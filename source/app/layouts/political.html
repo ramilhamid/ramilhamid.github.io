@@ -1,0 +1,52 @@
+{% extends "layouts/base.html" %}
+
+{% set bodystyle = "" %}
+
+{% set gotopshape = "square" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300%7COpen+Sans+Condensed:300,700&amp;subset=latin,latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/political.min.css -->
+    <link rel="stylesheet" href="styles/skins/political.css" type="text/css">
+    <!-- endbuild -->
+{% endblock %}
+
+{% block header %}
+    {% include "partials/political/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 90,
+        navbarScrolled : 80,
+        navbarScrolledPoint : 100,
+        menuClose : 'off',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/political/footer.html" %}
+{% endblock %}
+
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+{% endblock %}
+

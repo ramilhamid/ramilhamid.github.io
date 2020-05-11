@@ -1,0 +1,75 @@
+{% extends "layouts/base.html" %}
+
+{% set bodystyle = "" %}
+
+{% set gotopshape = "square" %}
+
+{% block fonts %}
+    <link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link href="//fonts.googleapis.com/css?family=Josefin+Sans:700,400%7CAmatic+SC:400,700&amp;subset=latin,latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <style  type="text/css" media="screen">
+        .transparent-header #masthead:not(.navbar-scrolled) .nav-highlight > a,
+        .transparent-header #masthead .nav-highlight > a {
+            color: #ffffff !important;
+        }
+        .transparent-header #masthead:not(.navbar-scrolled) .nav-highlight > a:after,
+        .transparent-header #masthead .nav-highlight > a:after {
+            background: #fec840 !important;
+        }
+    </style>
+    <!-- build:css assets/css/pet.min.css -->
+    <link rel="stylesheet" href="styles/skins/pet.css" type="text/css">
+    <!-- endbuild -->
+    <style>
+        .figure-caption-title {
+            font-size: 36px;
+        }
+        h3.sidebar-header {
+          font-size: 24px;
+        }
+
+        .menu a .menu-icon {
+            color: inherit;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+
+        #footer, .school-bg, .school-bg .pricing-head, .school-bg .pricing-body, .school-bg .panel-body {
+        background-image: url("assets/images/education/school-pat-not-include.png") !important;
+        }
+    </style>
+{% endblock %}
+
+
+{% block header %}
+    {% include "partials/pet/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 90,
+        navbarScrolled : 70,
+        navbarScrolledPoint : 30,
+        menuClose : 'on',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/pet/footer.html" %}
+{% endblock %}

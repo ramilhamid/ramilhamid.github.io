@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gt IE 8)]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <title>Lambda HTML 1.13.0 | Template Source Files</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicons/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/images/favicons/apple-touch-icon-60x60-precomposed.png">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="bs-docs-home ">
+        <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">Lambda HTML</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="getting-started.html">
+                    Getting Started
+                </a>
+                        </li>
+                        <li>
+                            <a href="using-lambda.html">
+                    Using Lambda
+                </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="skin.html">
+                                    Skin
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="slideshow.html">
+                                    Slideshow
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="revolution-slider.html">
+                                    Revolution Slider
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="map.html">
+                                    Map
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="pricing-tables.html">
+                                    Pricing Tables
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="contact-form.html">
+                                    Contact Form
+                                </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a href="source.html">
+                    Source Files
+                </a>
+                        </li>
+                        <li>
+                            <a href="changelog.html">
+                    Changelog
+                </a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <a href="http://themeforest.net/item/lambda-multi-purpose-bootstrap-html-template/10465708&ref=oxygenna" target="_blank" class="btn btn-success"><i class="fa fa-shopping-cart"></i> Purchase</a>
+                    </form>
+                </nav>
+            </div>
+        </header>
+        <div class="bs-header" id="content">
+            <div class="container">
+                <h1>Template Source Files</h1>
+                <p>An overview of how compile the template from its source files</p>
+            </div>
+        </div>
+        <div id="online-docs-warning" class="alert alert-info text-center">
+            <div class="container">
+                <strong>Online Docs Available</strong>
+                Looks like you are looking at the offline docs. You can find possibly more up to date docs <a href="http://lambdahtmldocs.oxygenna.com">online here</a>
+            </div>
+        </div>
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="bs-sidebar hidden-print affix-top" role="complementary">
+                        <ul class="nav bs-sidenav">
+                            <li><a href="#setting-up-your-system">Setting up your system</a>
+                                <ul class="nav">
+                                    <li><a href="#installing-node-js">Installing Node.js</a>
+                                    </li>
+                                    <li><a href="#checking-node-is-installed-and-working">Checking node is installed and working</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#the-source-files">The source files</a>
+                            </li>
+                            <li><a href="#getting-the-build-system-ready">Getting the build system ready</a>
+                                <ul class="nav">
+                                    <li><a href="#install-bower-packages">Install bower packages</a>
+                                    </li>
+                                    <li><a href="#install-node-modules">Install node modules</a>
+                                    </li>
+                                    <li><a href="#install-the-compass-gem">Install the compass gem</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#running-a-development-server">Running a development server</a>
+                                <ul class="nav">
+                                    <li><a href="#start-a-development-server">Start a development server</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#creating-a-production-build">Creating a production build</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="bs-docs-section">
+                        <h1 id="setting-up-your-system">Setting up your system</h1>
+                        <p>In order you run the build system for the template you will need to install node.js on your system. Follow the instructions below to install node.js on your system.</p>
+                        <h2 id="installing-node-js">Installing Node.js</h2>
+                        <p>You can download the latest versin of node.js <a href="http://nodejs.org/download/">from here</a> alternatively there are <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">guides on how to install using a package manager</a>.</p>
+                        <h2 id="checking-node-is-installed-and-working">Checking node is installed and working</h2>
+                        <p>Once you have node.js installed on your system you should be able to go to your command line and type</p>
+                        <pre><code>npm version</code></pre>
+                        <p>and see something like this</p>
+                        <pre><code>$ npm version
+{ http_parser: &#39;1.0&#39;,
+  node: &#39;0.10.28&#39;,
+  v8: &#39;3.14.5.9&#39;,
+  ares: &#39;1.9.0-DEV&#39;,
+  uv: &#39;0.10.27&#39;,
+  zlib: &#39;1.2.3&#39;,
+  modules: &#39;11&#39;,
+  openssl: &#39;1.0.1g&#39;,
+  npm: &#39;2.0.0-alpha-5&#39;,
+  triangular: &#39;0.0.0&#39; }</code></pre>
+                        <h1 id="the-source-files">The source files</h1>
+                        <p>The source files for the template can be found in the main download. Once you have unzipped the main download zip file from themeforest you will find another zip file inside named source.zip.</p>
+                        <p>Unzip the source.zip file and you will see a folder structure like this:</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Folder / File</th>
+                                    <th style="text-align:left">Contents</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>app</td>
+                                    <td style="text-align:left">contains the templates main app files</td>
+                                </tr>
+                                <tr>
+                                    <td>test</td>
+                                    <td style="text-align:left">testing folder</td>
+                                </tr>
+                                <tr>
+                                    <td>bower.json</td>
+                                    <td style="text-align:left">bower package file</td>
+                                </tr>
+                                <tr>
+                                    <td>package.json</td>
+                                    <td style="text-align:left">node.js package file</td>
+                                </tr>
+                                <tr>
+                                    <td>gulpfile.js</td>
+                                    <td style="text-align:left">gulp build file</td>
+                                </tr>
+                                <tr>
+                                    <td>composer.json</td>
+                                    <td style="text-align:left">PHP composer package file</td>
+                                </tr>
+                                <tr>
+                                    <td>changelog.md</td>
+                                    <td style="text-align:left">lists changes to the template</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Inside the app folder you will find the following files and folders</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Folder / File</th>
+                                    <th style="text-align:left">Contents</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>assets</td>
+                                    <td style="text-align:left">contains images used in the template</td>
+                                </tr>
+                                <tr>
+                                    <td>fonts</td>
+                                    <td style="text-align:left">font icon files used in the template</td>
+                                </tr>
+                                <tr>
+                                    <td>layouts</td>
+                                    <td style="text-align:left">layout files used in nunjucks template system</td>
+                                </tr>
+                                <tr>
+                                    <td>partials</td>
+                                    <td style="text-align:left">html partial files</td>
+                                </tr>
+                                <tr>
+                                    <td>scripts</td>
+                                    <td style="text-align:left">all the templates javascript files</td>
+                                </tr>
+                                <tr>
+                                    <td>styles</td>
+                                    <td style="text-align:left">all the templates SASS files</td>
+                                </tr>
+                                <tr>
+                                    <td>*.html</td>
+                                    <td style="text-align:left">the main html files that are combined with the layouts / partials to create the html pages</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 id="getting-the-build-system-ready">Getting the build system ready</h1>
+                        <p>In order to finish the set up of the build system you just need to run 2 simple commands from the root directory of your unzipped source files.</p>
+                        <h2 id="install-bower-packages">Install bower packages</h2>
+                        <p>Run the following command from the root of your source files to install the bower packages listed in bower.json</p>
+                        <pre><code>bower install</code></pre>
+                        <h2 id="install-node-modules">Install node modules</h2>
+                        <p>Run the following command from the root of your source files to install the node modules listed in packages.json</p>
+                        <pre><code>npm install</code></pre>
+                        <h2 id="install-the-compass-gem">Install the compass gem</h2>
+                        <p>Compass is an open-source CSS Authoring Framework. You will need to install the compass gem in order for the sass files to compile.</p>
+                        <p>Follow <a href="http://compass-style.org/install/">these instructions on how to install</a>.</p>
+                        <p>Once you have the gem installed you can test to see if it has installed correctly by typing the following in your terminal.</p>
+                        <pre><code>compass version</code></pre>
+                        <p>You should see something like the following</p>
+                        <pre><code>$ compass version
+Compass 1.0.3 (Polaris)
+Copyright (c) 2008-2015 Chris Eppstein
+Released under the MIT License.
+Compass is charityware.
+Please make a tax deductable donation for a worthy cause: http://umdf.org/compass</code></pre>
+                        <h1 id="running-a-development-server">Running a development server</h1>
+                        <h2 id="start-a-development-server">Start a development server</h2>
+                        <p>Once you have bower packages and node modules installed you are ready to code. To start a development server just type.</p>
+                        <pre><code>gulp serve</code></pre>
+                        <p>This should automatically open up a browser window with the template running. Any changes you make to the HTML &amp; JS &amp; SASS files will be auto updated in your browser window.</p>
+                        <h1 id="creating-a-production-build">Creating a production build</h1>
+                        <p>Once you are happy with your changes you can initiate a build that will create a copy of the template that you can FTP to your web server.</p>
+                        <p>Just run the command</p>
+                        <pre><code>gulp build</code></pre>
+                        <p>This will initiate a build, once it has finished you will find your built files in a folder called dist that will have been created for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="docs-footer" role="contentinfo">
+            <div class="container">
+                <ul class="bs-masthead-links pull-left">
+                    <li class="current-version">
+                        Currently v1.13.0
+                    </li>
+                    <li>
+                        <a href="changelog.html">Changelog</a>
+                    </li>
+                    <li>
+                        <a href="http://themeforest.net/user/oxygenna/portfolio" target="_blank">Our Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="http://www.oxygenna.com/contact" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="bs-masthead-links pull-right">
+                    <li>
+                        Made with <i class="fa fa-heart"></i> in Sitia, Greece
+                    </li>
+                </ul>
+                </li>
+        </footer>
+    </body>
+    <script src="assets/js/main.js"></script>
+</html>

@@ -1,0 +1,44 @@
+/* -------- */
+/* SERMON MANAGER */
+/* -------- */
+
+// Sermon Date & Type
+.sermon_date, .service_type {
+  text-transform: none;
+  font-size: inherit;
+}
+
+// Sermon List
+#wpfc_sermon_wrap {
+  margin-bottom: 24px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, .1);
+  .sermon-title {
+    padding: 10px;
+    margin: 0 0 10px 0;
+  }
+  .wpfc_sermon_wrap {
+    padding: 10px;
+  }
+  .wpfc_sermon_image img {
+    margin: 0 10px 0 0 !important;
+  }
+}
+.wpfc_sermon_image img {
+  margin: 0 10px 0 0 !important;
+}
+// Grid view
+.post-grid-content .wpfc_sermon_image {
+  display: none;
+}
+// Single Sermon Page
+.single-wpfc_sermon .post-details {
+  display: none;
+}
+.single-wpfc_sermon .wpfc_sermon_image {
+  display: none;
+}
+#wpfc-attachments a {
+  text-decoration: underline;
+  margin-bottom: 24px;
+  margin-top: 10px;
+}

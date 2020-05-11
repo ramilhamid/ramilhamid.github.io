@@ -1,0 +1,297 @@
+{% extends "layouts/pet.html" %}
+
+{% set title = "Pet Care | Lambda" %}
+{% set bodyclasses = "transparent-header pace-on pace-minimal" %}
+{% set activeMenu = "Blog" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section  section-fullheight">
+        <div class="background-media" style="background-image: url(assets/images/pet-care/bg-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0.5%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.5);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <header class="blog-header small-screen-center text-light col-md-12">
+                    <h1 class="text-center element-top-20 element-bottom-20 text-light super light" data-os-animation="none" data-os-animation-delay="0s">My Blog</h1>
+                </header>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row element-top-50 element-bottom-50">
+                <div class="col-md-10 col-md-offset-1 blog-list-layout-left">
+                    <article class="post">
+                        <div class="post-media">
+                            <div class="figure fade-in text-center figcaption-middle">
+                                <a class="figure-image" href="pet-care-post.html">
+                                    <img alt="Rescue Pup Surprise!" src="assets/images/pet-care/post1-notinclude.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <span class="figure-overlay-icons">
+                                                    <i class="icon-link"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <header class="post-head small-screen-center">
+                            <h2 class="post-title"><a href="pet-care-post.html" rel="bookmark" title="Permalink to Rescue Pup Surprise!">Rescue Pup Surprise!</a></h2>
+                            <div class="post-details">
+                                <span class="post-date">
+                                    <i class="icon-clock"></i> August 6, 2015
+                                </span>
+                                <span class="post-category">
+                                    <i class="icon-clipboard"></i>
+                                    <a href="#" rel="tag">news</a>,
+                                    <a href="#" rel="tag">protect</a>
+                                </span>
+                                <span class="post-link">
+                                    <i class="icon-speech-bubble"></i>
+                                    <a href="#">No comments</a>
+                                </span>
+                            </div>
+                        </header>
+                        <div class="post-body">
+                            <p>Aliquam sit amet quam risus. Mauris lobortis tortor quis ipsum pharetra, non mattis nibh gravida. Suspendisse blandit maximus pharetra. Nam molestie risus a massa
+                            pharetra pharetra. Integer eu iaculis enim, a fermentum ante. Integer bibendum blandit nisi, non <strong>viverra</strong> mi ultrices.</p>
+                        </div>
+                        <div class="small-screen-center post-more">
+                            <a class="post-more-link btn btn-primary" href="pet-care-post.html">read more</a>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <div class="post-media">
+                            <div class="figure fade-in text-center figcaption-middle">
+                                <a class="figure-image" href="pet-care-post.html">
+                                    <img alt="Cute And Confused" src="assets/images/pet-care/post2-notinclude.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <span class="figure-overlay-icons">
+                                                    <i class="icon-link"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <header class="post-head small-screen-center">
+                            <h2 class="post-title"><a href="pet-care-post.html" rel="bookmark" title="Permalink to Cute And Confused">Cute And Confused</a></h2>
+                            <div class="post-details">
+                                <span class="post-date">
+                                    <i class="icon-clock"></i> August 6, 2015
+                                </span>
+                                <span class="post-category">
+                                    <i class="icon-clipboard"></i>
+                                    <a href="#" rel="tag">news</a>,
+                                    <a href="#" rel="tag">protect</a>
+                                </span>
+                                <span class="post-link">
+                                    <i class="icon-speech-bubble"></i>
+                                    <a href="#">No comments</a>
+                                </span>
+                            </div>
+                        </header>
+                        <div class="post-body">
+                            <p>Sed venenatis, justo id mattis varius, ligula lectus dapibus ex, vitae feugiat lacus nulla vitae magna. Vestibulum tempor, neque sed fermentum ullamcorper, dolor leo
+                            fringilla odio, a blandit lacus nisl vel turpis.</p>
+                        </div>
+                        <div class="small-screen-center post-more">
+                            <a class="post-more-link btn btn-primary" href="pet-care-post.html">read more</a>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <div class="post-media">
+                            <div class="figure fade-in text-center figcaption-middle">
+                                <a class="figure-image" href="pet-care-post.html">
+                                    <img alt="Take a swim with your puppy!" src="assets/images/pet-care/post3-notinclude.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <span class="figure-overlay-icons">
+                                                    <i class="icon-link"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <header class="post-head small-screen-center">
+                            <h2 class="post-title"><a href="pet-care-post.html" rel="bookmark" title="Permalink to Take a swim with your puppy!">Take a
+                            swim with your puppy!</a></h2>
+                            <div class="post-details">
+                                <span class="post-date">
+                                    <i class="icon-clock"></i> August 6, 2015
+                                </span>
+                                <span class="post-category">
+                                    <i class="icon-clipboard"></i>
+                                    <a href="#" rel="tag">news</a>,
+                                    <a href="#" rel="tag">protect</a>
+                                </span>
+                                <span class="post-link">
+                                    <i class="icon-speech-bubble"></i>
+                                    <a href="#">No comments</a>
+                                </span>
+                            </div>
+                        </header>
+                        <div class="post-body">
+                            <p>Suspendisse in nunc viverra erat elementum ultrices vel at tortor. Curabitur consectetur massa vitae dapibus lobortis. Mauris elementum in nulla sed ultrices. Integer
+                            eget finibus lectus, vitae imperdiet velit. Donec eu ipsum condimentum, congue eros a, convallis lectus.</p>
+                        </div>
+                        <div class="small-screen-center post-more">
+                            <a class="post-more-link btn btn-primary" href="pet-care-post.html">read more</a>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <div class="post-media">
+                            <div class="figure fade-in text-center figcaption-middle">
+                                <a class="figure-image" href="pet-care-post.html">
+                                    <img alt="Introducing a New Dog to the Neighborhood"src="assets/images/pet-care/post4-notinclude.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <span class="figure-overlay-icons">
+                                                    <i class="icon-link"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <header class="post-head small-screen-center">
+                            <h2 class="post-title"><a href="pet-care-post.html" rel="bookmark" title=
+                            "Permalink to Introducing a New Dog to the Neighborhood">Introducing a New Dog to the Neighborhood</a></h2>
+                            <div class="post-details">
+                                <span class="post-date">
+                                    <i class="icon-clock"></i> August 6, 2015
+                                </span>
+                                <span class="post-category">
+                                    <i class="icon-clipboard"></i>
+                                    <a href="#" rel="tag">news</a>,
+                                    <a href="#" rel="tag">protect</a>
+                                </span>
+                                <span class="post-link">
+                                    <i class="icon-speech-bubble"></i>
+                                    <a href="#">No comments</a>
+                                </span>
+                            </div>
+                        </header>
+                        <div class="post-body">
+                            <p>Donec posuere, dui laoreet blandit faucibus, purus eros mattis mauris, at laoreet diam justo sagittis dolor. Suspendisse potenti. Pellentesque placerat, metus eget
+                            interdum rhoncus, lectus odio dignissim ipsum, ut ultrices tellus augue ac orci. Quisque et tempor erat.</p>
+                        </div>
+                        <div class="small-screen-center post-more">
+                            <a class="post-more-link btn btn-primary" href="pet-care-post.html">read more</a>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <div class="post-media">
+                            <div class="figure fade-in text-center figcaption-middle">
+                                <a class="figure-image" href="pet-care-post.html">
+                                    <img alt="Animal protection" src="assets/images/pet-care/post5-notinclude.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <span class="figure-overlay-icons">
+                                                    <i class="icon-link"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <header class="post-head small-screen-center">
+                            <h2 class="post-title"><a href="pet-care-post.html" rel="bookmark" title="Permalink to Animal protection">Animal protection</a></h2>
+
+                            <div class="post-details">
+                                <span class="post-date">
+                                    <i class="icon-clock"></i> August 6, 2015
+                                </span>
+                                <span class="post-category">
+                                    <i class="icon-clipboard"></i>
+                                    <a href="#" rel="tag">news</a>,
+                                    <a href="#" rel="tag">protect</a>
+                                </span>
+                                <span class="post-link">
+                                    <i class="icon-speech-bubble"></i>
+                                    <a href="#">No comments</a>
+                                </span>
+                            </div>
+                        </header>
+                        <div class="post-body">
+                            <p>Nulla enim nisl, scelerisque imperdiet ornare ac, sagittis at neque. Donec at metus id mauris commodo eleifend. Aenean sed posuere erat. Mauris <strong>maximus</strong>
+                            est nulla, vitae dictum magna condimentum nec. Maecenas eu ullamcorper nunc. Suspendisse in nunc viverra erat elementum ultrices vel at tortor.</p>
+                        </div>
+                        <div class="small-screen-center post-more">
+                            <a class="post-more-link btn btn-primary" href="pet-care-post.html">read more</a>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <div class="post-media">
+                            <div class="figure fade-in text-center figcaption-middle">
+                                <a class="figure-image" href="pet-care-post.html">
+                                    <img alt="Animal shelter" src="assets/images/pet-care/post6-notinclude.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <span class="figure-overlay-icons">
+                                                    <i class="icon-link"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <header class="post-head small-screen-center">
+                            <h2 class="post-title"><a href="" rel="bookmark" title="Permalink to Animal shelter">Animal shelter</a></h2>
+                            <div class="post-details">
+                                <span class="post-date">
+                                    <i class="icon-clock"></i> August 6, 2015
+                                </span>
+                                <span class="post-category">
+                                    <i class="icon-clipboard"></i>
+                                    <a href="#" rel="tag">news</a>,
+                                    <a href="#" rel="tag">protect</a>
+                                </span>
+                                <span class="post-link">
+                                    <i class="icon-speech-bubble"></i>
+                                    <a href="#">No comments</a>
+                                </span>
+                            </div>
+                        </header>
+                        <div class="post-body">
+                            <p>Aliquam sit amet quam risus. Mauris lobortis tortor quis ipsum pharetra, non mattis nibh gravida. Suspendisse blandit maximus pharetra. Nam molestie risus a massa
+                            pharetra pharetra. Integer eu iaculis enim, a fermentum ante. Integer bibendum blandit nisi, non viverra mi ultrices a.</p>
+                        </div>
+                        <div class="small-screen-center post-more">
+                            <a class="post-more-link btn btn-primary" href="pet-care-post.html">read more</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

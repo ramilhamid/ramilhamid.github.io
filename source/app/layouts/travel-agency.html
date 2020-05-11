@@ -1,0 +1,54 @@
+{% extends "layouts/base.html" %}
+
+{% set bodystyle = "" %}
+
+{% set gotopshape = "square" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400%7CAmatic+SC:400,700&amp;subset=latin-ext,latin-ext" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/travel-agency.min.css -->
+    <link rel="stylesheet" href="styles/skins/travel-agency.css" type="text/css">
+    <!-- endbuild -->
+    <style>
+        .figure-caption-title {
+            font-size: 36px;
+        }
+        .figure-caption-category{
+            font-size: 24px;
+        }
+    </style>
+{% endblock %}
+
+
+{% block header %}
+    {% include "partials/travel-agency/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 90,
+        navbarScrolled : 70,
+        navbarScrolledPoint : 30,
+        menuClose : 'on',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/travel-agency/footer.html" %}
+{% endblock %}

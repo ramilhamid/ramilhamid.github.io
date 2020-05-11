@@ -1,0 +1,315 @@
+{% extends "layouts/shop.html" %}
+
+{% set title = "Womens" %}
+{% set activeMenu = "Womens" %}
+
+{% block content %}
+<article>
+    <section class="section" >
+        <div class="background-overlay grid-overlay-0 " style="background-color: rgba(240,240,240,1);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-left element-top-30 element-bottom-30 text-normal normal regular" data-os-animation="none" data-os-animation-delay="0s" >
+                        Our Spring Collection
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-commerce">
+        <div class="container element-top-50 element-bottom-50">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ol class="breadcrumb">
+                                <li><a class="home" href="shop-index.html">Home</a></li>
+                                <li>Womens</li>
+                            </ol>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <p class="woocommerce-result-count">
+                                Showing all 8 results
+                            </p>
+                            <form class="woocommerce-ordering" method="get">
+                                <select name="orderby" class="orderby">
+                                    <option value="menu_order"  selected='selected'>Default sorting</option>
+                                    <option value="popularity" >Sort by popularity</option>
+                                    <option value="rating" >Sort by average rating</option>
+                                    <option value="date" >Sort by newness</option>
+                                    <option value="price" >Sort by price: low to high</option>
+                                    <option value="price-desc" >Sort by price: high to low</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="products list-container">
+                            <li class="product col-md-4 sale">
+                                <a href="shop-simple-product.html">
+                                    <span class="onsale">Sale!</span>
+                                    <div class="product-image">
+                                        <div class="product-image-front">
+                                            <img width="700" height="893" src="assets/images/shop/skirt1-1-700x893.jpg" alt="skirt1-1" />
+                                        </div>
+                                        <div class="product-image-back">
+                                            <img src="assets/images/shop/skirt1-2-700x893.jpg" alt=""/>
+                                        </div>
+                                        <div class="product-image-overlay">
+                                            <h4>View Details</h4>
+                                            <div class="star-rating" title="Rated 5.00 out of 5">
+                                                <span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <h3 class="product-title">
+                                        <a href="shop-simple-product.html">
+                                            White Skirt
+                                        </a>
+                                    </h3>
+                                    <span class="product-categories">
+                                        <a href="shop-mens-category.html" rel="tag">Jeans</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Skirts</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Tops</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Womens</a>
+                                    </span>
+                                    <h3 class="price">
+                                        <del><span class="amount">&#36;30.00</span></del> <ins><span class="amount">&#36;20.00</span></ins>
+                                    </h3>
+                                    <a href="#" rel="nofollow" class="add-to-cart-button add_to_cart_button product_type_simple"><i class="icon-bag"></i></a>
+                                </div>
+                            </li>
+                            <li class="product col-md-4 sale">
+                                <a href="shop-simple-product.html">
+                                    <span class="onsale">Sale!</span>
+                                    <div class="product-image">
+                                        <div class="product-image-front">
+                                            <img width="700" height="893" src="assets/images/shop/skirt4-1-700x893.jpg" alt="skirt4-1" />
+                                        </div>
+                                        <div class="product-image-back">
+                                            <img src="assets/images/shop/skirt4-2-700x893.jpg" alt=""/>
+                                        </div>
+                                        <div class="product-image-overlay">
+                                            <h4>View Details</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <h3 class="product-title">
+                                        <a href="shop-simple-product.html">
+                                            Ra Ra Skirt
+                                        </a>
+                                    </h3>
+                                    <span class="product-categories">
+                                        <a href="shop-mens-category.html" rel="tag">Skirts</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Tops</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Womens</a>
+                                    </span>
+                                    <h3 class="price">
+                                        <del><span class="amount">&#36;49.99</span></del> <ins><span class="amount">&#36;39.99</span></ins>
+                                    </h3>
+                                    <a href="#" rel="nofollow" class="add-to-cart-button add_to_cart_button product_type_simple"><i class="icon-bag"></i></a>
+                                </div>
+                            </li>
+                            <li class="product col-md-4">
+                                <a href="shop-simple-product.html">
+                                    <div class="product-image">
+                                        <div class="product-image-front">
+                                            <img width="700" height="893" src="assets/images/shop/jeans1-1-700x893.jpg" alt="jeans1-1" /></div>
+                                        <div class="product-image-back">
+                                            <img src="assets/images/shop/jeans1-2-700x893.jpg" alt=""/>
+                                        </div>
+                                        <div class="product-image-overlay">
+                                            <h4>View Details</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <h3 class="product-title">
+                                        <a href="shop-simple-product.html">
+                                            Womens Jeans
+                                        </a>
+                                    </h3>
+                                    <span class="product-categories">
+                                        <a href="shop-mens-category.html" rel="tag">Jeans</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Tops</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Womens</a>
+                                    </span>
+                                    <h3 class="price">
+                                        <span class="amount">&#36;29.00</span>
+                                    </h3>
+                                    <a href="#" rel="nofollow" class="add-to-cart-button add_to_cart_button product_type_simple"><i class="icon-bag"></i></a>
+                                </div>
+                            </li>
+                            <li class="product col-md-4 sale">
+                                <a href="shop-simple-product.html">
+                                    <span class="onsale">Sale!</span>
+                                    <div class="product-image">
+                                        <div class="product-image-front">
+                                            <img width="700" height="893" src="assets/images/shop/top1-1-700x893.jpg" alt="top1-1" />
+                                        </div>
+                                        <div class="product-image-back">
+                                            <img src="assets/images/shop/top1-2-700x893.jpg" alt="top1-2"/>
+                                        </div>
+                                        <div class="product-image-overlay">
+                                            <h4>View Details</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <h3 class="product-title">
+                                        <a href="shop-simple-product.html">
+                                            Woo Top Fancy
+                                        </a>
+                                    </h3>
+                                    <span class="product-categories">
+                                        <a href="shop-mens-category.html" rel="tag">Jeans</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Tops</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Womens</a>
+                                    </span>
+                                    <h3 class="price">
+                                        <del><span class="amount">&#36;33.00</span></del> <ins><span class="amount">&#36;24.00</span></ins>
+                                    </h3>
+                                    <a href="#" rel="nofollow" class="add-to-cart-button add_to_cart_button product_type_simple"><i class="icon-bag"></i></a>
+                                </div>
+                            </li>
+                            <li class="product col-md-4">
+                                <a href="shop-simple-product.html">
+                                    <div class="product-image">
+                                        <div class="product-image-front">
+                                            <img width="700" height="893" src="assets/images/shop/top2-1-700x893.jpg" alt="top2-1" />
+                                        </div>
+                                        <div class="product-image-back">
+                                            <img src="assets/images/shop/top2-2-700x893.jpg" alt=""/>
+                                        </div>
+                                        <div class="product-image-overlay">
+                                            <h4>View Details</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <h3 class="product-title">
+                                        <a href="shop-simple-product.html">
+                                            Woo Top Black
+                                        </a>
+                                    </h3>
+                                    <span class="product-categories">
+                                        <a href="shop-mens-category.html" rel="tag">Jeans</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Tops</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Womens</a>
+                                    </span>
+                                    <h3 class="price">
+                                        <span class="amount">&#36;21.00</span>
+                                    </h3>
+                                    <a href="#" rel="nofollow" class="add-to-cart-button add_to_cart_button product_type_simple"><i class="icon-bag"></i></a>
+                                </div>
+                            </li>
+                            <li class="product col-md-4 sale">
+                                <a href="shop-simple-product.html">
+                                    <span class="onsale">Sale!</span>
+                                    <div class="product-image">
+                                        <div class="product-image-front">
+                                            <img width="700" height="893" src="assets/images/shop/dress1-1-700x893.jpg" alt="dress1-1" />
+                                        </div>
+                                        <div class="product-image-back">
+                                            <img src="assets/images/shop/dress1-2-700x893.jpg" alt=""/>
+                                        </div>
+                                        <div class="product-image-overlay">
+                                            <h4>View Details</h4>
+                                            <div class="star-rating" title="Rated 3.00 out of 5">
+                                                <span style="width:60%"><strong class="rating">3.00</strong> out of 5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <h3 class="product-title">
+                                        <a href="shop-simple-product.html">
+                                            Woo Dress
+                                        </a>
+                                    </h3>
+                                    <span class="product-categories">
+                                        <a href="shop-mens-category.html" rel="tag">Skirts</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Womens</a>
+                                    </span>
+                                    <h3 class="price">
+                                        <del><span class="amount">&#36;15.00</span></del> <ins><span class="amount">&#36;12.00</span></ins>
+                                    </h3>
+                                    <a href="#" rel="nofollow" class="add-to-cart-button add_to_cart_button product_type_simple"><i class="icon-bag"></i></a>
+                                </div>
+                            </li>
+                            <li class="product col-md-4">
+                                <a href="shop-simple-product.html">
+                                    <div class="product-image">
+                                        <div class="product-image-front">
+                                            <img width="700" height="893" src="assets/images/shop/jeans2-1-700x893.jpg" alt="jeans2-1" />
+                                        </div>
+                                        <div class="product-image-back">
+                                            <img src="assets/images/shop/jeans2-2-700x893.jpg" alt="jeans2-2"/>
+                                        </div>
+                                        <div class="product-image-overlay">
+                                            <h4>View Details</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <h3 class="product-title">
+                                        <a href="shop-simple-product.html">
+                                            Black Jeans
+                                        </a>
+                                    </h3>
+                                    <span class="product-categories">
+                                        <a href="shop-mens-category.html" rel="tag">Jeans</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Tops</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Womens</a>
+                                    </span>
+                                    <h3 class="price">
+                                        <span class="amount">&#36;80.00</span>
+                                    </h3>
+                                    <a href="#" rel="nofollow" class="add-to-cart-button add_to_cart_button product_type_simple"><i class="icon-bag"></i></a>
+                                </div>
+                            </li>
+                            <li class="product col-md-4 sale">
+                                <a href="shop-simple-product.html">
+                                    <div class="product-image">
+                                        <div class="product-image-front">
+                                            <img width="700" height="893" src="assets/images/shop/dress2-1-700x893.jpg" alt="dress2-1" />
+                                        </div>
+                                        <div class="product-image-back">
+                                            <img src="assets/images/shop/dress2-2-700x893.jpg" alt="dress2-2"/>
+                                        </div>
+                                        <div class="product-image-overlay">
+                                            <h4>View Details</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <h3 class="product-title">
+                                        <a href="shop-simple-product.html">
+                                            Colorful Dress
+                                        </a>
+                                    </h3>
+                                    <span class="product-categories">
+                                        <a href="shop-mens-category.html" rel="tag">Skirts</a>,
+                                        <a href="shop-mens-category.html" rel="tag">Womens</a>
+                                    </span>
+                                    <h3 class="price">
+                                        <span class="amount">&#36;20.00</span>
+                                    </h3>
+                                    <a href="#" rel="nofollow" class="add-to-cart-button add_to_cart_button product_type_simple"><i class="icon-bag"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    {% include "partials/shop/sidebar.html" %}
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

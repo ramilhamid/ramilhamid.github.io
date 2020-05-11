@@ -1,0 +1,45 @@
+{% extends "layouts/base.html" %}
+
+{% set bodystyle = "" %}
+
+{% set gotopshape = "square" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet" type="text/css"
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/lawcompany.min.css -->
+    <link rel="stylesheet" href="styles/skins/lawcompany.css" type="text/css">
+    <!-- endbuild -->
+{% endblock %}
+
+{% block header %}
+    {% include "partials/lawcompany/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 100,
+        navbarScrolled : 90,
+        navbarScrolledPoint : 20,
+        menuClose : 'off',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 1,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/lawcompany/footer.html" %}
+{% endblock %}

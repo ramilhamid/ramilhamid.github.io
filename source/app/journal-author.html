@@ -1,0 +1,38 @@
+{% extends "layouts/journal.html" %}
+
+{% set title = "John Doe" %}
+{% set activeMenu = "Pages" %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="container-author">
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="author-info media text-center element-top-50 element-bottom-50 small-screen-center">
+                        <div class="author-avatar">
+                            <a href="journal-index.html">
+                                <img alt='' class='media-objects img-circle avatar-80 photo' height='80' src='assets/images/corporate/team09-notinclude.jpg' width='80'>
+                            </a>
+                        </div>
+
+                        <h2><a href="journal-index.html">John Doe</a></h2>
+
+                        <p class="lead">Sold the highest number of back scratchers of an employee in the history of Back Scratchers Inc., Was employee of the month 10 months in a row, Started out as
+                        a dishwasher and am now the executive chef at La Lune.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row element-top-50 element-bottom-50">
+                <div class="col-md-8 col-md-offset-2 blog-list-layout-normal">
+                    {% include "partials/journal/posts.html" %}
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

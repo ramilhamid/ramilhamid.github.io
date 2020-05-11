@@ -1,0 +1,142 @@
+// Core variables and mixins
+@import "bootstrap/oxygenna-variables";
+@import "compass/css3";
+@import "theme/compass-mixins";
+
+
+// Skin Variables
+$font-family: 'Josefin Sans';
+$font-size: 18px;
+$font-weight: 400;
+$heading-font-family: 'Amatic SC';
+$heading-font-weight: 300;
+$heading-text-transform: none;
+$brand-font-family: 'Amatic SC';
+$brand-font-size: 36px;
+$brand-font-weight: 300;
+$navbar-font-family: 'Amatic SC';
+$navbar-font-size: 29px;
+$navbar-font-weight: 700;
+$navbar-dropdown-font-size: 24px;
+$font-weight-hairline: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$blog-post-title-font-size: 48px;
+$blog-post-title-font-weight: 300;
+$blog-post-font-size: 18px;
+$blog-post-font-weight: 400;
+$blockquote-font-family: 'Josefin Sans';
+$blockquote-font-size: 24px;
+$blockquote-font-style: normal;
+$blockquote-font-weight: 300;
+$lead-font-size: 24px;
+$lead-font-weight: 300;
+$navbar-height: 90px;
+$navbar-scrolled: 70px;
+$submenu-width: 220px;
+$navbar-border-height: 0px;
+$sidemenu-width: 270px;
+$sidemenu-nav-max-height: 600px;
+$text-color: #472514;
+$heading-color: #472514;
+$link-color: #42b2a9;
+$link-color-hover: #91ffe0;
+$icon-color: #472514;
+$small-color: #472514;
+$text-color-alt: #ffffff;
+$heading-color-alt: #ffffff;
+$link-color-alt: #ffffff;
+$link-color-hover-alt: #ffffff;
+$icon-color-alt: #ffffff;
+$small-color-alt: #ffffff;
+$background-color: #ffffff;
+$background-invert: #472514;
+$background-complementary: rgba(0,0,0,.1);
+$nav-background: rgba(66, 178, 169, 0.7);
+$nav-link: #ffffff;
+$nav-link-hover: #42b2a9;
+$nav-link-active: #42b2a9;
+$nav-brand: #ffffff;
+$nav-text: #ffffff;
+$nav-borders: rgba(0, 0, 0, 0.06);
+$nav-dropdown-background: rgba(66, 178, 169, 0.8);
+$nav-dropdown-link: #ffffff;
+$nav-dropdown-link-hover: #ffffff;
+$nav-dropdown-text: #ffffff;
+$nav-dropdown-border: rgba(0,0,0,.055);
+$nav-dropdown-separators: rgba(0,0,0,.055);
+$nav-transparent-link: #ffffff;
+$nav-transparent-link-hover: #42b2a9;
+$nav-transparent-brand: #ffffff;
+$nav-transparent-text: #ffffff;
+$nav-transparent-borders: rgba(255, 255, 255, 0.1);
+$logo-background: #ffffff;
+$logo-brand: #472514;
+$top-bar-background: #f0f0f0;
+$top-bar-link: #ffffff;
+$top-bar-link-hover: #91ffe0;
+$top-bar-text: #42b2a9;
+$top-bar-borders: rgba(255, 255, 255, .1);
+$footer-background: #211109;
+$footer-link: #ffffff;
+$footer-link-hover: #91ffe0;
+$footer-text: rgba(255, 255, 255, .6);
+$footer-borders: #42b2a9;
+$sub-footer-background: #000;
+$sub-footer-link: #ffffff;
+$sub-footer-link-hover: #91ffe0;
+$sub-footer-text: rgba(255, 255, 255, .6);
+$sub-footer-borders: rgba(255, 255, 255, .1);
+$form-color: #42b2a9;
+$form-background: rgba(255, 255, 255, 0.6);
+$form-borders: rgba(255, 152, 102, 0.1);
+$form-placeholder-color: #ffffff;
+$form-active: #42b2a9;
+$primary-text: #ffffff;
+$primary-bg: rgba(66, 178, 169, 0.9);
+$default-text: #42b2a9;
+$default-bg: rgba(255, 255, 255, 0.9);
+$warning-text: #ffffff;
+$warning-bg: #CD6727;
+$danger-text: #ffffff;
+$danger-bg: #008D7D;
+$success-text: #ffffff;
+$success-bg: #42b2a9;
+$info-text: #ffffff;
+$info-bg: #78A2BB;
+$border-radius-base: 18px;
+$border-radius-large: 24px;
+$border-radius-small: 15px;
+$border-radius-forms: 18px;
+$overlay-text: #ffffff;
+$overlay-bg: rgba(0, 0, 0, 0.7);
+$magnific-overlay-bg: #ffffff;
+$magnific-close-icon: #ffffff;
+$magnific-close-bg: #000000;
+$top-icon-color: rgba(66, 178, 169, 0.9);
+$top-icon-bg: #ffffff;
+$slideshow-color: #ffffff;
+$slideshow-shadow: rgba(255, 255, 255, 0.2);
+$loader-color: rgba(66, 178, 169, 0.9);
+$loader-bg: #efebe9;
+
+// Transparent logo switch
+@media (min-width: 992px) {
+    .transparent-header #masthead .navbar-brand {
+        background-image: url('../../assets/images/barber/logo-w.png');
+    }
+    .transparent-header #masthead .navbar-brand img {
+        visibility: hidden;
+    }
+    .transparent-header #masthead.navbar-scrolled .navbar-brand {
+        background-image: none;
+    }
+    .transparent-header #masthead.navbar-scrolled .navbar-brand img {
+        visibility: visible;
+    }
+}
+
+// Skin Creator
+@import "theme/skin";

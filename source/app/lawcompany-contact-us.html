@@ -1,0 +1,126 @@
+{% extends "layouts/lawcompany.html" %}
+
+{% set title = "Contact us | Law Company" %}
+
+{% set bodyclasses = "pace-on pace-minimal" %}
+
+{% set activeMenu = "Contact" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block extracss %}
+    <!-- build:css assets/css/extras.min.css -->
+    <link rel="stylesheet" href="styles/revolution.css">
+    <link rel="stylesheet" href="../bower_components/mediaelement/build/mediaelementplayer.css">
+    <!-- endbuild -->
+    <style type="text/css">
+        select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .select-wrap, .form-control {
+            background-color: rgba(0, 0, 0, 0.03) !important;
+            color: #444444 !important;
+            border-color: rgba(118, 178, 178, 0.9) !important;
+        }
+        select::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="color"]::-webkit-input-placeholder, .uneditable-input::-webkit-input-placeholder, .select-wrap::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
+            color: #888888 !important;
+        }
+    </style>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/lawcompany/footer.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+{% endblock %}
+
+{% block content %}
+
+<article>
+    <section class="section">
+
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                    <div class="google-map" id="map" style="height:500px"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+       <!--  <div class="background-overlay grid-overlay-0" style="background-color: rgba(193,193,193,0);"></div> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+
+                    <h1 class="text-center element-top-20 element-bottom-20 os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0.3s">Get in touch</h1>
+
+                    <p class="lead text-center center text-normal element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+                    Create stunning pages withour powerful admin panel. Functionality and usability combine to let you design your pages without any coding. Get Lambda now and start creating the perfect site for you right
+                    away.</p>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-md-8 text-center os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                            <form action="contact_mailer.php" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-user"></i>
+                                            <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-envelope"></i>
+                                            <input class="form-control" id="email" name="email" placeholder="Your email *" type="email" required="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-pencil"></i>
+                                    <textarea class="form-control" id="message" name="message" type="message" placeholder="Your message" rows="10" required=""></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Send email" class="btn btn-primary">
+                                </div>
+                                <div class="messages text-center"></div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-2 text-default small-screen-default">
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

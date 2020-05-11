@@ -1,0 +1,32 @@
+<div class="menu navbar navbar-static-top header-logo-left-menu-right oxy-mega-menu navbar-sticky text-caps" id="masthead">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/pet-care-index.html">
+                <img alt="Lambda Theme - Pet Care" src="assets/images/pet-care/pet-care-logo-white.png">
+                PET CARE
+            </a>
+        </div>
+
+        <div class="nav-container">
+            <nav class="collapse navbar-collapse main-navbar logo-navbar navbar-right">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav" id="menu-main">
+                        {% for item in [{title:"Home", href:"pet-care-index.html"},
+                                        {title:"Prices", href:"pet-care-prices.html"},
+                                        {title:"Blog", href:"pet-care-blog.html"},
+                                        {title:"Contact", href:"pet-care-contact.html"}] %}
+                        <li class="menu-item {{ 'active' if activeMenu == item.title }}">
+                            <a {% if item.href == '#' %} class="dropdown-toggle" data-toggle="dropdown" {% endif %} href="/{{ item.href }}"><i class="menu-icon fa fa-paw"></i>{{ item.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

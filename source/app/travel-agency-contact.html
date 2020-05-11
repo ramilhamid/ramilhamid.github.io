@@ -1,0 +1,110 @@
+% extends "layouts/travel-agency.html" %}
+
+{% set title = "Travel Agency | Lambda" %}
+{% extends "layouts/travel-agency.html" %}
+
+{% set title = "Travel Agency | Europe" %}
+
+{% set bodyclasses = "transparent-header transparent-menu-below pace-on pace-dot" %}
+
+{% set activeMenu = "Contact" %}
+
+{% block content %}
+
+<article>
+    <section class="section">
+        <div class="background-media" style="background-image: url(assets/images/travel-agency/img22-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:no-scroll; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.5);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-150"></div>
+                        <div class="visible-sm element-height-150"></div>
+                        <div class="visible-md element-height-150"></div>
+                        <div class="visible-lg element-height-150"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <br>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h3 class="bigtext text-light regular element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s"><span>Contact us</span></h3>
+                        </div>
+
+                        <div class="col-md-4">
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <br>
+                        </div>
+
+                        <div class="col-md-6 text-center">
+                            <p class="lead text-center center text-light element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">We are a travel
+                            agency who are passionate about travelling. Drop us a line if you have any requests or you are ready for a new project.</p>
+
+                            <p></p>
+
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-20"></div>
+                                <div class="visible-sm element-height-20"></div>
+                                <div class="visible-md element-height-20"></div>
+                                <div class="visible-lg element-height-20"></div>
+                            </div>
+                            <form action="contact_mailer.php" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group form-icon-group">
+                                        <i class="fa fa-user"></i>
+                                        <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-icon-group">
+                                        <i class="fa fa-envelope"></i>
+                                        <input class="form-control" id="email" name="email" placeholder="Your email *" type="email" required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group form-icon-group">
+                                        <i class="fa fa-file-text"></i>
+                                        <input class="form-control" id="subject" name="subject" placeholder="Your subject *" type="text" required="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-icon-group">
+                                <i class="fa fa-pencil"></i>
+                                <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="10" required=""></textarea>
+                            </div>
+                            <input type="submit" value="Send email" class="btn btn-primary">
+                            <div class="messages text-center"></div>
+                        </form>
+
+                        <div class="col-md-3">
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

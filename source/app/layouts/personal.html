@@ -1,0 +1,53 @@
+{% extends "layouts/base.html" %}
+
+{% set bodyclasses = "transparent-header slide-menu pace-on pace-minimal" %}
+{% set bodystyle = "" %}
+
+{% set gotopshape = "circle" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Lato:100,300,400italic,700%7COswald:300,400,700%7CRoboto+Slab:100,300,400,700&amp;subset=latin,latin,latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/personal.min.css -->
+    <link rel="stylesheet" href="styles/skins/personal.css" type="text/css">
+    <!-- endbuild -->
+{% endblock %}
+
+{% block header %}
+    {% include "partials/personal/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 90,
+        navbarScrolled : 70,
+        navbarScrolledPoint : 30,
+        menuClose : 'on',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/personal/footer.html" %}
+{% endblock %}
+
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+{% endblock %}
+

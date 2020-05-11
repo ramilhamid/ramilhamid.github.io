@@ -1,0 +1,42 @@
+{% extends "layouts/base.html" %}
+
+{% set bodyclasses = "transparent-header transparent-menu-below pace-on pace-minimal" %}
+{% set bodystyle = "" %}
+
+{% set gotopshape = "square" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300italic,400,700%7CRoboto+Condensed:400,700%7CRoboto+Slab:100,300,400,700&amp;subset=latin,latin,latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/photography.min.css -->
+    <link rel="stylesheet" href="styles/skins/photography.css" type="text/css">
+    <!-- endbuild -->
+{% endblock %}
+
+{% block header %}
+    {% include "partials/photography/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 100,
+        navbarScrolled : 60,
+        navbarScrolledPoint : 20,
+        menuClose : 'off',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 1,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}

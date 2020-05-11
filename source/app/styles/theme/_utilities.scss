@@ -1,0 +1,96 @@
+/* --------------- */
+/* UTILITY CLASSES */
+/* --------------- */
+
+/* - Margin elements - */
+$i: 0;
+@while $i <= 300 {
+  .element-top-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .element-bottom-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  $i: $i + 10;
+}
+$i: 0;
+@while $i <= 300 {
+  .element-left-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .element-right-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  $i: $i + 10;
+}
+
+/* - Height elements - */
+$i: 0;
+@while $i <= 500 {
+  .element-height-#{$i} {
+    height: #{$i}px;
+  }
+  $i: $i + 10;
+}
+
+/* - Block behaviors */
+.block {
+  display: block !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+
+/* - Clear - */
+.clear {
+  clear: both;
+}
+
+/* - Responsive images -*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* - List containers - */
+.list-container {
+  .figure {
+    display: block;
+  }
+  .figure-image img {
+    width: 100%;
+  }
+}
+@media (min-width: 991px) {
+  .list-container {
+    .col-md-2:nth-child(6n+1), .col-md-3:nth-child(4n+1), .col-md-4:nth-child(3n+1), .col-md-6:nth-child(2n+1), .col-md-2-4:nth-child(5n+1) {
+      clear: both;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .list-container {
+    .col-sm-2:nth-child(6n+1), .col-sm-3:nth-child(4n+1), .col-sm-4:nth-child(3n+1), .col-sm-6:nth-child(2n+1), .col-sm-2-4:nth-child(5n+1) {
+      clear: both;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .list-container {
+    .col-xs-2:nth-child(6n+1), .col-xs-3:nth-child(4n+1), .col-xs-4:nth-child(3n+1), .col-xs-6:nth-child(2n+1), .col-xs-2-4:nth-child(5n+1) {
+      clear: both;
+    }
+  }
+}
+
+/* - FAde out content - */
+.fade-content {
+  > * {
+    opacity: 0.2;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  }
+}

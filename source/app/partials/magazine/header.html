@@ -1,0 +1,130 @@
+<div class="top-bar">
+    <div class="container">
+        <div class="top top-left">
+            <div class="sidebar-widget text-left small-screen-center widget_nav_menu">
+                <div>
+                    <ul class="menu">
+                        <li>
+                            <a href="magazine-index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="magazine-about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="magazine-terms.html">Terms</a>
+                        </li>
+
+                        <li>
+                            <a href="magazine-advertise.html">Advertise</a>
+                        </li>
+
+                        <li>
+                            <a href="magazine-contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="top top-right">
+            <div class="sidebar-widget text-right small-screen-center widget_social">
+                <ul class="unstyled inline social-icons social-simple social-normal">
+                    <li>
+                        <a href="http://lambdahtml.oxygenna.com">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://lambdahtml.oxygenna.com">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://lambdahtml.oxygenna.com">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://lambdahtml.oxygenna.com">
+                            <i class="fa fa-flickr"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://lambdahtml.oxygenna.com">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget text-right small-screen-center widget_search">
+                <form action="magazine-index.html" id="searchform" method="get" name="searchform">
+                    <div class="input-group">
+                        <input class="form-control" id="s" name="s" placeholder="Search" type="text" value="">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit" id="searchsubmit" value="Search">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu navbar navbar-static-top header-logo-center-menu-below oxy-mega-menu navbar-sticky text-caps" id="masthead">
+    <div class="logo-navbar container-logo">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="magazine-index.html"><img alt="Lambda Theme - Magazine" src=
+                "assets/images/magazine/lamda-magazine-logo.png"></a>
+
+                <div class="logo-sidebar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="nav-container clearfix">
+            <nav class="collapse navbar-collapse main-navbar">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav" id="menu-main">
+                        {% for item in [{title:"Home", href:"#", children:[
+                                            {title:"Magazine Style", href:"magazine-index.html"},
+                                            {title:"Newspaper Style", href:"magazine-newspaper.html"}
+                                        ]},
+                                        {title:"Creative", href:"magazine-blog.html"},
+                                        {title:"Journalism", href:"magazine-blog.html"},
+                                        {title:"Social Media", href:"magazine-blog.html"},
+                                        {title:"Fashion", href:"magazine-blog.html"},
+                                        {title:"Business", href:"magazine-blog.html"},
+                                        {title:"Journal", href:"magazine-blog.html"},
+                                        {title:"Shopping", href:"magazine-blog.html"}] %}
+
+                            <li class="{{ 'active' if activeMenu == item.title }} {{ 'dropdown' if item.href == '#'}}">
+                                <a {% if item.href == '#' %} class="dropdown-toggle" data-toggle="dropdown" {% endif %} href="/{{ item.href }}">{{ item.title }}</a>
+                                {% if item.children %}
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    {% for child in item.children %}
+                                        <li>
+                                            <a href="/{{ child.href }}">{{ child.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="menu-sidebar"></div>
+            </nav>
+        </div>
+    </div>
+</div>

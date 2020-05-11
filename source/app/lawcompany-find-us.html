@@ -1,0 +1,60 @@
+{% extends "layouts/lawcompany.html" %}
+
+{% set title = "Contact us | Law Company" %}
+
+{% set bodyclasses = "pace-on pace-minimal" %}
+
+
+{% set activeMenu = "Contact" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/lawcompany/footer.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+{% endblock %}
+
+{% block content %}
+
+<article>
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(255,255,255,1);"></div>
+
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-4 text-right">
+                    <h2 class="element-top-20 element-bottom-20 os-animation normal regular" data-os-animation="fadeInLeftBig" data-os-animation-delay="0s">Find us at</h2>
+                    <hr class="element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+
+                    <div class="col-text-1 element-top-20 element-bottom-20 os-animation" data-os-animation="fadeInLeftBig" data-os-animation-delay="0.5s">
+                        <p><i class="fa fa-home" style="color: #76b2b2;"></i> 36. St Michael&#8217;s St, Oxford OX1, UK<br>
+                        <i class="fa fa-phone" style="color: #76b2b2;"></i> (00) 789 456 7890</p>
+                    </div>
+                    <hr class=" element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+
+                    <div class="col-text-1 element-top-20 element-bottom-20 os-animation" data-os-animation="fadeInLeftBig" data-os-animation-delay="1s">
+                        <p><i class="fa fa-home" style="color: #76b2b2;"></i> 6-8 St Michael&#8217;s St, Oxford OX1, UK<br>
+                        <i class="fa fa-phone" style="color: #76b2b2;"></i> (00) 123 123 7890</p>
+                    </div>
+                    <hr class=" element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="1.2s">
+
+                    <div class="col-text-1 element-top-20 element-bottom-20 os-animation" data-os-animation="fadeInLeftBig" data-os-animation-delay="1.5s">
+                        <p><i class="fa fa-home" style="color: #76b2b2;"></i> 18 High St, Oxford OX1, UK<br>
+                        <i class="fa fa-phone" style="color: #76b2b2;"></i> (00) 123 456 7890</p>
+                    </div>
+                </div>
+
+                <div class="col-md-8 text-left small-screen-default os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                    <div class="google-map" id="map" style="height:600px"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

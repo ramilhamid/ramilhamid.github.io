@@ -1,0 +1,44 @@
+<div class="menu header-logo-left-menu-right navbar navbar-static-top oxy-mega-menu navbar-sticky text-none" id="masthead">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="lawcompany-index.html"><img alt="Lambda - Law Company" src="assets/images/lawcompany/lamda.png"> Law Company
+            </a>
+        </div>
+        <div class="nav-container">
+            <nav class="collapse navbar-collapse main-navbar logo-navbar navbar-right">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav" id="menu-main">
+                        {% for item in [{title:"Home", href:"lawcompany-index.html#home"},
+                                    {title:"Services", href:"lawcompany-index.html#services"},
+                                    {title:"Our attorneys", href:"lawcompany-index.html#attorneys"},
+                                    {title:"Evaluation", href:"lawcompany-index.html#evaluation"},
+                                    {title:"Blog", href:"lawcompany-blog.html"},
+                                    {title:"Contact", href:"#", children:[
+                                            {title:"Contact us", href:"lawcompany-contact-us.html"},
+                                            {title:"Find us", href:"lawcompany-find-us.html"}
+                                        ]}
+                                    ] %}
+                            <li class="{{ 'active' if activeMenu == item.title }} {{ 'dropdown' if item.href == '#'}}">
+                                <a {% if item.href == '#' %} class="dropdown-toggle" data-toggle="dropdown" {% endif %} href="/{{ item.href }}">{{ item.title }}</a>
+                                {% if item.children %}
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    {% for child in item.children %}
+                                        <li>
+                                            <a href="/{{ child.href }}">{{ child.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+{% extends "layouts/journal.html" %}
+
+{% set title = "Contact" %}
+{% set activeMenu = "Contact" %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="background-media" style="background-image: url(assets/images/journal/p071.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(42,110,118,0.7);"></div>
+
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center element-top-100 element-bottom-100 text-light os-animation bigger hairline" data-os-animation="fadeIn" data-os-animation-delay="0s">Share your thoughts</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay" style="background-color: rgba(255,255,255,0);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-70"></div>
+                        <div class="visible-sm element-height-70"></div>
+                        <div class="visible-md element-height-70"></div>
+                        <div class="visible-lg element-height-70"></div>
+                    </div>
+
+                    <form action="contact_mailer.php" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-user"></i>
+                                    <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-envelope"></i>
+                                    <input class="form-control" id="email" name="email" placeholder="Your email *" type="email" required="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-icon-group">
+                            <i class="fa fa-pencil"></i>
+                            <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="10" required=""></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <input type="submit" value="Send email" class="btn btn-primary">
+                        </div>
+                        <div class="messages text-center"></div>
+                    </form>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-70"></div>
+                        <div class="visible-sm element-height-70"></div>
+                        <div class="visible-md element-height-70"></div>
+                        <div class="visible-lg element-height-70"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

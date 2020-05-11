@@ -1,0 +1,95 @@
+<div class="menu navbar navbar-static-top header-logo-center-menu-below oxy-mega-menu" id="masthead">
+    <div class="logo-navbar container-logo">
+        <div class="container-fullwidth">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="journal-index.html"><img alt="Lambda Wordpress Bootstrap Theme" src="assets/images/journal/lambda-journal1.png"></a>
+
+                <div class="logo-sidebar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fullwidth">
+        <div class="nav-container clearfix">
+            <nav class="collapse navbar-collapse main-navbar">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav" id="menu-main-menu">
+                        {% for item in [{title:"Home", href:"journal-index.html"},
+                            {title:"Single Post", href:"#", children:[{title:"Standard Post", href:"journal-post.html"},
+                                                                {title:"Quote Post", href:"journal-quote-post.html"},
+                                                                {title:"Gallery Post", href:"journal-gallery-post.html"},
+                                                                {title:"Video Post", href:"journal-video-post.html"},
+                                                                {title:"Audio Post", href:"journal-audio-post.html"}
+                            ]},
+                            {title:"Pages", href:"#", children:[{title:"404 - Not Found", href:"journal-404.html"},
+                                                                {title:"Author Page", href:"journal-author.html"},
+                                                                {title:"Tag Page", href:"journal-index.html"},
+                                                                {title:"Category Page", href:"journal-index.html"},
+                                                                {title:"Archive Page", href:"journal-index.html"}
+                            ]},
+                            {title:"Categories", href:"#", children:[{title:"Education", href:"journal-index.html"},
+                                                                {title:"Tech", href:"journal-index.html"},
+                                                                {title:"Food & Health", href:"journal-index.html"},
+                                                                {title:"Fashion", href:"journal-index.html"},
+                                                                {title:"Travel", href:"journal-index.html"}
+                            ]},
+                            {title:"Elements", href:"#", children:[{title:"Basic Type", href:"journal-basic-type.html"},
+                                                                {title:"Buttons", href:"journal-buttons.html"},
+                                                                {title:"Blockquotes", href:"journal-blockquotes.html"},
+                                                                {title:"Font Icons", href:"journal-font-icons.html"}
+                            ]},
+                            {title:"Contact", href:"journal-contact.html"}] %}
+                            <li class="{{ 'active' if activeMenu == item.title }} {{ 'dropdown' if item.href == '#'}}">
+                                <a {% if item.href == '#' %} class="dropdown-toggle" data-toggle="dropdown" {% endif %} href="/{{ item.href }}">{{ item.title }}</a>
+                                {% if item.children %}
+                                    <ul class="dropdown-menu dropdown-menu-left {{ 'row' if 'megamenu' == item.type }}">
+                                    {% for child in item.children %}
+                                        {% if item.type != 'megamenu' %}
+                                            <li class="menu-item">
+                                                <a href="/{{ child.href }}">{{ child.title }}</a>
+                                            </li>
+                                        {% else %}
+                                            <li class="menu-item menu-item-object-oxy_mega_columns menu-item-has-children dropdown-submenu dropdown {{ child.size }}">
+                                                <strong>{{child.title}}</strong>
+                                                <ul class="dropdown-menu-left">
+                                                {% for megamenu in child.children %}
+                                                     <li class="menu-item">
+                                                        <a href="/{{ megamenu.href }}">{{ megamenu.title }}</a>
+                                                    </li>
+                                                {% endfor %}
+                                                </ul>
+                                            </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="menu-sidebar">
+                    <div class="sidebar-widget widget_search">
+                        <h3 class="sidebar-header">Search Title</h3>
+
+                        <form action="journal-index.html" id="searchform" method="get" name="searchform">
+                            <div class="input-group">
+                                <input class="form-control" id="s" name="s" placeholder="Search" type="text" value="">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" id="searchsubmit" type="submit" value="Search">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

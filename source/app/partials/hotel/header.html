@@ -1,0 +1,59 @@
+<div class="menu navbar navbar-static-top header-logo-left-menu-right oxy-mega-menu navbar-sticky text-none" id="masthead">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/hotel-index.html">
+                <img alt="Lambda Theme - Hotel" src="assets/images/hotel/logohotel1.png">
+            </a>
+        </div>
+
+        <div class="nav-container">
+            <nav class="collapse navbar-collapse main-navbar logo-navbar navbar-right">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav" id="menu-main">
+                        {% for item in [{title:"Home", href:"hotel-index.html"},
+                                        {title:"Accomodation", href:"#", children:[ {title:"The Rooms", href:"hotel-the-rooms.html"},
+                                                                                    {title:"Spa Center", href:"hotel-spa-center.html"},
+                                                                                    {title:"Restaurant", href:"hotel-restaurant.html"} ]},
+                                        {title:"Gallery", href:"hotel-gallery.html"},
+                                        {title:"Reservations", href:"hotel-reservations.html"},
+                                        {title:"Contact", href:"hotel-contact.html"}] %}
+                        <li class="menu-item {{ 'active' if activeMenu == item.title }} {{ 'dropdown' if item.href == '#'}}">
+                            <a {% if item.href == '#' %} class="dropdown-toggle" data-toggle="dropdown" {% endif %} href="/{{ item.href }}">{{ item.title }}</a>
+                            {% if item.children %}
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                {% for child in item.children %}
+                                <li class="menu-item">
+                                    <a href="/{{ child.href }}">{{ child.title }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="menu-sidebar">
+                    <div class="sidebar-widget widget_social">
+                        <ul class="unstyled inline social-icons social-simple">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

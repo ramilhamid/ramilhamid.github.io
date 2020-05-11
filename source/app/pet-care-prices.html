@@ -1,0 +1,195 @@
+{% extends "layouts/pet.html" %}
+
+{% set title = "Pet Care | Lambda" %}
+{% set bodyclasses = "transparent-header pace-on pace-minimal" %}
+{% set activeMenu = "Prices" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="background-media" style="background-image: url(assets/images/pet-care/bg-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:no-scroll; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.5);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-24"></div>
+                        <div class="visible-sm element-height-24"></div>
+                        <div class="visible-md element-height-24"></div>
+                        <div class="visible-lg element-height-24"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8 text-center">
+                            <h1 class="text-default element-top-40 element-bottom-20 text-light os-animation normal regular" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">Prices</h1>
+                            <div class="divider-border divider-border-center element-top-20 element-bottom-20 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">
+                                <div class="divider-border-inner" style="background:#58b451;"></div>
+                            </div>
+                            <p class="lead text-center center text-light element-top-20 element-bottom-40 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            Mauris neque orci,commodo malesuada orci vel, suscipit fermentum ex. Sed sed metus quis risus tempor tincidunt ac eget metus. Phasellus et condimentum dolor. Curabitur molestie est ac sodales pellentesque. Nunc nec sem augue. Maecenas vel dignissim eros.</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class=" element-top-20 element-bottom-40 pricing-col pricing-featured os-animation" data-os-animation="bounce" data-os-animation-delay="0.3s">
+                                <h2 class="pricing-head" style="background: #58b451; color:#FFFFFF">EXTRA LARGE DOG</h2>
+                                <div class="pricing-body" style="background: #58b451; color:#FFFFFF">
+                                    <div class="pricing-price">
+                                        <header style="background: #ffffff; color: #58b451;">
+                                            <h2><small style="color: #58b451;">£</small> 18</h2>
+                                            <p style="color: #58b451;"></p>
+                                        </header>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li style="border-color: rgba(255,255,255,0.1)">Wet/dry food included</li>
+                                        <li style="border-color: rgba(255,255,255,0.1)">3 walks daily</li>
+                                        <li style="border-color: rgba(255,255,255,0.1)">Social interaction</li>
+                                    </ul><a class="btn btn-lg btn-primary" href="" style="background: #ffffff; color: #58b451;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class=" element-top-20 element-bottom-40 pricing-col pricing-featured os-animation" data-os-animation="bounce" data-os-animation-delay="0.4s">
+                                <h2 class="pricing-head" style="background: #58b451; color:#FFFFFF">LARGE DOG</h2>
+                                <div class="pricing-body" style="background: #58b451; color:#FFFFFF">
+                                    <div class="pricing-price">
+                                        <header style="background: #ffffff; color: #58b451;">
+                                            <h2><small style="color: #58b451;">£</small> 16</h2>
+                                            <p style="color: #58b451;"></p>
+                                        </header>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li style="border-color: rgba(255,255,255,0.1)">Wet/dry food included</li>
+                                        <li style="border-color: rgba(255,255,255,0.1)">3 walks daily</li>
+                                        <li style="border-color: rgba(255,255,255,0.1)">Social interaction</li>
+                                    </ul><a class="btn btn-lg btn-primary" href="" style="background: #ffffff; color: #58b451;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class=" element-top-20 element-bottom-40 pricing-col pricing-featured os-animation" data-os-animation="bounce" data-os-animation-delay="0.5s">
+                                <h2 class="pricing-head" style="background: #58b451; color:#FFFFFF">MEDIUM DOG</h2>
+                                <div class="pricing-body" style="background: #58b451; color:#FFFFFF">
+                                    <div class="pricing-price">
+                                        <header style="background: #ffffff; color: #58b451;">
+                                            <h2><small style="color: #58b451;">£</small> 14</h2>
+                                            <p style="color: #58b451;"></p>
+                                        </header>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li style="border-color: rgba(255,255,255,0.1)">Wet/dry food included</li>
+                                        <li style="border-color: rgba(255,255,255,0.1)">3 walks daily</li>
+                                        <li style="border-color: rgba(255,255,255,0.1)">Social interaction</li>
+                                    </ul><a class="btn btn-lg btn-primary" href="" style="background: #ffffff; color: #58b451;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class=" element-top-20 element-bottom-40 pricing-col pricing-featured os-animation" data-os-animation="bounce" data-os-animation-delay="0.6s">
+                                <h2 class="pricing-head" style="background: #58b451; color:#FFFFFF">SMALL DOG</h2>
+                                <div class="pricing-body" style="background: #58b451; color:#FFFFFF">
+                                    <div class="pricing-price">
+                                        <header style="background: #ffffff; color: #58b451;">
+                                            <h2><small style="color: #58b451;">£</small> 12</h2>
+                                            <p style="color: #58b451;"></p>
+                                        </header>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li style="border-color: rgba(255,255,255,0.1)">Wet/dry food included</li>
+                                        <li style="border-color: rgba(255,255,255,0.1)">3 walks daily</li>
+                                        <li style="border-color: rgba(255,255,255,0.1)">Social interaction</li>
+                                    </ul><a class="btn btn-lg btn-primary" href="" style="background: #ffffff; color: #58b451;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 text-center"></div>
+                <div class="col-md-8 text-center">
+                    <h1 class="element-top-20 element-bottom-20 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">Our happy doggy customers</h1>
+                    <div class="divider-border divider-border-center element-top-20 element-bottom-20 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">
+                        <div class="divider-border-inner" style="background:#58b451;"></div>
+                    </div>
+                    <div class="col-text-1 element-top-20 element-bottom-20 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                        <p>Etiam accumsan vitae nisl nec feugiat. Duis varius molestie magna, eu ornare odio ullamcorper ac. Etiam dictum lobortis massa vel commodo. Ut vel pulvinar elit. Integer ipsum neque, luctus eu augue vel, facilisis rhoncus erat.</p>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-container element-top-0 element-bottom-0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="portfolio-header clearfix">
+                                    <div class="portfolio-filters pull-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio masonry no-transition" data-col-lg="4" data-col-md="4" data-col-sm="2" data-col-xs="1" data-layout="fitRows" data-padding="0">
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="1" data-title="Buster">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="0s">
+                                    <span class="figure-image"><img alt="Buster" class="normalwidth" src="assets/images/pet-care/portfolio1-notinclude.jpg"></span>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="2" data-title="Daisy">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                    <span class="figure-image"><img alt="Daisy" class="normalwidth" src="assets/images/pet-care/portfolio2-notinclude.jpg"></span>
+                                </div>
+                            </div>
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="3" data-title="Teddy">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                    <span class="figure-image"><img alt="Teddy" class="normalwidth" src="assets/images/pet-care/portfolio3-notinclude.jpg"></span>
+                                </div>
+                            </div>
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="4" data-title="Ginger">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                                    <span class="figure-image"><img alt="Ginger" class="normalwidth" src="assets/images/pet-care/portfolio4-notinclude.jpg"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(42,48,52,1);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-9">
+                    <p class="lead text-center center text-light element-top-60 element-bottom-60 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.1s">The most advanced,flexible and awesome theme you’ve ever seen. Need more? Feel free to contact us.</p>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary btn-lg text-normal element-left-0 element-right-0 element-top-20 element-bottom-20 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s" href="#">let's work together</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

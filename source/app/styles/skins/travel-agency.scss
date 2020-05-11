@@ -1,0 +1,170 @@
+// Core variables and mixins
+@import "bootstrap/oxygenna-variables";
+@import "compass/css3";
+@import "theme/compass-mixins";
+
+
+// Skin Variables
+$font-family: 'Josefin Sans';
+$font-size: 16px;
+$font-weight: 400;
+$heading-font-family: 'Amatic SC';
+$heading-font-weight: 400;
+$heading-text-transform: none;
+$brand-font-family: 'Amatic SC';
+$brand-font-size: 46px;
+$brand-font-weight: 400;
+$navbar-font-family: 'Amatic SC';
+$navbar-font-size: 45px;
+$navbar-font-weight: 700;
+$navbar-dropdown-font-size: 28px;
+$font-weight-hairline: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$blog-post-title-font-size: 48px;
+$blog-post-title-font-weight: 300;
+$blog-post-font-size: 16px;
+$blog-post-font-weight: 400;
+$blockquote-font-family: 'Josefin Sans';
+$blockquote-font-size: 24px;
+$blockquote-font-style: normal;
+$blockquote-font-weight: 400;
+$lead-font-size: 24px;
+$lead-font-weight: 400;
+$navbar-height: 90px;
+$navbar-scrolled: 70px;
+$submenu-width: 220px;
+$navbar-border-height: 0px;
+$sidemenu-width: 270px;
+$sidemenu-nav-max-height: 600px;
+$text-color: #5c5c5c;
+$heading-color: #1c1c1c;
+$link-color: #00bcd4;
+$link-color-hover: #0e9fb2;
+$icon-color: #5c5c5c;
+$small-color: #878787;
+$text-color-alt: #ffffff;
+$heading-color-alt: #ffffff;
+$link-color-alt: #ffffff;
+$link-color-hover-alt: #ffffff;
+$icon-color-alt: #ffffff;
+$small-color-alt: #ffffff;
+$background-color: #ffffff;
+$background-invert: #1c1c1c;
+$background-complementary: rgba(0,0,0,.1);
+$nav-background: rgba(0, 188, 212, 0.8);
+$nav-link: #ffffff;
+$nav-link-hover: #ffffff;
+$nav-link-active: #ffffff;
+$nav-brand: #ffffff;
+$nav-text: #ffffff;
+$nav-borders: rgba(255, 255, 255, 0);
+$nav-dropdown-background: rgba(0, 188, 212, 0.8);
+$nav-dropdown-link: #ffffff;
+$nav-dropdown-link-hover: #ffffff;
+$nav-dropdown-text: #ffffff;
+$nav-dropdown-border: rgba(0,0,0,.055);
+$nav-dropdown-separators: rgba(0,0,0,.055);
+$nav-transparent-link: #ffffff;
+$nav-transparent-link-hover: #ffffff;
+$nav-transparent-brand: #ffffff;
+$nav-transparent-text: #ffffff;
+$nav-transparent-borders: rgba(255, 255, 255, 0.1);
+$logo-background: rgba(255, 255, 255, 0.95);
+$logo-brand: #1c1c1c;
+$top-bar-background: #f0f0f0;
+$top-bar-link: #4c4c4c;
+$top-bar-link-hover: #00bcd4;
+$top-bar-text: #6c6c6c;
+$top-bar-borders: rgba(255, 255, 255, .1);
+$footer-background: #1c1c1c;
+$footer-link: #ffffff;
+$footer-link-hover: #ffffff;
+$footer-text: rgba(255, 255, 255, .6);
+$footer-borders: rgba(255, 255, 255, .1);
+$sub-footer-background: #000;
+$sub-footer-link: #ffffff;
+$sub-footer-link-hover: #ffffff;
+$sub-footer-text: rgba(255, 255, 255, .6);
+$sub-footer-borders: rgba(255, 255, 255, .1);
+$form-color: #5c5c5c;
+$form-background: rgba(255, 255, 255, 0.7);
+$form-borders: rgba(255, 255, 255, 0.78);
+$form-placeholder-color: #5c5c5c;
+$form-active: #00bcd4;
+$primary-text: #ffffff;
+$primary-bg: #00bcd4;
+$default-text: #ffffff;
+$default-bg: #4D4A51;
+$warning-text: #ffffff;
+$warning-bg: #cd6727;
+$danger-text: #ffffff;
+$danger-bg: #008D7D;
+$success-text: #ffffff;
+$success-bg: #008D7D;
+$info-text: #ffffff;
+$info-bg: #78A2BB;
+$border-radius-base: 4px;
+$border-radius-large: 4px;
+$border-radius-small: 4px;
+$border-radius-forms: 4px;
+$overlay-text: #ffffff;
+$overlay-bg: rgba(0, 0, 0, 0.5);
+$magnific-overlay-bg: rgba(255, 255, 255, 0.7);
+$magnific-close-icon: #ffffff;
+$magnific-close-bg: #000000;
+$top-icon-color: #ffffff;
+$top-icon-bg: #00bcd4;
+$slideshow-color: #ffffff;
+$slideshow-shadow: rgba(255, 255, 255, 0.2);
+$loader-color: #00bcd4;
+$loader-bg: #ffffff;
+
+// Skin Creator
+@import "theme/skin";
+
+// Advanced CSS
+h3.sidebar-header {
+    font-size: 28px;
+}
+
+.post-title strong, .widget_recent_entries li span strong, .Newspaper-Title strong{
+    font-weight: 700;
+    background-color: rgba(0,188,212, .7);
+    border-radius: 4px;
+    padding: 0px 12px;
+    color: white;
+    float: right;
+}
+
+.figure-caption-title span strong{
+    display: block;
+}
+
+#masthead.menu {
+   line-height: 55px;
+}
+
+th {font-size:24px;}
+
+@media (min-width: 992px) {
+   .transparent-header.transparent-menu-below #content {
+      margin-top: -145px;
+   }
+}
+@media (min-width: 992px) {
+    .transparent-header #masthead .navbar-brand {
+        background-image: url("../../assets/images/travel-agency/lamda-travelagency-logo.png");
+    }
+    .transparent-header #masthead .navbar-brand img {
+        visibility: hidden;
+    }
+    .transparent-header #masthead.navbar-scrolled .navbar-brand {
+      background-image: none;
+    }
+    .transparent-header #masthead.navbar-scrolled .navbar-brand img {
+      visibility: visible;
+    }
+}

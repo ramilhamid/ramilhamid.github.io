@@ -1,0 +1,586 @@
+{% extends "layouts/yoga.html" %}
+
+{% set title = "Yoga" %}
+{% set activeMenu = "Home" %}
+
+{% block extrajs %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+
+    <!-- build:js assets/js/revolution.min.js -->
+    <script type="text/javascript" src="scripts/tools.min.js"></script>
+    <script type="text/javascript" src="scripts/revolution.min.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('#homepage-slider').revolution({
+                jsFileLocation: '/scripts/',
+                extensions: 'revolution-extensions/',
+                sliderType:"standard",
+                sliderLayout:"auto",
+                dottedOverlay:"none",
+                delay:9000,
+                navigation: {
+                    keyboardNavigation:"off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation:"off",
+                    onHoverStop:"off",
+                    touch:{
+                        touchenabled:"on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    }
+                    ,
+                    arrows: {
+                        style:"",
+                        enable:true,
+                        hide_onmobile:false,
+                        hide_onleave:false,
+                        tmp:'',
+                        left: {
+                            h_align:"left",
+                            v_align:"center",
+                            h_offset:20,
+                            v_offset:0
+                        },
+                        right: {
+                            h_align:"right",
+                            v_align:"center",
+                            h_offset:20,
+                            v_offset:0
+                        }
+                    }
+                    ,
+                    bullets: {
+                        enable:true,
+                        hide_onmobile:false,
+                        style:"hesperiden",
+                        hide_onleave:false,
+                        direction:"horizontal",
+                        h_align:"center",
+                        v_align:"bottom",
+                        h_offset:0,
+                        v_offset:20,
+                        space:5,
+                        tmp:''
+                    }
+                },
+                gridwidth:1170,
+                gridheight:700,
+                lazyType:"none",
+                shadow:2,
+                spinner:"spinner2",
+                stopLoop:"off",
+                stopAfterLoops:-1,
+                stopAtSlide:-1,
+                shuffle:"off",
+                autoHeight:"off",
+                hideThumbsOnMobile:"off",
+                hideSliderAtLimit:0,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                debugMode:false,
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            });
+        });
+    </script>
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/yoga/footer.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+{% endblock %}
+
+{% block extracss %}
+    <!-- build:css assets/css/extras.min.css -->
+    <link rel="stylesheet" href="styles/revolution.css">
+    <link rel="stylesheet" href="../bower_components/mediaelement/build/mediaelementplayer.css">
+    <!-- endbuild -->
+    <style  type="text/css" media="screen">
+
+        .yogabutton {
+            font-size: 21px;
+            color: #ffffff;
+            font-family: inherit;
+            font-weight: 300;
+            line-height: 36px;
+            border: 2px solid #b378f1;
+            background: #b378f1;
+            padding: 5px 36px;
+            box-shadow: none;
+            border-radius: 36px;
+        }
+        .yogabutton:hover {
+              border-color: #8a2be2;
+              background: #8a2be2;
+        }
+        .yogabutton:hover, .yogabutton a, .yogabutton a:hover {
+              text-decoration: none;
+              color: #ffffff;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section" id="home">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rev_slider_wrapper fullwidthbanner-container">
+                        <div id="homepage-slider" class="rev_slider" data-version="5.0">
+                            <ul>
+                                <!-- SLIDE  -->
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-1" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="5" data-title="Slide" data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgposition="center bottom" data-duration="9000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0"
+                                    data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="105" data-scalestart="100" src="assets/images/yoga/yoga01-notinclude.jpg"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption charitywhitecenter tp-resizeme" data-end="7900" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start=
+                                    "2000" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:500;e:Power3.easeInOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power3.easeInOut;s:500;e:Power3.easeInOut;"
+                                    data-voffset="0" data-width="auto" data-x="center" data-y="center" id="slide-1-layer-1" style="z-index: 5; white-space: nowrap;">
+                                        Harmonize your <span>body</span>,<br>
+                                        <span>mind</span> and <span>inner self</span>
+                                    </div><!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption yogabutton tp-resizeme" data-end="7500" data-height="auto" data-hoffset="-1" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2500"
+                                    data-transform_idle="" data-transform_in="y:50px;opacity:0;s:500;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:500;e:Power3.easeInOut;s:500;e:Power3.easeInOut;"
+                                    data-voffset="186" data-width="auto" data-x="center" data-y="bottom" id="slide-1-layer-2" style="z-index: 6; white-space: nowrap;">
+                                        <a href="http://themeforest.net/item/lambda-multi-purpose-bootstrap-html-template/10465708?ref=oxygenna">READ MORE</a>
+                                    </div>
+                                </li><!-- SLIDE  -->
+
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-2" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="5" data-title="Slide" data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgposition="center bottom" data-duration="9000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0"
+                                    data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="110" data-scalestart="100" src=
+                                    "assets/images/yoga/yoga02-notinclude.jpg"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption charitywhitecenter tp-resizeme" data-end="7900" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start=
+                                    "2000" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:500;e:Power3.easeInOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power3.easeInOut;s:500;e:Power3.easeInOut;"
+                                    data-voffset="0" data-width="auto" data-x="center" data-y="center" id="slide-2-layer-1" style="z-index: 5; white-space: nowrap;">
+                                        Empower your <span>body</span>.<br>
+                                        Empower your <span>mind</span>
+                                    </div><!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption yogabutton tp-resizeme" data-end="7500" data-height="auto" data-hoffset="1" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2500"
+                                    data-transform_idle="" data-transform_in="y:50px;opacity:0;s:500;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:500;e:Power3.easeInOut;s:500;e:Power3.easeInOut;"
+                                    data-voffset="142" data-width="auto" data-x="center" data-y="center" id="slide-2-layer-2" style="z-index: 6; white-space: nowrap;">
+                                        <a href="http://themeforest.net/item/lambda-multi-purpose-bootstrap-html-template/10465708?ref=oxygenna">READ MORE</a>
+                                    </div>
+                                </li><!-- SLIDE  -->
+
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-3" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="5" data-title="Slide" data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgposition="center bottom" data-duration="9000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0"
+                                    data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="110" data-scalestart="100" src="assets/images/yoga/yoga03-notinclude.jpg"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption charitywhitecenter tp-resizeme" data-end="7900" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start=
+                                    "2000" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:500;e:Power3.easeInOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power3.easeInOut;s:500;e:Power3.easeInOut;"
+                                    data-voffset="0" data-width="auto" data-x="center" data-y="center" id="slide-3-layer-1" style="z-index: 5; white-space: nowrap;">
+                                        Transform how your body <span>looks</span>,<br>
+                                        <span>feels</span> and <span>moves</span>
+                                    </div><!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption yogabutton tp-resizeme" data-end="7500" data-height="auto" data-hoffset="6" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2500"
+                                    data-transform_idle="" data-transform_in="y:50px;opacity:0;s:700;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:500;e:Power3.easeInOut;s:500;e:Power3.easeInOut;"
+                                    data-voffset="145" data-width="auto" data-x="center" data-y="center" id="slide-3-layer-2" style="z-index: 6; white-space: nowrap;">
+                                        <a href="http://themeforest.net/item/lambda-multi-purpose-bootstrap-html-template/10465708?ref=oxygenna">READ MORE</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="tp-bannertimer"></div>
+                        </div><!-- END REVOLUTION SLIDER -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-transparent" id="classes">
+        <div class="background-media" style="background-image: url(assets/images/yoga/yoga04-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 55%;">
+        </div>
+
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6 hide-one-pixel text-center small-screen-left"></div>
+
+                <div class="col-md-6 text-center small-screen-center" style="background:rgba(138, 43, 226, 0.8);">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-md-8">
+                            <h1 class="text-center element-top-80 element-bottom-20 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0s">VARIETY<br>
+                            OF EXERCISES</h1>
+
+                            <div class="divider-border divider-border-center element-top-0 element-bottom-0 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:2px;">
+                                <div class="divider-border-inner" style="background:#ffffff;"></div>
+                            </div>
+
+                            <div class="col-text-1 text-light element-top-30 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <p style="text-align: center;">When you join a class, you join a<br>
+                                family. Real people. Real life. Real<br>
+                                yoga.</p>
+                            </div><a class="btn btn-primary btn-normal element-left-0 element-right-0 element-top-10 element-bottom-80 os-animation" data-os-animation="fadeIn"
+                            data-os-animation-delay="0.3s" href="yoga-classes.html" target="_self">READ MORE</a>
+                        </div>
+
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="team">
+
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-container element-top-0 element-bottom-0 text-normal">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="portfolio-header clearfix">
+                                    <div class="portfolio-filters pull-right"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio masonry no-transition" data-col-lg="3" data-col-md="3" data-col-sm="3" data-col-xs="1" data-layout="fitRows" data-padding="0">
+                            <div class="masonry-item portfolio-item filter-practice filter-tai-chi" data-comments="0" data-date="2015-05-27T14:06:07+00:00" data-menu-order="0" data-title="T’AI CHI TRAINER">
+                                <div class="figure element-top-0 element-bottom-0 image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/yoga/yoga07-notinclude.jpg"
+                                    target="_self" title=""><img alt="T’AI CHI TRAINER" class="normalwidth" src="assets/images/yoga/yoga07-notinclude.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">T’AI CHI TRAINER</h3>
+
+                                                    <p class="figure-caption-description">Hector Howard</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item filter-pilates filter-practice" data-comments="0" data-date="2015-05-27T14:02:15+00:00" data-menu-order="0" data-title=
+                            "PILATES TRAINER">
+                                <div class="figure element-top-0 element-bottom-0 image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth" data-os-animation="none"
+                                data-os-animation-delay="0s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/yoga/yoga06-notinclude.jpg"
+                                    target="_self" title="">
+                                        <img alt="PILATES TRAINER" class="normalwidth" src=
+                                        "assets/images/yoga/yoga06-notinclude.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">PILATES TRAINER</h3>
+
+                                                    <p class="figure-caption-description">Vincent Gilbert</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item filter-practice filter-yoga" data-comments="0" data-date="2015-05-27T13:58:08+00:00" data-menu-order="0" data-title="YOGA TRAINER">
+                                <div class="figure element-top-0 element-bottom-0 image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth" data-os-animation="none"
+                                data-os-animation-delay="0s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/yoga/yoga05-notinclude.jpg"
+                                    target="_self" title="">
+                                        <img alt="YOGA TRAINER" class="normalwidth" src="assets/images/yoga/yoga05-notinclude.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">YOGA TRAINER</h3>
+
+                                                    <p class="figure-caption-description">Tricia Rowe</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="prices">
+        <div class="background-media" style="background-image: url(assets/images/yoga/yoga08-notinclude.jpg); background-repeat:no-repeat; background-size:auto; background-attachment:fixed; background-position: 50% 55%;">
+        </div>
+
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6 text-left small-screen-left" style="background:rgba(138, 43, 226, 0.8);">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-md-8">
+                            <h1 class="text-center element-top-80 element-bottom-20 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0s">PRICES</h1>
+
+                            <div class="divider-border divider-border-center element-top-0 element-bottom-0 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:2px;">
+                                <div class="divider-border-inner" style="background:#ffffff;"></div>
+                            </div>
+
+                            <div class="panel-group element-top-30 element-bottom-80 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s" id="accordion_122">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <a class="accordion-toggle collapsed" data-parent="#accordion_122" data-toggle="collapse" href="#group_519">YOGA PRICE LIST</a>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="group_519">
+                                        <div class="panel-body">
+                                            <div class="col-text-1 text-light element-top-10 element-bottom-10">
+                                                <ul class="list-unstyled">
+                                                    <li>One month of three weekly sessions 25$</li>
+
+                                                    <li>Three months of three weekly sessions 70$</li>
+
+                                                    <li>Six months of three weekly sessions 135$</li>
+
+                                                    <li>One year of three weekly sessions 240$</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <a class="accordion-toggle collapsed" data-parent="#accordion_122" data-toggle="collapse" href="#group_175">BEGGINERS YOGA PRICE LIST</a>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="group_175">
+                                        <div class="panel-body">
+                                            <div class="col-text-1 text-light element-top-10 element-bottom-10">
+                                                <ul class="list-unstyled">
+                                                    <li>One month of three weekly sessions 15$</li>
+
+                                                    <li>Three months of three weekly sessions 60$</li>
+
+                                                    <li>Six months of three weekly sessions 125$</li>
+
+                                                    <li>One year of three weekly sessions 230$</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <a class="accordion-toggle collapsed" data-parent="#accordion_122" data-toggle="collapse" href="#group_428">PILATES PRICE LIST</a>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="group_428">
+                                        <div class="panel-body">
+                                            <div class="col-text-1 text-light element-top-10 element-bottom-10">
+                                                <ul class="list-unstyled">
+                                                    <li>One month of three weekly session 25$</li>
+
+                                                    <li>Three months of three weekly sessions 70$</li>
+
+                                                    <li>Six months of three weekly sessions 135$</li>
+
+                                                    <li>One year of three weekly sessions 240$</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <a class="accordion-toggle collapsed" data-parent="#accordion_122" data-toggle="collapse" href="#group_538">BEGGINERS PILATES PRICE LIST</a>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="group_538">
+                                        <div class="panel-body">
+                                            <div class="col-text-1 text-light element-top-10 element-bottom-10">
+                                                <ul class="list-unstyled">
+                                                    <li>One month of three weekly session 15$</li>
+
+                                                    <li>Three months of three weekly sessions 60$</li>
+
+                                                    <li>Six months of three weekly sessions 125$</li>
+
+                                                    <li>One year of three weekly sessions 230$</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <a class="accordion-toggle collapsed" data-parent="#accordion_122" data-toggle="collapse" href="#group_447">T’AI CHI PRICE LIST</a>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="group_447">
+                                        <div class="panel-body">
+                                            <div class="col-text-1 text-light element-top-10 element-bottom-10">
+                                                <ul class="list-unstyled">
+                                                    <li>One month of three weekly sessions 30$</li>
+
+                                                    <li>Three months of three weekly sessions 85$</li>
+
+                                                    <li>Six months of three weekly sessions 150$</li>
+
+                                                    <li>One year of three weekly sessions 250$</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <a class="accordion-toggle collapsed" data-parent="#accordion_122" data-toggle="collapse" href="#group_248">BEGGINERS T’AI CHI PRICE LIST</a>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="group_248">
+                                        <div class="panel-body">
+                                            <div class="col-text-1 text-light element-top-10 element-bottom-10">
+                                                <ul class="list-unstyled">
+                                                    <li>One month of three weekly sessions 20$</li>
+
+                                                    <li>Three months of three weekly sessions 75$</li>
+
+                                                    <li>Six months of three weekly sessions 140$</li>
+
+                                                    <li>One year of three weekly sessions 240$</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-default small-screen-center"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="blog">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="recent-post-padding element-top-0 element-bottom-0 recent-simple-os-container row">
+                        <div class="col-md-4 recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                            <article class="post-grid post-grid-overlay element-bottom-20 text-center"style="background-image: url(assets/images/yoga/yoga10-notinclude.jpg)">
+                                <a href="yoga-post.html">
+                                    <div class="post-grid-content">
+                                        <h3 class="post-grid-content-title">Poses You Should Do Daily</h3>
+
+                                        <div class="post-grid-content-footer">
+                                            christos , June 18, 2015
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4 recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                            <article class="post-grid post-grid-overlay element-bottom-20 text-center" style="background-image: url(assets/images/yoga/yoga04-notinclude.jpg)">
+                                <a href="yoga-post.html">
+                                    <div class="post-grid-content">
+                                        <h3 class="post-grid-content-title">Relieve Stress with T&#8217;ai Chi</h3>
+
+                                        <div class="post-grid-content-footer">
+                                            langan , June 23, 2015
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4 recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                            <article class="post-grid post-grid-overlay element-bottom-20 text-center" style="background-image: url(assets/images/yoga/yoga11-notinclude1.jpg)">
+                                <a href="yoga-post.html">
+                                    <div class="post-grid-content">
+                                        <h3 class="post-grid-content-title">The Benefits of Pilates</h3>
+
+                                        <div class="post-grid-content-footer">
+                                            proistak , May 22, 2015
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <div class="background-overlay" style="background-color: rgba(138,43,226,1);"></div>
+
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6">
+                    <div class="google-map element-top-0 element-bottom-0" id="map" style="height:500px"></div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-md-8 text-center">
+                            <h1 class="text-center element-top-0 element-bottom-20 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0s">Contact us</h1>
+
+                            <div class="divider-border divider-border-center element-top-0 element-bottom-30 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style=
+                            "height:2px;">
+                                <div class="divider-border-inner" style="background:#ffffff;"></div>
+                            </div>
+
+                            <form action="contact_mailer.php" class="contact-form">
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-user"></i>
+                                    <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required="">
+                                </div>
+
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-envelope"></i>
+                                    <input class="form-control" id="email" name="email" placeholder="Your email *" type="email" required="">
+                                </div>
+
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-pencil"></i>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="5" required=""></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Send email" class="btn btn-primary">
+                                </div>
+                                <div class="messages text-center"></div>
+                            </form>
+
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "layouts/base.html" %}
+
+{% set bodyclasses = "transparent-header pace-on pace-minimal" %}
+{% set bodystyle = "" %}
+
+{% set gotopshape = "square" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,900%7CYeseva+One:400%7CGentium+Book+Basic:700&amp;subset=latin,latin,latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/architecture.min.css -->
+    <link rel="stylesheet" href="styles/skins/architecture.css" type="text/css">
+    <!-- endbuild -->
+{% endblock %}
+
+{% block header %}
+    {% include "partials/architecture/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 120,
+        navbarScrolled : 120,
+        navbarScrolledPoint : 62,
+        menuClose : 'off',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/architecture/footer.html" %}
+{% endblock %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+{% endblock %}
+

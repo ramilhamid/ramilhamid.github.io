@@ -1,0 +1,200 @@
+{% extends "layouts/hotel.html" %}
+
+{% set title = "Superior Room|Hotel" %}
+{% set activeMenu = "Accomodation" %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom="background-position: 50% -120px" data-start=
+        "background-position: 50% 0px" style="background-image: url(assets/images/hotel/hotel-13-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(0,0,0,0.2);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-50"></div>
+                        <div class="visible-sm element-height-100"></div>
+                        <div class="visible-md element-height-200"></div>
+                        <div class="visible-lg element-height-200"></div>
+                    </div>
+
+                    <h1 class="text-center element-bottom-20 text-light os-animation super"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        Superior Rooms
+                    </h1>
+
+                    <div class="figure element-bottom-100 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                        <span class="figure-image">
+                            <img alt="decor-big-white.png" src="assets/images/hotel/decor-big-white.png">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="text-center element-top-60 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        Amenities
+                    </h2>
+
+                    <div class="figure element-bottom-20 block text-center os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                        <span class="figure-image">
+                            <img alt="decor-small-gold.png" src="assets/images/hotel/decor-small-gold.png">
+                        </span>
+                    </div>
+
+                    <div class="col-text-1 os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                        <p>The <strong>Superior Room</strong>, with king-size
+                        bed or twin bedded and one sofa bed, spans 25 sqm with
+                        a balcony or terrace overlooking the
+                        <strong>sea</strong>. Located in the main building.</p>
+
+                        <p>This room can accommodate a maximum of 3 adults or 2
+                        adults &amp; 1 child in the existing bedding.</p>
+                    </div>
+
+                    <ul class="skills-list element-top-20 element-bottom-20 os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                        <li>Individual air conditioning units</li>
+
+                        <li>Safe</li>
+
+                        <li>Internet connection</li>
+
+                        <li>Non-smoking &amp; smoking</li>
+
+                        <li>Shower cabin or Bathtub</li>
+
+                        <li>Work desk</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="figure element-top-60 element-bottom-20 os-animation"
+                    data-os-animation="fadeInRight" data-os-animation-delay="0s">
+                        <a class="figure-image magnific" href=
+                        "assets/images/hotel/hotel-13-notinclude.jpg"
+                        target="_self">
+                            <img alt="hotel-13-notinclude.jpg" src="assets/images/hotel/hotel-13-notinclude.jpg">
+                        </a>
+                    </div>
+
+                    <div class="figure element-bottom-20 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.1s">
+                        <a class="figure-image magnific" href=
+                        "assets/images/hotel/hotel-3-notinclude.jpg"
+                        target="_self">
+                            <img alt="hotel-3-notinclude.jpg" src="assets/images/hotel/hotel-3-notinclude.jpg">
+                        </a>
+                    </div>
+
+                    <div class="figure element-bottom-80 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.1s">
+                        <a class="figure-image magnific" href=
+                        "assets/images/hotel/hotel-6-notinclude.jpg"
+                        target="_self">
+                            <img alt="hotel-6-notinclude.jpg" src="assets/images/hotel/hotel-6-notinclude.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" style="background-image: url(assets/images/hotel/rooms2-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(0,0,0,0.3);"></div>
+
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-12 text-center">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-40"></div>
+                        <div class="visible-sm element-height-40"></div>
+                        <div class="visible-md element-height-40"></div>
+                        <div class="visible-lg element-height-40"></div>
+                    </div>
+
+                    <form action="contact_mailer_hotel.php" class="contact-form">
+
+                        <div class="row vertical-middle">
+                            <div class="col-md-3 text-light">
+                                <div class="form-group  text-left">
+                                    <label>Check in Date:</label>
+                                    <div class="date-wrapper">
+                                        <input type="text" name="datepickerin" size="40" class="form-control datepicker" placeholder=
+                                        "Choose Check in date" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-light">
+                                <div class="form-group text-left">
+                                    <label>Check out Date:</label>
+
+                                    <div class="date-wrapper">
+                                        <div class="date-wrapper">
+                                            <input type="text" name="datepickerout" size="40" class="form-control datepicker" placeholder=
+                                        "Choose Check out date" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-light">
+                                <div class="form-group text-left">
+                                    <label>Room type:</label><br>
+                                    <select name="type">
+                                        <option value="Single Room">
+                                            Single Room
+                                        </option>
+                                        <option value="Double Room">
+                                            Double Room
+                                        </option>
+                                        <option value="Triple Room">
+                                            Triple Room
+                                        </option>
+                                        <option value="Suite">
+                                            Suite
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group text-center">
+                                    <label>&nbsp;</label><br>
+                                    <input class=
+                                    "btn btn-primary"
+                                    type="submit" value=
+                                    "Book Your Room Now">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messages"></div>
+                    </form>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-40"></div>
+                        <div class="visible-sm element-height-40"></div>
+                        <div class="visible-md element-height-40"></div>
+                        <div class="visible-lg element-height-40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

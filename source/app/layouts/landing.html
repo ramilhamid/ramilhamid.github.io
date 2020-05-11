@@ -1,0 +1,48 @@
+{% extends "layouts/base.html" %}
+
+{% set bodyclasses = "transparent-header pace-on pace-dot" %}
+{% set bodystyle = "" %}
+
+{% set gotopshape = "circle" %}
+
+{% block fonts %}
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700&amp;subset=latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+	<!-- build:css assets/css/landing.min.css -->
+	<link rel="stylesheet" href="styles/skins/landing.css" type="text/css">
+	<!-- endbuild -->
+{% endblock %}
+
+{% block header %}
+	{% include "partials/landing/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 100,
+        navbarScrolled : 90,
+        navbarScrolledPoint : 30,
+        menuClose : 'off',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+{% block extrajs %}{% endblock %}
+

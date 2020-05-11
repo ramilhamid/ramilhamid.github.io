@@ -1,0 +1,112 @@
+{% extends "layouts/medical.html" %}
+
+{% set title = "Contact | Medical" %}
+{% set activeMenu = "Contact" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/medical/footer.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="background-media" style=
+        "background-image: url(assets/images/medical/img4-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(44,137,159,0.2);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 text-center small-screen-center">
+                    <h1 class="text-center element-top-100 element-bottom-100 text-light normal regular">Contact us</h1>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(255,255,255,0);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center small-screen-center col-border-bottom">
+                    <div class="row">
+                        <div class="col-md-6 text-center small-screen-center">
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-80"></div>
+                                <div class="visible-sm element-height-80"></div>
+                                <div class="visible-md element-height-80"></div>
+                                <div class="visible-lg element-height-80"></div>
+                            </div>
+
+                            <form id="contactForm" action="contact_mailer.php" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-user"></i>
+                                            <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-envelope"></i>
+                                            <input class="form-control" id="email" name="email" placeholder="Your email *" type="email" required="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-pencil"></i>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="10" required=""></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Send email" class="btn btn-primary">
+                                </div>
+                                <div class="messages text-center"></div>
+                            </form>
+
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-80"></div>
+                                <div class="visible-sm element-height-80"></div>
+                                <div class="visible-md element-height-80"></div>
+                                <div class="visible-lg element-height-80"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 text-center small-screen-center">
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-80"></div>
+                                <div class="visible-sm element-height-80"></div>
+                                <div class="visible-md element-height-80"></div>
+                                <div class="visible-lg element-height-80"></div>
+                            </div>
+
+                            <div class="google-map element-top-0 element-bottom-0" id="map" style="height:355px"></div>
+
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-30"></div>
+                                <div class="visible-sm element-height-30"></div>
+                                <div class="visible-md element-height-30"></div>
+                                <div class="visible-lg element-height-30"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

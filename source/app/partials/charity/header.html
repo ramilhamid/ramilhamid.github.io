@@ -1,0 +1,37 @@
+<div class="menu header-logo-left-menu-right navbar navbar-static-top oxy-mega-menu navbar-sticky text-none" id="masthead">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="charity-index.html"><img alt="Lambda - Charity" src="assets/images/charity/charity-white.png"> Charity
+            </a>
+        </div>
+        <div class="nav-container">
+            <nav class="collapse navbar-collapse main-navbar logo-navbar navbar-right">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav" id="menu-main">
+                        {% for item in [{title:"HOME", href:"charity-index.html#home"},
+                                    {title:"ABOUT US", href:"charity-index.html#about"},
+                                    {title:"OUR GOALS", href:"charity-index.html#goals"},
+                                    {title:"TESTIMONIALS", href:"charity-index.html#testimonials"},
+                                    {title:"NEWS", href:"charity-index.html#news"},
+                                    {title:"JOIN US", href:"charity-index.html#join"}] %}
+                            <li class="menu-item {{ 'active' if activeMenu == item.title }}">
+                                <a href="/{{ item.href }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+
+                        <li class="menu-item nav-highlight">
+                            <a href="charity-index.html#donate">DONATE</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-sidebar"></div>
+            </nav>
+        </div>
+    </div>
+</div>

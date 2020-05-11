@@ -1,0 +1,420 @@
+{% extends "layouts/pet.html" %}
+
+{% set title = "Pet Care" %}
+{% set bodyclasses = "transparent-header pace-on pace-minimal" %}
+{% set activeMenu = "Home" %}
+
+{% block extrajs %}
+    <!-- build:js assets/js/revolution.min.js -->
+    <script type="text/javascript" src="scripts/tools.min.js"></script>
+    <script type="text/javascript" src="scripts/revolution.min.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('#homepage-slider').revolution({
+                jsFileLocation: '/scripts/',
+                extensions: 'revolution-extensions/',
+                sliderType:"standard",
+                sliderLayout:"fullscreen",
+                dottedOverlay:"none",
+                delay:9000,
+                navigation: {
+                    keyboardNavigation:"off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation:"off",
+                    onHoverStop:"on",
+                    touch:{
+                        touchenabled:"on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    }
+                    ,
+                    arrows: {
+                        style:"hesperiden",
+                        enable:true,
+                        hide_onmobile:false,
+                        hide_onleave:false,
+                        tmp:'',
+                        left: {
+                            h_align:"left",
+                            v_align:"center",
+                            h_offset:20,
+                            v_offset:0
+                        },
+                        right: {
+                            h_align:"right",
+                            v_align:"center",
+                            h_offset:20,
+                            v_offset:0
+                        }
+                    }
+                    ,
+                    bullets: {
+                        enable:true,
+                        hide_onmobile:false,
+                        style:"hesperiden",
+                        hide_onleave:false,
+                        direction:"horizontal",
+                        h_align:"center",
+                        v_align:"bottom",
+                        h_offset:0,
+                        v_offset:20,
+                        space:5,
+                        tmp:''
+                    }
+                },
+                gridwidth:960,
+                gridheight:350,
+                lazyType:"none",
+                shadow:0,
+                spinner:"spinner0",
+                stopLoop:"off",
+                stopAfterLoops:-1,
+                stopAtSlide:-1,
+                shuffle:"off",
+                autoHeight:"off",
+                fullScreenAutoWidth:"off",
+                fullScreenAlignForce:"on",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                hideThumbsOnMobile:"off",
+                hideSliderAtLimit:0,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                debugMode:false,
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            });
+        });
+    </script>
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section" id="home">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rev_slider_wrapper fullwidthbanner-container">
+                        <div id="homepage-slider" class="rev_slider" data-version="5.0">
+                            <ul>
+                                <!-- SLIDE  -->
+
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-1" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-title="Slide" data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src=
+                                    "assets/images/pet-care/rev-slider2-notinclude.png"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption charitywhitecenter tp-resizeme" data-height="auto" data-hoffset="15" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000"
+                                    data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-voffset="77" data-width="auto" data-x="center" data-y=
+                                    "center" id="slide-1-layer-1" style="z-index: 5; white-space: nowrap;">
+                                        A dog is the <span>only</span><br>
+                                        thing on <span>earth</span> that loves you<br>
+                                        more than he loves <span>himself</span>.
+                                    </div>
+                                </li><!-- SLIDE  -->
+
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-2" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-title="Slide" data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src=
+                                    "assets/images/pet-care/rev-slider3-notinclude.png"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption charitywhitecenter tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000"
+                                    data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="y:bottom;s:300;s:300;" data-voffset="40" data-width="auto" data-x="center"
+                                    data-y="center" id="slide-2-layer-1" style="z-index: 5; white-space: nowrap;">
+                                        An animal's <span>eyes</span> have the power<br>
+                                        to <span>speak</span> great languages.
+                                    </div>
+                                </li><!-- SLIDE  -->
+
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-3" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-title="Slide" data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="assets/images/pet-care/rev-slider1-notinclude.png"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption charitywhitecenter tp-resizeme" data-height="auto" data-hoffset="15" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000"
+                                    data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="y:bottom;s:300;s:300;" data-voffset="50" data-width="auto" data-x="center"
+                                    data-y="center" id="slide-3-layer-1" style="z-index: 5; white-space: nowrap;">
+                                        All animals<br>
+                                        <span>deserve</span> a<br>
+                                        chance to live.
+                                    </div>
+                                </li><!-- SLIDE  -->
+
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-4" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-title="Slide" data-transition="notransition">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src=
+                                    "assets/images/pet-care/videobg-notinclude.jpg"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption tp-resizeme fullscreenvideo tp-videolayer" data-aspectratio="16:9" data-autoplay="on" data-disablevideoonmobile="1" data-forcecover="1" data-height=""
+                                    data-responsive_offset="on" data-start="500" data-transform_idle="" data-transform_in="opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-videocontrols="none"
+                                    data-videoheight="100%" data-videoloop="loop" data-videomp4="http://theme-background-videos.s3.amazonaws.com/dog.mp4" data-videopreload="auto" data-videowebm=
+                                    "http://theme-background-videos.s3.amazonaws.com/dog.webm" data-videowidth="100%" data-width="" data-x="0" data-y="0" id="slide-4-layer-1" style="z-index: 5;"></div>
+                                </li>
+                            </ul>
+                            <div class="tp-bannertimer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+
+                    <div class="list-container row element-top-40 element-bottom-40 os-animation" data-os-animation="bounce" data-os-animation-delay="0.1s">
+                        <div class="col-md-4 text-normal element-top-0 element-bottom-20 text-center os-animation" data-os-animation="bounce" data-os-animation-delay="0.1s">
+                            <div class="box box-round box-normal box-simple">
+                                <div class="box-dummy"></div>
+                                <div class="box-inner grid-overlay-0">
+                                    <div class="box-animate" data-animation="none"><img alt="PUPPY PLAY" src="assets/images/pet-care/services1-notinclude.jpg"></div>
+                                </div>
+                            </div>
+                            <h2>PUPPY PLAY</h2>
+                            <p>Pellentesque ullamcorper, tellus a viverra mattis, massa urna pulvinar lacus, sed consequat ex lectus non ipsum. Phasellus non iaculis leo, id consequat eros ultricies
+                            rhoncus.</p>
+                        </div>
+                        <div class="col-md-4 text-normal element-top-0 element-bottom-20 text-center os-animation" data-os-animation="bounce" data-os-animation-delay="0.2s">
+                            <div class="box box-round box-normal box-simple">
+                                <div class="box-dummy"></div>
+                                <div class="box-inner grid-overlay-0">
+                                    <div class="box-animate" data-animation="none"><img alt="CARE ADVICE" src="assets/images/pet-care/services2-notinclude.jpg"></div>
+                                </div>
+                            </div>
+                            <h2>CARE ADVICE</h2>
+                            <p>Maecenas imperdiet lorem in consequat ultricies. In tristique molestie dui a posuere. Morbi aliquet, lorem ac ultricies rhoncus, mi felis tempor diam, non volutpat tortor lorem vel sem.</p>
+                        </div>
+                        <div class="col-md-4 element-top-0 element-bottom-20 text-center os-animation" data-os-animation="bounce" data-os-animation-delay="0.3s">
+                            <div class="box box-round box-normal box-simple">
+                                <div class="box-dummy"></div>
+                                <div class="box-inner grid-overlay-0">
+                                    <div class="box-animate" data-animation="none"><img alt="DOG WALKING" src="assets/images/pet-care/services3-notinclude.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <h2>DOG WALKING</h2>
+                            <p>Vivamus eleifend ultrices dolor non convallis. Aliquam odio nibh, porttitor ut enim eu, tempor vehicula velit. Nam rhoncus leo ac ante viverra, vel egestas odio
+                            feugiat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(42,48,52,1);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-9">
+                    <p class="lead text-center center text-light element-top-60 element-bottom-60 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.1s">The most advanced,flexible and awesome theme you’ve ever seen. Need more? Feel free to contact us.</p>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary btn-lg element-left-0 element-right-0 element-top-20 element-bottom-20 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s" href="#">let's work together</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(42,48,52,1);"></div>
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-container element-top-0 element-bottom-0 text-light">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="portfolio-header clearfix">
+                                    <div class="portfolio-filters pull-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio masonry no-transition magnific-all" data-col-lg="3" data-col-md="3" data-col-sm="2" data-col-xs="1" data-layout="fitRows" data-padding="0">
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="1" data-title="Buster">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth" data-os-animation="bounce" data-os-animation-delay="0s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/pet-care/portfolio1-notinclude.jpg"
+                                    target="_self" title="">
+                                        <img alt="Buster" class="normalwidth" src="assets/images/pet-care/portfolio1-notinclude.jpg">
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Buster</h3>
+                                                    <p class="figure-caption-description"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="2" data-title="Daisy">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="bounce" data-os-animation-delay="0.15s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/pet-care/portfolio2-notinclude.jpg"
+                                    target="_self" title="">
+                                        <img alt="Daisy" class="normalwidth" src="assets/images/pet-care/portfolio2-notinclude.jpg">
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Daisy</h3>
+                                                    <p class="figure-caption-description"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="3" data-title="Teddy">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="bounce" data-os-animation-delay="0.3s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/pet-care/portfolio3-notinclude.jpg"
+                                    target="_self" title="">
+                                        <img alt="Teddy" class="normalwidth" src="assets/images/pet-care/portfolio3-notinclude.jpg">
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Teddy</h3>
+                                                    <p class="figure-caption-description"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="4" data-title="Ginger">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="bounce" data-os-animation-delay="0.45s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/pet-care/portfolio4-notinclude.jpg"
+                                    target="_self" title="">
+                                        <img alt="Ginger" class="normalwidth" src="assets/images/pet-care/portfolio4-notinclude.jpg">
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Ginger</h3>
+                                                    <p class="figure-caption-description"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="5" data-title="Samantha">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="bounce" data-os-animation-delay="0.6s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/pet-care/portfolio5-notinclude.jpg"
+                                    target="_self" title="">
+                                        <img alt="Samantha" class="normalwidth" src="assets/images/pet-care/portfolio5-notinclude.jpg">
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Samantha</h3>
+                                                    <p class="figure-caption-description"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="masonry-item portfolio-item filter-dogs" data-comments="0" data-date="2015-08-04T08:10:02+00:00" data-menu-order="6" data-title="Romeo">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-onhover fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="bounce" data-os-animation-delay="0.75s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/pet-care/portfolio6-notinclude.jpg"
+                                    target="_self" title="">
+                                        <img alt="Romeo" class="normalwidth" src="assets/images/pet-care/portfolio6-notinclude.jpg">
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Romeo</h3>
+                                                    <p class="figure-caption-description"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(255,255,255,1);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class=" text-normal element-top-40 element-bottom-40 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                        <span class="service-simple-image"><img alt="Give This Little Beauty A New Home" src="assets/images/pet-care/singleservice-notinclude.png"></span>
+                        <h1>Give This Little Beauty A New Home</h1>
+                        <p>Duis tristique commodo elit, quis feugiat eros consequat ut. Duis sit amet lorem malesuada tortor venenatis lacinia. Vivamus commodo velit non lacus scelerisque, id gravida
+                        augue suscipit. Morbi blandit lacinia libero a egestas. Vestibulum posuere mollis urna, a rutrum ipsum.</p>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" style="background-image: url(assets/images/pet-care/bg-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.5);"></div>
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class=" element-top-40 element-bottom-40 text-center text-light os-animation flexslider feature-slider" data-flex-animation="slide" data-flex-controls="hide"
+                    data-flex-controls-position="outside" data-flex-controlsalign="center" data-flex-directions="hide" data-flex-slideshow="true" data-flex-speed="7000" data-os-animation="bounce" data-os-animation-delay="0s" id="flexslider-34">
+                        <ul class="slides">
+                            <li>
+                                <blockquote>
+                                    <p>This Theme is just awesome. It is so easy to create a gorgeous looking sites. I would also like to mention their excellent and superfast support. It never took
+                                    more than 2-3hours to have the correct solution. I'm going to buy more themes of them, sure! Keep up the good work.</p>
+                                    <div class="box box-small box-round">
+                                        <div class="box-dummy"></div>
+                                        <div class="box-inner"><img alt="testimonial2-notinclude" class="attachment-thumbnail" height="150" src="assets/images/pet-care/testimonial2-notinclude-150x150.jpg" width="150"></div>
+                                    </div>
+                                    <footer>
+                                        Samantha
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li>
+                                <blockquote>
+                                    <p>After purchasing all of the top rated theme I find this theme to be the most intuitive. Everything is right where it's supposed to be and makes use of the best
+                                    plugin combinations I have ever seen. Truly, there are no words to describe how happy I am with this theme! Recommended</p>
+                                    <div class="box box-small box-round">
+                                        <div class="box-dummy"></div>
+                                        <div class="box-inner"><img alt="testimonial1-notinclude" class="attachment-thumbnail" height="150" src="assets/images/pet-care/testimonial1-notinclude-150x150.jpg" width="150"></div>
+                                    </div>
+                                    <footer>
+                                        Romeo
+                                    </footer>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

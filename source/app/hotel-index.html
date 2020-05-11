@@ -1,0 +1,473 @@
+{% extends "layouts/hotel.html" %}
+
+{% set title = "Hotel" %}
+{% set activeMenu = "Home" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/hotel/footer.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="background-media" style=
+        "background-image: url(assets/images/hotel/promo-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-50"></div>
+                        <div class="visible-sm element-height-100"></div>
+                        <div class="visible-md element-height-200"></div>
+                        <div class="visible-lg element-height-200"></div>
+                    </div>
+
+                    <h1 class="text-center text-light os-animation super"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        Outdoor &amp; Indoor Luxury
+                    </h1>
+                    <h1 class="text-center element-top-20 element-bottom-20 text-light os-animation bigger regular"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                        <em>at just the right price</em>
+                    </h1>
+                    <div class="figure os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                        <span class="figure-image">
+                            <img alt="decor-big-white.png" src="assets/images/hotel/decor-big-white.png">
+                        </span>
+                    </div>
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                    <a class="btn btn-link btn-lg text-light btn-header scroll-to-id element-top-20 element-bottom-20 os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.5s"
+                    href="hotel-the-rooms.html" target=
+                    "_self">
+                        View Our Rooms
+                    </a>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-50"></div>
+                        <div class="visible-sm element-height-100"></div>
+                        <div class="visible-md element-height-100"></div>
+                        <div class="visible-lg element-height-100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" style=
+        "background-image: url(assets/images/hotel/promo-blur-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(0,0,0,0.3);"></div>
+
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-12 text-center">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-40"></div>
+                        <div class="visible-sm element-height-40"></div>
+                        <div class="visible-md element-height-40"></div>
+                        <div class="visible-lg element-height-40"></div>
+                    </div>
+
+                    <form action="contact_mailer_hotel.php" class="contact-form">
+
+                        <div class="row vertical-middle">
+                            <div class="col-md-3 text-light">
+                                <div class="form-group  text-left">
+                                    <label>Check in Date:</label>
+                                    <div class="date-wrapper">
+                                        <input type="text" name="datepickerin" size="40" class="form-control datepicker" placeholder=
+                                        "Choose Check in date" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-light">
+                                <div class="form-group text-left">
+                                    <label>Check out Date:</label>
+
+                                    <div class="date-wrapper">
+                                        <div class="date-wrapper">
+                                            <input type="text" name="datepickerout" size="40" class="form-control datepicker" placeholder=
+                                        "Choose Check out date" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-light">
+                                <div class="form-group text-left">
+                                    <label>Room type:</label><br>
+                                    <select name="type">
+                                        <option value="Single Room">
+                                            Single Room
+                                        </option>
+                                        <option value="Double Room">
+                                            Double Room
+                                        </option>
+                                        <option value="Triple Room">
+                                            Triple Room
+                                        </option>
+                                        <option value="Suite">
+                                            Suite
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group text-center">
+                                    <label>&nbsp;</label><br>
+                                    <input class=
+                                    "btn btn-primary"
+                                    type="submit" value=
+                                    "Book Your Room Now">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messages"></div>
+                    </form>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-40"></div>
+                        <div class="visible-sm element-height-40"></div>
+                        <div class="visible-md element-height-40"></div>
+                        <div class="visible-lg element-height-40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom=
+        "background-position: 50% -80px" data-start=
+        "background-position: 50% 0px" style=
+        "background-image: url(assets/images/hotel/hotel-4-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(86,154,167,0);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6" style=
+                "background:rgba(255, 255, 255, 0.95);">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-md-8 text-center">
+                            <h2 class="element-top-100 os-animation big"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.1s">
+                                The Rooms
+                            </h2>
+                            <div class=
+                            "figure os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <span class="figure-image">
+                                    <img alt="decor-small-gold.png" src="assets/images/hotel/decor-small-gold.png">
+                                </span>
+                            </div>
+
+                            <div class="col-text-1 element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                                <p>Lambda Hotel &amp; Jacuzzi Suites features
+                                20 <strong>spacious</strong> guest rooms and
+                                bathrooms that combine comfort, style, elegance
+                                and the latest technology.</p>
+
+                                <p>These details transform Lambda into an ideal
+                                place; both for leisure and business
+                                travellers. The soothing palette of warm
+                                colours along with the <strong>branded</strong>
+                                furniture, combine the classical with the
+                                modern and create a beautiful and cosy
+                                atmosphere.</p>
+                            </div>
+                            <a class="btn btn-primary btn-normal element-top-20 element-bottom-100 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay="0.4s" href=
+                            "hotel-the-rooms.html" target=
+                            "_self">
+                                See the Rooms
+                            </a>
+                        </div>
+
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom=
+        "background-position: 50% -80px" data-start=
+        "background-position: 50% 0px" style=
+        "background-image: url(assets/images/hotel/spa-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(86,154,167,0);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-200"></div>
+                        <div class="visible-sm element-height-200"></div>
+                        <div class="visible-md element-height-200"></div>
+                        <div class="visible-lg element-height-200"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" style=
+                "background:rgba(255, 255, 255, 0.95);">
+                    <div class="row">
+                        <div class=
+                        "col-md-2"></div>
+
+                        <div class="col-md-8 text-center">
+                            <h2 class="element-top-100 os-animation big"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.1s">
+                                The Spa Center
+                            </h2>
+
+                            <div class="figure element-top-0 element-bottom-0 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.2s">
+                                <span class="figure-image">
+                                    <img alt="decor-small-gold.png" src="assets/images/hotel/decor-small-gold.png">
+                                </span>
+                            </div>
+
+                            <div class="col-text-1 element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.3s">
+                                <p>The Lambda <strong>Spa Center</strong> with
+                                years of experience in the field, is now the
+                                epitome of relaxation, detoxication,
+                                invigoration, purification, rejuvenation and
+                                general well-being.</p>
+
+                                <p>The centre has an indoor swimming pool, two
+                                <strong>aquastream</strong> pools with warm
+                                seawater, a whirlpool, solarium, sanarium,
+                                sauna and Hamam as well as a total of 24
+                                treatment rooms.</p>
+                            </div>
+                            <a class="btn btn-primary element-top-20 element-bottom-100 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.4s" href=
+                            "hotel-spa-center.html"
+                            target="_self">
+                                Read More
+                            </a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom=
+        "background-position: 50% -80px" data-start=
+        "background-position: 50% 0px" style=
+        "background-image: url(assets/images/hotel/restaurant-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(86,154,167,0);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6" style=
+                "background:rgba(255, 255, 255, 0.95);">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-md-8 text-center">
+                            <h2 class="element-top-100 os-animation big"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.1s">
+                                The Restaurant
+                            </h2>
+                            <div class="figure element-top-0 element-bottom-0 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.2s">
+                                <span class="figure-image">
+                                    <img alt="decor-small-gold.png" src="assets/images/hotel/decor-small-gold.png">
+                                </span>
+                            </div>
+                            <div class=
+                            "col-text-1 element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.3s">
+                                <p>Our 5 star outstanding
+                                <strong>restaurant</strong> and 2 bars await to
+                                tempt our guests with international culinary
+                                delights. Sumptuous buffets are available in
+                                the «Lambda» Restaurant for breakfast and
+                                dinner.</p>
+
+                                <p>«The Greek» near the beach offers local
+                                cuisine for lunch and dinner and the «Lambda
+                                Bar» Restaurant promises fine dining with our
+                                <strong>chefs</strong> creating demanding
+                                gourmet dishes in an open kitchen
+                                environment.</p>
+                            </div>
+                            <a class="btn btn-primary btn-normal element-top-20 element-bottom-100 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.4s" href="hotel-restaurant.html" target="_self">Read More</a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom=
+        "background-position: 50% -80px" data-start=
+        "background-position: 50% 0px" style=
+        "background-image: url(assets/images/hotel/rooms2-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(0,0,0,0.7);"></div>
+
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-2 text-center"></div>
+
+                <div class="col-md-8 text-center">
+                    <h2 class=
+                    "text-default element-top-100 element-bottom-0 text-light os-animation big default"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        Our Guests
+                    </h2>
+                    <div class="figure os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                        <span class="figure-image">
+                            <img alt="decor-small-white.png" src="assets/images/hotel/decor-small-white.png">
+                        </span>
+                    </div>
+                    <div class="element-top-20 element-bottom-100 text-center text-light os-animation flexslider feature-slider"
+                    data-flex-animation="slide" data-flex-controls="show"
+                    data-flex-controls-position="outside"
+                    data-flex-controlsalign="center" data-flex-directions=
+                    "hide" data-flex-slideshow="true" data-flex-speed="7000"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.3s" id="flexslider-116">
+                        <ul class="slides">
+                            <li>
+                                <blockquote>
+                                    <p>The ideal spot for any occasion, Lambda
+                                    Hotel serves dinner seven nights a week,
+                                    and serves lunch Monday through Friday,
+                                    when the room is awash in sunlight.</p>
+
+                                    <footer>
+                                        Athens Square
+                                    </footer>
+                                </blockquote>
+                            </li>
+
+                            <li>
+                                <blockquote>
+                                    <p>What an amazing hotel. We were greeted
+                                    by Linda at the front desk with a warm
+                                    friendly smile. Thank you so much for
+                                    making our days with you special.</p>
+
+                                    <footer>
+                                        Mary Jane Doe
+                                    </footer>
+                                </blockquote>
+                            </li>
+
+                            <li>
+                                <blockquote>
+                                    <p>Thank you for a great time, your
+                                    kindness and great service. I enjoyed my
+                                    spa time and felt completely relaxed. Many
+                                    thanks for a wonderful time with warm
+                                    regards.</p>
+
+                                    <footer>
+                                        John Doe
+                                    </footer>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(86,154,167,0);"></div>
+
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6">
+                    <div class="google-map"
+                    data-os-animation="none" data-os-animation-delay="0s" id="map" style="height:500px"></div>
+                </div>
+
+                <div class="col-md-6 text-center" style=
+                "background:rgba(255, 255, 255, 0.95);">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-md-8 text-center">
+                            <h2 class=
+                            "element-top-100 os-animation big"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.1s">
+                                The Location
+                            </h2>
+                            <div class="figure os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.2s">
+                                <span class="figure-image">
+                                    <img alt="decor-small-gold.png" src="assets/images/hotel/decor-small-gold.png">
+                                </span>
+                            </div>
+
+                            <div class="col-text-1 element-top-20 element-bottom-100 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.3s">
+                                <p><strong>Lambda Hotel</strong> is located on
+                                the north coast of the island of Crete,
+                                directly on the north beach, 12 kilometres away
+                                from Heraklion International Airport. The
+                                central location makes it ideal for excursion
+                                trips along the 400 kilometre-long island.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

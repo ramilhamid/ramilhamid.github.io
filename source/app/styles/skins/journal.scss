@@ -1,0 +1,137 @@
+// Core variables and mixins
+@import "bootstrap/oxygenna-variables";
+@import "compass/css3";
+@import "theme/compass-mixins";
+
+
+// Skin Variables
+$font-family: 'Merriweather';
+$font-size: 16px;
+$font-weight: 300;
+$heading-font-family: 'Merriweather';
+$heading-font-weight: 700;
+$heading-text-transform: none;
+$brand-font-family: 'Monsieur La Doulaise';
+$brand-font-size: 72px;
+$brand-font-weight: 400;
+$navbar-font-family: 'Merriweather';
+$navbar-font-size: 18px;
+$navbar-font-weight: 400;
+$navbar-dropdown-font-size: 16px;
+$font-weight-hairline: 300;
+$font-weight-light: 400;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$blog-post-title-font-size: 46px;
+$blog-post-title-font-weight: 400;
+$blog-post-font-size: 16px;
+$blog-post-font-weight: 300;
+$blockquote-font-family: 'Merriweather';
+$blockquote-font-size: 24px;
+$blockquote-font-style: italic;
+$blockquote-font-weight: 300;
+$lead-font-size: 21px;
+$lead-font-weight: 300;
+$navbar-height: 180px;
+$navbar-scrolled: 90px;
+$submenu-width: 220px;
+$navbar-border-height: 0px;
+$sidemenu-width: 270px;
+$sidemenu-nav-max-height: 600px;
+$text-color: #4c4c4c;
+$heading-color: #333332;
+$link-color: #1695a3;
+$link-color-hover: #187f8a;
+$icon-color: #666665;
+$small-color: #969ea5;
+$text-color-alt: #ffffff;
+$heading-color-alt: #ffffff;
+$link-color-alt: #ffffff;
+$link-color-hover-alt: #ffffff;
+$icon-color-alt: #ffffff;
+$small-color-alt: #ffffff;
+$background-color: rgba(255, 255, 255, 0.96);
+$background-invert: #333332;
+$background-complementary: rgba(0,0,0,.08);
+$nav-background: rgba(255, 255, 255, 0.9);
+$nav-link: #666665;
+$nav-link-hover: #1695a3;
+$nav-link-active: #1695a3;
+$nav-brand: #333332;
+$nav-text: #666665;
+$nav-borders: rgba(13, 14, 15, 0.09);
+$nav-dropdown-background: rgba(22, 149, 163, 0.95);
+$nav-dropdown-link: #ffffff;
+$nav-dropdown-link-hover: #254345;
+$nav-dropdown-text: rgba(255,255,255,.75);
+$nav-dropdown-border: rgba(0,0,0,.055);
+$nav-dropdown-separators: rgba(0,0,0,.055);
+$nav-transparent-link: #ffffff;
+$nav-transparent-link-hover: #ffffff;
+$nav-transparent-brand: #ffffff;
+$nav-transparent-text: #ffffff;
+$nav-transparent-borders: rgba(255, 255, 255, 0.1);
+$logo-background: rgba(255, 255, 255, 0.55);
+$logo-brand: #333332;
+$top-bar-background: #272e31;
+$top-bar-link: #ffffff;
+$top-bar-link-hover: #ffffff;
+$top-bar-text: #ffffff;
+$top-bar-borders: rgba(255, 255, 255, .1);
+$footer-background: #1695a3;
+$footer-link: #ffffff;
+$footer-link-hover: #ffffff;
+$footer-text: rgba(255, 255, 255, .6);
+$footer-borders: rgba(255, 255, 255, .1);
+$sub-footer-background: #1a7580;
+$sub-footer-link: #ffffff;
+$sub-footer-link-hover: #ffffff;
+$sub-footer-text: rgba(255, 255, 255, .6);
+$sub-footer-borders: rgba(255, 255, 255, .1);
+$form-color: #3c3c3c;
+$form-background: rgba(0,0,0,.02);
+$form-borders: rgba(0,0,0,.1);
+$form-placeholder-color: #9c9c9c;
+$form-active: #6BA4B6;
+$primary-text: #ffffff;
+$primary-bg: #1695a3;
+$default-text: #ffffff;
+$default-bg: #4D4A51;
+$warning-text: #ffffff;
+$warning-bg: #CD6727;
+$danger-text: #ffffff;
+$danger-bg: #E85543;
+$success-text: #ffffff;
+$success-bg: #008D7D;
+$info-text: #ffffff;
+$info-bg: #78A2BB;
+$border-radius-base: 24px;
+$border-radius-large: 24px;
+$border-radius-small: 15px;
+$border-radius-forms: 24px;
+$overlay-text: #ffffff;
+$overlay-bg: rgba(51, 51, 50, 0.8);
+$magnific-overlay-bg: rgba(48, 40, 64, .9);
+$magnific-close-icon: #ffffff;
+$magnific-close-bg: rgba(48, 40, 64, .9);
+$top-icon-color: #ffffff;
+$top-icon-bg: #202628;
+$slideshow-color: #ffffff;
+$slideshow-shadow: rgba(0, 0, 0, 0.2);
+$loader-color: #1695a3;
+$loader-bg: rgba(255, 255, 255, 0.75);
+
+
+// Skin Creator
+@import "theme/skin";
+
+body {
+background-size: cover !important;
+}
+#content {
+line-height: 2em;
+}
+#footer {
+line-height: 1.5em;
+}

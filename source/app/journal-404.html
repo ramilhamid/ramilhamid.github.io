@@ -1,0 +1,31 @@
+{% extends "layouts/journal.html" %}
+
+{% set title = "404 - Page Not Found" %}
+{% set activeMenu = "Pages" %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="background-overlay" style="background-color: rgba(255,255,255,0);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 text-center"></div>
+
+                <div class="col-md-8 text-center">
+                    <h1 class="text-center element-top-40 element-bottom-20 os-animation hyper default" data-os-animation="fadeIn" data-os-animation-delay="0s">404</h1>
+
+                    <h1 class="text-center element-top-40 element-bottom-20 os-animation bigger default" data-os-animation="fadeIn" data-os-animation-delay="0s">Sorry, this page
+                    doesn&#8217;t exist</h1>
+
+                    <p class="lead text-center center element-top-20 element-bottom-100 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">Perhaps you were looking for
+                        <a href="journal-index.html"><strong>who we are</strong></a>, browse <a href="journal-index.html"><strong>our portfolio</strong></a>, wanted to get in touch or view the <a href="journal-index.html"><strong>latest news</strong></a>.
+                    </p>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

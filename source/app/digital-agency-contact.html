@@ -1,0 +1,148 @@
+{% extends "layouts/digital-agency.html" %}
+
+{% set title = "Digital Agency" %}
+{% set activeMenu = "Contact" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/digital-agency/footer.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="background-media" style=
+        "background-image: url(assets/images/digital-agency/balloon.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:no-scroll; background-position: 50% 0%;"></div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.5);"></div>
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-12 text-center">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-70"></div>
+                        <div class="visible-lg element-height-70"></div>
+                    </div>
+                    <h1 class="element-top-20 element-bottom-20 text-light os-animation big" data-os-animation="fadeIn" data-os-animation-delay="0.1s">Lets work together</h1>
+                    <div class="divider-border divider-border-center element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        <div class="divider-border-inner"></div>
+                    </div>
+                    <p class="lead text-center center text-light element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.15s">We are a corporate web
+                    design agency who are passionate with our pixels. Drop us a line if you have any requests or you are ready for a new project.</p>
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6 text-center">
+                            <form id="contactForm" action="contact_mailer.php" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-user"></i>
+                                            <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-envelope"></i>
+                                            <input class="form-control" id="email" name="email" placeholder="Your email *" type="email" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-pencil"></i>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="10" required=""></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <input type="submit" value="Send email" class="btn btn-primary">
+                                </div>
+                                <div class="messages text-center"></div>
+                            </form>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section extras">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-3 text-center" style="background:rgba(254, 68, 68, 0.9);">
+                    <div class="box box-round box-medium element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">
+                        <div class="box-dummy"></div>
+                        <div class="box-inner grid-overlay-0">
+                            <div class="box-animate" data-animation="bounce">
+                                <i class="fa fa-home" style="color:#ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead text-light element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">Lambda LTD<br>
+                    Some Address, London UK</p>
+                </div>
+                <div class="col-md-3 text-center" style="background:rgba(254, 68, 68, 0.8);">
+                    <div class="box box-round box-medium element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">
+                        <div class="box-dummy"></div>
+                        <div class="box-inner grid-overlay-0">
+                            <div class="box-animate" data-animation="bounce">
+                                <i class="fa fa-envelope" style="color:#ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead text-light element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">some@lambda.com<br>
+                    Drop us a line</p>
+                </div>
+                <div class="col-md-3 text-center" style="background:rgba(254, 68, 68, 0.7);">
+                    <div class="box box-round box-medium element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">
+                        <div class="box-dummy"></div>
+                        <div class="box-inner grid-overlay-0">
+                            <div class="box-animate" data-animation="bounce">
+                                <i class="fa fa-facebook" style="color:#ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead text-light element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">visit our page<br> on facebook</p>
+                </div>
+                <div class="col-md-3 text-center" style="background:rgba(254, 68, 68, 0.6);">
+                    <div class="box box-round box-medium element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">
+                        <div class="box-dummy"></div>
+                        <div class="box-inner grid-overlay-0">
+                            <div class="box-animate" data-animation="bounce">
+                                <i class="fa fa-twitter" style="color:#ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead text-center center text-light element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">follow us on twitter for the latest
+                    updates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="google-map" id="map" style="height:355px"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

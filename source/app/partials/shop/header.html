@@ -1,0 +1,281 @@
+<div class="top-bar">
+    <div class="container">
+        <div class="top top-left">
+            <div class="sidebar-widget text-left small-screen-center widget_text">
+                Opening Hours: 09:00 - 17:00 <strong>Monday</strong> to <strong>Friday</strong>
+            </div>
+        </div>
+
+        <div class="top top-right">
+            <div class="sidebar-widget text-right small-screen-center widget_nav_menu" id="nav_menu-5">
+                <div class="menu-top-bar-menu-container">
+                    <ul class="menu">
+                        <li>
+                            <a href="shop-checkout.html">Checkout</a>
+                        </li>
+
+                        <li>
+                            <a href="shop-terms.html">Terms</a>
+                        </li>
+
+                        <li>
+                            <a href="shop-faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-widget text-right small-screen-center widget_search">
+                <form action="shop-index.html" method="get" name="searchform">
+                    <div class="input-group">
+                        <input class="form-control" id="s" name="s" placeholder="Search" type="text">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit" id="searchsubmit" value="Search">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu navbar navbar-static-top header-logo-center-menu-below oxy-mega-menu text-caps" id="masthead">
+    <div class="logo-navbar container-logo">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="shop-index.html">
+                    <img alt="Lambda Theme - Shop" src="assets/images/shop/lambda-shop.png">
+                </a>
+
+                <div class="logo-sidebar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="nav-container clearfix">
+            <nav class="collapse navbar-collapse main-navbar">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav" id="menu-main">
+                        {% for item in [{title:"Home", href:"shop-index.html", children:[
+                                            {title:"Flexslider", href:"shop-flexslider.html"},
+                                            {title:"Right Sidebar", href:"shop-right-sidebar.html"},
+                                            {title:"Left Sidebar", href:"shop-left-sidebar.html"},
+                                            {title:"Full Width", href:"shop-fullwidth.html"}
+                                        ]},
+                                        {title:"Womens", href:"shop-womens-category.html", type:"megamenu", bgimage:"style='background-image: url(assets/images/shop/womens_menu.jpg); background-size: cover;'", children:[
+                                            {title:"Shop Womens", type:"label", size:"col-md-3", children:[
+                                                {title:"Skirts", href:"shop-womens-category.html" , label:"On Sale!", labeltype:"danger"},
+                                                {title:"Jeans", href:"shop-womens-category.html"},
+                                                {title:"Tops", href:"shop-womens-category.html"},
+                                                {title:"Bags", href:"shop-womens-category.html"}
+                                            ]},
+                                            {title:"Features", type:"label", size:"col-md-3", children:[
+                                                {title:"New In", href:"shop-womens-category.html"},
+                                                {title:"Sale", href:"shop-womens-category.html"}
+                                            ]},
+                                            {title:"Best Sellers", type:"label", size:"col-md-3", children:[
+                                                {title:"Top 10", href:"shop-womens-category.html"},
+                                                {title:"Recommended", href:"shop-womens-category.html"}
+                                            ]}
+                                        ]},
+                                        {title:"Mens", href:"shop-mens-category.html", type:"megamenu", bgimage:"style='background-image: url(assets/images/shop/mans_menu.jpg); background-size: cover;'", children:[
+                                            {title:"Shop Mens", type:"label", size:"col-md-3", children:[
+                                                {title:"Hoodies", href:"shop-mens-category.html"},
+                                                {title:"Shirts", href:"shop-mens-category.html"},
+                                                {title:"Tops", href:"shop-mens-category.html"},
+                                                {title:"Jackets", href:"shop-mens-category.html", label:"Sold Out", labeltype:"success"}
+                                            ]},
+                                            {title:"Features", type:"label", size:"col-md-3", children:[
+                                                {title:"Premium", href:"shop-mens-category.html", label:"20% Off", labeltype:"success"},
+                                                {title:"Casual", href:"shop-mens-category.html"}
+                                            ]},
+                                            {title:"Best Sellers", type:"label", size:"col-md-3", children:[
+                                                {title:"Top 5", href:"shop-mens-category.html"},
+                                                {title:"Selected Homme", href:"shop-mens-category.html"}
+                                            ]}
+                                        ]},
+                                        {title:"Kids", href:"shop-kids-category.html", type:"megamenu", bgimage:"style='background-image: url(assets/images/shop/kids_menu.jpg); background-size: cover;'", children:[
+                                            {title:"Shop Kids", type:"label", size:"col-md-3", children:[
+                                                {title:"Young girls", href:"shop-kids-category.html"},
+                                                {title:"Young Boys", href:"shop-kids-category.html"},
+                                                {title:"Jeans", href:"shop-kids-category.html"},
+                                                {title:"Skirts", href:"shop-kids-category.html"}
+                                            ]},
+                                            {title:"Features", type:"label", size:"col-md-3", children:[
+                                                {title:"Basics", href:"shop-kids-category.html"},
+                                                {title:"School", href:"shop-kids-category.html", label:"New!", labeltype:"primary"}
+                                            ]},
+                                            {title:"Best Sellers", type:"label", size:"col-md-3", children:[
+                                                {title:"On Sale", href:"shop-kids-category.html"},
+                                                {title:"Fashion", href:"shop-kids-category.html"}
+                                            ]}
+                                        ]},
+                                        {title:"Pages", href:"#", children:[
+                                            {title:"Simple Category", href:"shop-mens-category.html"},
+                                            {title:"Video Category", href:"shop-video-category.html"},
+                                            {title:"Single Product", href:"shop-simple-product.html"},
+                                            {title:"Cart", href:"shop-cart.html"},
+                                            {title:"Checkout", href:"shop-checkout.html"}
+                                        ]},
+                                        {title:"Contact", href:"shop-contact.html"}] %}
+
+                            <li class="menu-item dropdown {{ 'active' if activeMenu == item.title }} {{ 'menu-item-object-oxy_mega_menu' if 'megamenu' == item.type }}">
+                                <a {% if item.href == '#' %} class="dropdown-toggle" data-toggle="dropdown" {% endif %} href="/{{ item.href }}">{{ item.title }}</a>
+                                {% if item.children %}
+                                <ul class="dropdown-menu dropdown-menu-left {{ 'row' if 'megamenu' == item.type }}" {% if item.bgimage %} {{item.bgimage}} {% endif %}>
+                                {% for child in item.children %}
+                                    {% if item.type != 'megamenu' %}
+                                    <li class="menu-item">
+                                        <a href="/{{ child.href }}">{{ child.title }}</a>
+                                    </li>
+                                    {% else %}
+                                    <li class="menu-item menu-item-object-oxy_mega_columns menu-item-has-children dropdown-submenu dropdown {{ child.size }}">
+                                        <strong>{{child.title}}</strong>
+                                        <ul class="dropdown-menu-left">
+                                        {% for megamenu in child.children %}
+                                             <li class="menu-item">
+                                                <a href="/{{ megamenu.href }}">{{ megamenu.title }}
+                                                    {% if megamenu.label %}
+                                                        <span class="label menu-label label-{{megamenu.labeltype}}">{{megamenu.label}}</span>
+                                                    {% endif %}
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                        </ul>
+                                    </li>
+                                    {% endif %}
+                                {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="menu-sidebar">
+                    <div class="sidebar-widget widget_shopping_cart">
+                        <h3 class="sidebar-header">Cart</h3>
+
+                        <div class="widget_shopping_cart_content">
+                            <div class="mini-cart-overview dropdown navbar-right">
+                                <a data-toggle="dropdown" href="shop-cart">
+                                    <i class="icon icon-bag animated pulse-two"></i>
+                                    <span class="mini-cart-count">5</span>
+                                    <span class="amount">$114.96</span>
+                                </a>
+
+                                <ul class="dropdown-menu product_list_widget">
+                                    <li>
+                                        <div class="product-mini">
+                                            <div class="product-image">
+                                                <a href="shop-simple-product.html">
+                                                    <img alt="hoodie1-1" height="114" src="assets/images/shop/hoodie1-1-90x114.jpg" width="90">
+                                                </a>
+                                            </div>
+
+                                            <div class="product-details">
+                                                <h4 class="product-details-heading"><a href="shop-simple-product.html">Mens Sporty Hoodie</a></h4>
+
+                                                <p></p>
+
+                                                <p><span class="quantity">1 × <span class="amount">$24.99</span></span></p><a class="remove" href=
+                                                "#" title="Remove this item">×</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="product-mini">
+                                            <div class="product-image">
+                                                <a href="shop-simple-product.html">
+                                                    <img alt="jacket1-1" height="114" src="assets/images/shop/jacket1-1-90x114.jpg" width="90">
+                                                </a>
+                                            </div>
+
+                                            <div class="product-details">
+                                                <h4 class="product-details-heading"><a href="shop-simple-product.html">Mens Bomber Jacket</a></h4>
+
+                                                <p></p>
+
+                                                <p><span class="quantity">1 × <span class="amount">$32.99</span></span></p><a class="remove" href="#" title="Remove this item">×</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="product-mini">
+                                            <div class="product-image">
+                                                <a href="shop-simple-product.html">
+                                                    <img alt="skirt1-1" height="114" src="assets/images/shop/skirt1-1-90x114.jpg" width="90">
+                                                </a>
+                                            </div>
+
+                                            <div class="product-details">
+                                                <h4 class="product-details-heading"><a href="shop-simple-product.html">White Skirt</a></h4>
+
+                                                <p></p>
+
+                                                <p><span class="quantity">1 × <span class="amount">$20.00</span></span></p><a class="remove" href=
+                                                "#" title="Remove this item">×</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="product-mini">
+                                            <div class="product-image">
+                                                <a href="shop-simple-product.html">
+                                                    <img alt="kidspants2-1" height="105" src="assets/images/shop/kidspants2-1-90x105.jpg" width="90">
+                                                </a>
+                                            </div>
+
+                                            <div class="product-details">
+                                                <h4 class="product-details-heading"><a href="shop-simple-product.html">Lazy Sweatpants</a></h4>
+
+                                                <p></p>
+
+                                                <p><span class="quantity">1 × <span class="amount">$16.99</span></span></p><a class="remove" href="#" title="Remove this item">×</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="product-mini">
+                                            <div class="product-image">
+                                                <a href="shop-simple-product.html">
+                                                    <img alt="kidsjacket2-1" height="105" src="assets/images/shop/kidsjacket2-1-90x105.jpg" width="90">
+                                                </a>
+                                            </div>
+
+                                            <div class="product-details">
+                                                <h4 class="product-details-heading"><a href="shop-simple-product.html">Patterned Hooded Jacket</a></h4>
+
+                                                <p></p>
+
+                                                <p><span class="quantity">1 × <span class="amount">$19.99</span></span></p><a class="remove" href="#" title="Remove this item">×</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p class="total"><strong>Subtotal:</strong> <span class="amount">$114.96</span></p>
+
+                                        <div class="buttons">
+                                            <a href="shop-cart.html">View Cart</a> <a href="shop-checkout.html">Checkout</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- end product list -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

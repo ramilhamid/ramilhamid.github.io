@@ -1,0 +1,146 @@
+{% extends "layouts/journal.html" %}
+
+{% set title = "Quote Post" %}
+{% set activeMenu = "Single Post" %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="container">
+            <div class="row element-top-50 element-bottom-50">
+                <div class="col-md-8 col-md-offset-2 blog-list-layout-normal">
+                    <article class="post">
+                        <div class="post-body">
+                            <blockquote class="text-left text-normal">
+                                <p>Good morning, oh in case i don't see you, good afternoon, good evening and goodnight. excuse me, i'd like to ask you a few questions. we're going for a ride on the information
+                                super highway. Here she comes to wreck the day. here she comes to wreck the day. alrighty then kinda hot in these rhinos. we're going for a ride on the information super highway.</p>
+
+                                <footer>
+                                    Cold Warriors
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </article>
+                    <nav class="post-navigation">
+                        <ul class="pager">
+                            <li class="previous">
+                                <a class="btn btn-primary btn-icon btn-icon-left" href="journal-post.html" rel="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                    Previous
+                                </a>
+                            </li>
+
+                            <li class="next">
+                                <a class="btn btn-primary btn-icon btn-icon-right" href="journal-gallery-post.html" rel="next">Next
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="comments padded">
+                        <div class="comments-head">
+                            <h3>3 comments</h3><small>Join the conversation</small>
+                        </div>
+
+                        <ul class="media-list">
+                            <li class="media media-comment">
+                                <div class="media-avatar media-left">
+                                    <a href="#">
+                                        <img alt='team' class='img-circle' height='48' src='assets/images/corporate/team13-notinclude.jpg' width='48'>
+                                    </a>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="media-inner">
+                                        <div>
+                                            <h4 class="media-heading clearfix"><strong>langan</strong> - October 23, 2014 <strong class="comment-reply pull-right"><a class='comment-reply-link' href=
+                                            '#'>reply</a></strong></h4>
+
+                                            <p>Your blog is awesome!</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="media media-comment">
+                                        <div class="media-avatar media-left">
+                                            <a href="#">
+                                                <img alt='team' class='img-circle' height='48' src='assets/images/corporate/team09-notinclude.jpg' width='48'>
+                                            </a>
+                                        </div>
+
+                                        <div class="media-body">
+                                            <div class="media-inner">
+                                                <div>
+                                                    <h4 class="media-heading clearfix"><strong>proistak</strong> - October 24, 2014 <strong class="comment-reply pull-right"><a class='comment-reply-link' href='#'>reply</a></strong></h4>
+
+                                                    <p>While working as a school janitor, the father would come home each night and work on his side project. He spent over 7 years producing what is perhaps the most
+                                                    complicated, intricate maze you will ever see.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="media media-comment">
+                                <div class="media-avatar media-left">
+                                    <a href="#">
+                                        <img alt='team' class='img-circle' height='48' src='assets/images/corporate/team09-notinclude.jpg' width='48'></a>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="media-inner">
+                                        <div>
+                                            <h4 class="media-heading clearfix"><strong>christos</strong> - October 24, 2014 <strong class="comment-reply pull-right"><a class='comment-reply-link' href='#'>reply</a></strong></h4>
+
+                                            <p>You know, the one with all the well meaning rules that don&#8217;t work out in real life, uh, Christianity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Leave a Reply <small>
+                            <a href="#" rel="nofollow" style="display:none;">Cancel reply
+                            </a></small>
+                        </h3>
+
+                        <form>
+                            <p><span>Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <label for="author">Your name *</label>
+                                    <input class="input-block-level form-control" id="author" name="author" type="text">
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="email">Your email *</label><input class="input-block-level form-control" id="email" name="email" type="text">
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="url">Website</label><input class="input-block-level form-control" id="url" name="url" type="text">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label>Your message</label>
+                                    <textarea class="input-block-level form-control" rows="5">
+                                    </textarea>
+                                </div>
+                            </div>
+
+                            <p class="form-submit">
+                                <input class="btn btn-primary" id="submit" name="submit" type="submit" value="Post Comment">
+                                <input name='comment_post_ID' type='hidden' value='137'>
+                                <input id='comment_parent' name='comment_parent' type='hidden' value='0'>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

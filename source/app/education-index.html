@@ -1,0 +1,666 @@
+{% extends "layouts/education.html" %}
+
+{% set title = "Education" %}
+{% set bodyclasses = "pace-on pace-counter transparent-header" %}
+{% set activeMenu = "Home" %}
+
+{% block extrajs %}
+    <!-- build:js assets/js/revolution.min.js -->
+    <script type="text/javascript" src="scripts/tools.min.js"></script>
+    <script type="text/javascript" src="scripts/revolution.min.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('#homepage-slider').revolution({
+                jsFileLocation: '/scripts/',
+                extensions: 'revolution-extensions/',
+                sliderType:"standard",
+                sliderLayout:"fullwidth",
+                dottedOverlay:"none",
+                delay:9000,
+                navigation: {
+                    keyboardNavigation:"off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation:"off",
+                    onHoverStop:"off",
+                    touch:{
+                        touchenabled:"on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    }
+                    ,
+                    arrows: {
+                        style:"gyges",
+                        enable:true,
+                        hide_onmobile:false,
+                        hide_onleave:false,
+                        tmp:'',
+                        left: {
+                            h_align:"left",
+                            v_align:"center",
+                            h_offset:20,
+                            v_offset:0
+                        },
+                        right: {
+                            h_align:"right",
+                            v_align:"center",
+                            h_offset:20,
+                            v_offset:0
+                        }
+                    }
+                },
+                responsiveLevels:[1240,1024,1024,1024],
+                gridwidth:[1170,1024,778,480],
+                gridheight:[550,600,960,720],
+                lazyType:"none",
+                parallax: {
+                    type:"mouse+scroll",
+                    origo:"enterpoint",
+                    speed:400,
+                    levels:[5,10,15,20,25,30,35,40,45,50],
+                },
+                shadow:0,
+                spinner:"spinner5",
+                stopLoop:"off",
+                stopAfterLoops:-1,
+                stopAtSlide:-1,
+                shuffle:"off",
+                autoHeight:"off",
+                hideThumbsOnMobile:"off",
+                hideSliderAtLimit:0,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                debugMode:false,
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section">
+
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rev_slider_wrapper fullwidthbanner-container">
+                        <div id="homepage-slider" class="rev_slider" data-version="5.0">
+                            <ul>    <!-- SLIDE  -->
+
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-1" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
+                                data-slotamount="7" data-title="Slide"
+                                data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="off" data-bgposition="center top" data-bgrepeat="repeat-x" data-no-retina="" height="800"
+                                    src="assets/images/education/img1-notinclude1.jpg" width="1200"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" data-elementdelay="0.05" data-height="none" data-hoffset="['40','40','40','40']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-splitin="chars"
+                                    data-splitout="none" data-start="1000" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['200','200','200','200']" data-whitespace="nowrap"
+                                    data-width="none" data-x="['left','left','left','left']" data-y="['top','top','top','top']" id="slide-1-layer-2" style="z-index: 5; white-space: nowrap;">
+                                        Teaching kids for
+                                    </div><!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" data-elementdelay="0.05" data-height="none" data-hoffset="['40','40','40','40']"
+                                    data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="2000"
+                                    data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:3000;e:Power4.easeInOut;" data-transform_out=
+                                    "y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['280','280','280','280']" data-whitespace="nowrap" data-width="none" data-x=
+                                    "['left','left','left','left']" data-y="['top','top','top','top']" id="slide-1-layer-3" style="z-index: 6; white-space: nowrap;">
+                                        over 15 years
+                                    </div>
+                                </li><!-- SLIDE  -->
+
+                                <li data-delay="9000" data-description="" data-easein="default" data-easeout="default" data-index="rs-2" data-masterspeed="300" data-rotate="0"
+                                data-saveperformance="off" data-slotamount="7" data-title="Slide" data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="off" data-bgposition="center top" data-bgrepeat="repeat-x" data-no-retina="" height="800"
+                                    src="assets/images/education/img2-notinclude.jpg" width="1200"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" data-elementdelay="0.05" data-height="none" data-hoffset="['500','500','500','500']"
+                                    data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="1000"
+                                    data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out=
+                                    "y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['200','200','200','200']" data-whitespace="nowrap" data-width="none" data-x=
+                                    "['left','left','left','left']" data-y="['top','top','top','top']" id="slide-2-layer-1" style="z-index: 5; white-space: nowrap;">
+                                        Perfect education
+                                    </div><!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" data-elementdelay="0.05" data-height="none" data-hoffset="['500','500','500','500']"
+                                    data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="2000"
+                                    data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:3000;e:Power4.easeInOut;" data-transform_out=
+                                    "y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['280','280','280','280']" data-whitespace="nowrap" data-width="none" data-x=
+                                    "['left','left','left','left']" data-y="['top','top','top','top']" id="slide-2-layer-2" style="z-index: 6; white-space: nowrap;">
+                                        for your child!
+                                    </div>
+                                </li><!-- SLIDE  -->
+
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-3" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-title="Slide"
+                                data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="off" data-bgposition="center top" data-bgrepeat="repeat-x" data-no-retina="" height="800"
+                                    src="assets/images/education/img3-notinclude.jpg" width="1200"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" data-elementdelay="0.05" data-end="8700" data-height="none" data-hoffset=
+                                    "['40','40','40','40']" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none"
+                                    data-start="1000" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out=
+                                    "y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['200','200','200','200']" data-whitespace="nowrap" data-width="none" data-x=
+                                    "['left','left','left','left']" data-y="['top','top','top','top']" id="slide-3-layer-1" style="z-index: 5; white-space: nowrap;">
+                                        Our goal
+                                    </div><!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" data-elementdelay="0.05" data-end="8700" data-height="none" data-hoffset=
+                                    "['40','40','40','40']" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none"
+                                    data-start="2000" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:3000;e:Power4.easeInOut;" data-transform_out=
+                                    "y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['280','280','280','280']" data-whitespace="nowrap" data-width="none" data-x=
+                                    "['left','left','left','left']" data-y="['top','top','top','top']" id="slide-3-layer-2" style="z-index: 6; white-space: nowrap;">
+                                        is to create a place
+                                    </div><!-- LAYER NR. 3 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" data-elementdelay="0.05" data-end="8700" data-height="none" data-hoffset=
+                                    "['40','40','40','40']" data-mask_out="x:inherit;y:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="3000"
+                                    data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:4000;e:Power3.easeInOut;" data-transform_out=
+                                    "y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['360','360','360','360']" data-whitespace="nowrap" data-width="none" data-x=
+                                    "['left','left','left','left']" data-y="['top','top','top','top']" id="slide-3-layer-3" style="z-index: 7; white-space: nowrap;">
+                                        that engages each child
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tp-bannertimer" style="height: 5px; background-color: rgba(0, 0, 0, 0.15);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-move-up">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(71,164,74,0);"></div>
+
+        <div class="container container-vertical-top">
+            <div class="row vertical-top">
+                <div class="col-md-4 school-bg os-animation col-border-right" data-os-animation="zoomIn" data-os-animation-delay="0.2s" style="background:#ffb74d;">
+                    <h1 class="text-left element-top-20 element-bottom-20 text-light" data-os-animation="none" data-os-animation-delay="0s">Courses</h1>
+
+                    <div class="col-text-1 text-light element-top-20 element-bottom-20">
+                        <p>This eight-week course is the first of two courses focusing on “boosting the basics” at the middle school level. The course teaches the fundamentals of writing such as: sentences vs. fragments.</p>
+                    </div>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 school-bg os-animation col-border-right" data-os-animation="zoomIn" data-os-animation-delay="0.3s" style="background:#2196f3;">
+                    <h1 class="text-left element-top-20 element-bottom-20 text-light">Prices</h1>
+
+                    <div class="col-text-1 text-light element-top-20 element-bottom-20">
+                        <p>We offer the best courses in the industry at the lowest prices you'll find anywhere and <strong>we guarantee it!</strong> Plus, every course we offer is state-approved and can be completed online in the comfort of your own home.</p>
+                    </div>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 school-bg os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.4s" style="background:#63e668;">
+                    <h1 class="text-left element-top-20 element-bottom-20 text-light normal regular">Teachers</h1>
+
+                    <div class="col-text-1 text-light element-top-20 element-bottom-20">
+                        <p>The teachers at Lambda School are specially selected and trained for our program. They work with both the children and the parents to assure a positive school experience.</p>
+                    </div>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="list-container row element-top-50 element-bottom-50 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                        <div class="col-md-4 element-top-0 element-bottom-20 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            <span class="service-simple-image"><img alt="Health" src="assets/images/education/icon4-notinclude.png"></span>
+
+                            <h2>Health</h2>
+
+                            <p>Lessons and activities within each unit build sequentially to provide the reinforcement and continuity that will support children’s efforts to think, choose and act in healthy ways.</p>
+                        </div>
+
+                        <div class="col-md-4 element-top-0 element-bottom-20 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            <span class="service-simple-image"><img alt="Arts" src="assets/images/education/icon6-notinclude.png"></span>
+
+                            <h2>Arts</h2>
+
+                            <p>Our middle school arts worksheets are a great way for your artistically-inclined kid to pass the afternoon.It's important to supplement your child's education with
+                            additional fine arts-focused materials.</p>
+                        </div>
+
+                        <div class="col-md-4 element-top-0 element-bottom-20 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            <span class="service-simple-image"><img alt="Foreign Languages" src=
+                            "assets/images/education/icon5-notinclude.png"></span>
+
+                            <h2>Foreign Languages</h2>
+
+                            <p>The department of Foreign Languages offers continuing education 17 languages. Our experienced instructors, many of them native speakers, emphasizes the living language
+                            in its cultural context.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="background-media" style=
+        "background-image: url(assets/images/education/img4-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.2);"></div>
+
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-3 text-center small-screen-default os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                    <i class=" fa fa-briefcase text-light" style="font-size:42px"></i>
+
+                    <div class="counter element-top-10 element-bottom-0 text-light os-animation" data-count="21" data-format="(,ddd)" data-os-animation="fadeIn" data-os-animation-delay=
+                    "0s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+
+                    <div class="divider-border divider-border-center element-top-0 element-bottom-10 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:3px;">
+                        <div class="divider-border-inner" style="background:rgba(255, 255, 255, 0.81); width:60px;"></div>
+                    </div>
+
+                    <h3 class="text-center element-top-0 element-bottom-0 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0.1s">Teachers</h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                    <i class=" fa fa-child text-light" style="font-size:42px"></i>
+
+                    <div class="counter element-top-10 element-bottom-0 text-light os-animation" data-count="1400" data-format="(,ddd)" data-os-animation="fadeIn"
+                    data-os-animation-delay="0.3s">
+                        <span class="value odometer-counter super">0</span>
+                    </div>
+
+                    <div class="divider-border divider-border-center element-top-0 element-bottom-10 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s" style="height:3px;">
+                        <div class="divider-border-inner" style="background:rgba(255, 255, 255, 0.81); width:60px;"></div>
+                    </div>
+
+                    <h3 class="text-center element-top-0 element-bottom-0 text-light os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">Children</h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center small-screen-default os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                    <i class=" fa fa-tachometer text-light" style="font-size:42px"></i>
+
+                    <div class="counter element-top-10 element-bottom-0 text-light os-animation" data-count="15" data-format="(,ddd)" data-os-animation="fadeIn" data-os-animation-delay=
+                    "0.6s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+
+                    <div class="divider-border divider-border-center element-top-0 element-bottom-10 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s" style="height:3px;">
+                        <div class="divider-border-inner" style="background:rgba(255, 255, 255, 0.81); width:60px;"></div>
+                    </div>
+
+                    <h3 class="text-center element-top-0 element-bottom-0 text-light os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">Years Experience</h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                    <i class=" fa fa-check-circle text-light" style="font-size:42px"></i>
+
+                    <div class="counter text-default element-top-10 element-bottom-0 text-light os-animation" data-count="56" data-format="(,ddd)" data-os-animation="fadeIn" data-os-animation-delay=
+                    "0.9s">
+                        <span class="value odometer-counter super">0</span>
+                    </div>
+
+                    <div class="divider-border divider-border-center element-top-0 element-bottom-10 os-animation" data-os-animation="fadeIn" data-os-animation-delay="1s" style="height:3px;">
+                        <div class="divider-border-inner" style="background:rgba(255, 255, 255, 0.81); width:60px;"></div>
+                    </div>
+
+                    <h3 class="text-center element-top-0 element-bottom-0 text-light os-animation" data-os-animation="fadeIn" data-os-animation-delay="1s">Activities</h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center element-top-50 element-bottom-0 os-animation big regular" data-os-animation="fadeIn" data-os-animation-delay="0.1s">Our Teachers</h1>
+
+                    <div class="divider-border divider-border-center element-top-30 element-bottom-60 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:3px;">
+                        <div class="divider-border-inner" style="width:60px;"></div>
+                    </div>
+
+                    <div class=" row staff-list-container list-container element-top-0 element-bottom-50">
+                        <div class="figure col-md-3 fade-in element-top-0 element-bottom-20 figcaption-bottom text-left fade-in os-animation" data-os-animation="fadeIn"
+                        data-os-animation-delay="0.2s">
+                            <div class="figure-image">
+                                <img alt="Benjamin Bentley" src="assets/images/education/img17-notinclude.jpg">
+
+                                <div class="figure-overlay">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption text-center">
+                                            <ul class="figure-overlay-icons social-icons social-simple">
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i  class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-behance"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="figure-caption text-left">
+                                <h3 class="figure-caption-title"><strong>Benjamin Bentley</strong> <span>Math Teacher</span></h3>
+
+                                <p class="figure-caption-description">Secondary school teachers teach one or more subjects within the school curriculum to secondary students. Subject areas include English.</p>
+                            </div>
+                        </div>
+
+                        <div class="figure col-md-3 fade-in element-top-0 element-bottom-20 figcaption-bottom text-left fade-in os-animation" data-os-animation="fadeIn"
+                        data-os-animation-delay="0.4s">
+                            <div class="figure-image">
+                                <img alt="Lily Finch" src="assets/images/education/img15-notinclude.jpg">
+
+                                <div class="figure-overlay">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption text-center">
+                                            <ul class="figure-overlay-icons social-icons social-simple">
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i  class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-behance"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="figure-caption text-left">
+                                <h3 class="figure-caption-title"><strong>Lily Finch</strong> <span>Health Teacher</span></h3>
+
+                                <p class="figure-caption-description">Environmental health officers assess risk and develop, regulate, enforce and monitor laws and regulations governing public health for both the built and natural environment</p>
+                            </div>
+                        </div>
+
+                        <div class="figure col-md-3 fade-in element-top-0 element-bottom-20 figcaption-bottom text-left fade-in os-animation" data-os-animation="fadeIn"
+                        data-os-animation-delay="0.6s">
+                            <div class="figure-image">
+                                <img alt="Thomas Alexander" src="assets/images/education/img16-notinclude.jpg">
+
+                                <div class="figure-overlay">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption text-center">
+                                            <ul class="figure-overlay-icons social-icons social-simple">
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i  class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-behance"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="figure-caption text-left">
+                                <h3 class="figure-caption-title"><strong>Thomas Alexander</strong> <span>Foreign Languages Teacher</span></h3>
+
+                                <p class="figure-caption-description">Foreign language teachers are unique and dynamic. They do all the teachery stuff a normal teacher does (i.e., teaching), but with some added.</p>
+                            </div>
+                        </div>
+
+                        <div class="figure col-md-3 fade-in element-top-0 element-bottom-20 figcaption-bottom text-left fade-in os-animation" data-os-animation="fadeIn"
+                        data-os-animation-delay="0.8s">
+                            <div class="figure-image">
+                                <img alt="Scott Barker" src="assets/images/education/img14-notinclude.jpg">
+
+                                <div class="figure-overlay">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption text-center">
+                                            <ul class="figure-overlay-icons social-icons social-simple">
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i  class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-behance"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="figure-caption text-left">
+                                <h3 class="figure-caption-title"><strong>Scott Barker</strong> <span>Art Teacher</span></h3>
+
+                                <p class="figure-caption-description">Art teachers help students develop their artistic skills by cultivating creative expression and fostering an understanding of textures, shapes and colors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="background-media" style="background-image: url(assets/images/education/img6-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.2);"></div>
+
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12 text-center os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                    <h1 class="text-center element-top-50 element-bottom-0 text-light" data-os-animation="none" data-os-animation-delay="0s">First Day At School!</h1>
+
+                    <h1 class="countdown super text-light element-top-20 element-bottom-50" data-date="2018/09/21">
+                        <span class="counter-element">
+                            <span class="counter-days odometer text-center">0</span>
+                                <b>days</b>
+                        </span>
+                        <span class="counter-element">
+                            <span class="counter-hours odometer text-center">0</span>
+                                <b>hours</b>
+                        </span>
+                        <span class="counter-element">
+                            <span class="counter-minutes odometer text-center">0</span>
+                            <b>minutes</b>
+                         </span>
+                        <span class="counter-element">
+                            <span class="counter-seconds odometer text-center">0</span>
+                            <b>seconds</b>
+                        </span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(250,250,250,1);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center element-top-70 element-bottom-0 os-animation big default" data-os-animation="fadeIn" data-os-animation-delay="0s">Latest news</h1>
+
+                    <div class="divider-border divider-border-center element-top-10 element-bottom-10 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:3px;">
+                        <div class="divider-border-inner" style="width:60px;"></div>
+                    </div>
+                    <div class=" element-top-0 element-bottom-50 recent-simple-os-container row">
+                        <div class="col-md-4 recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                            <article class="post-grid post-grid-overlay element-bottom-20 text-left" style="background-image: url(assets/images/education/img8-notinclude.jpg)">
+                                <a href="education-post.html">
+                                    <div class="post-grid-content">
+                                        <h3 class="post-grid-content-title">How can we stop school violence?</h3>
+
+                                        <div class="post-grid-content-footer">
+                                            christos , August 14, 2015
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4 recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                            <article class="post-grid post-grid-overlay element-bottom-20 text-left" style="background-image: url(assets/images/education/img5-notinclude.jpg)">
+                                <a href="education-post.html">
+                                    <div class="post-grid-content">
+                                        <h3 class="post-grid-content-title">Tips to make school lunches healthier</h3>
+
+                                        <div class="post-grid-content-footer">
+                                            christos , August 14, 2015
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4 recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                            <article class="post-grid post-grid-overlay element-bottom-20 text-left" style="background-image: url(assets/images/education/img9-notinclude.jpg)">
+                                <a href="education-post.html">
+                                    <div class="post-grid-content">
+                                        <h3 class="post-grid-content-title">Why Are School Buses Yellow?</h3>
+
+                                        <div class="post-grid-content-footer">
+                                            oxygenna , July 3, 2014
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

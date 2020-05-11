@@ -1,0 +1,45 @@
+{% extends "layouts/base.html" %}
+
+{% set bodystyle = "" %}
+
+{% set gotopshape = "circle" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Raleway%7CMontserrat%7CGentium+Basic:400italic&amp;subset=latin,latin,latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/education.min.css -->
+    <link rel="stylesheet" href="styles/skins/education.css" type="text/css">
+    <!-- endbuild -->
+{% endblock %}
+
+{% block header %}
+    {% include "partials/education/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 100,
+        navbarScrolled : 90,
+        navbarScrolledPoint : 20,
+        menuClose : 'off',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 1,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/education/footer.html" %}
+{% endblock %}

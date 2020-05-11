@@ -1,0 +1,68 @@
+{% extends "layouts/base.html" %}
+
+{% set bodystyle = "" %}
+
+{% set gotopshape = "square" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,700%7CAmatic+SC:400,700&amp;subset=latin,latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/barber.min.css -->
+    <link rel="stylesheet" href="styles/skins/barber.css" type="text/css">
+    <!-- endbuild -->
+    <style>
+        #footer  {
+        text-align: center;
+        }
+
+        .post-grid {
+        background-color:rgba(255,152,102,0.7);
+        }
+
+        h3.sidebar-header {
+          font-size: 24px;
+        }
+        .onsale{
+            z-index: 10;
+            background-color: rgba(66, 178, 169, 1);
+            font-size: 16px;
+            line-height: 50px;
+        }
+        h3.product-title{
+           font-size:24px;
+        }
+    </style>
+{% endblock %}
+
+
+{% block header %}
+    {% include "partials/barber/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 90,
+        navbarScrolled : 70,
+        navbarScrolledPoint : 30,
+        menuClose : 'on',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/barber/footer.html" %}
+{% endblock %}

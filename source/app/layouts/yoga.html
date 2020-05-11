@@ -1,0 +1,74 @@
+{% extends "layouts/base.html" %}
+
+{% set bodyclasses = "transparent-header pace-on pace-minimal" %}
+{% set bodystyle = "" %}
+
+{% set gotopshape = "circle" %}
+
+{% block fonts %}
+    <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.2' type='text/css' media='all' />
+    <link href="//fonts.googleapis.com/css?family=Lato:100,300,300italic,700,700italic,900,400%7CMontserrat:400%7CGentium+Book+Basic:400italic&amp;subset=latin,latin,latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <style  type="text/css" media="screen">
+        .background-media {
+            background-size: cover !important;
+        }
+        .recent-post-padding .recent-simple-os-animation {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        .post-grid {
+            margin-bottom: 0 !important;
+        }
+
+        @media (max-width: 768px) {
+          #classes .hide-one-pixel {
+            min-height: 0;
+          }
+        }
+        .panel-heading {
+          padding: 8px 15px;
+        }
+    </style>
+    <!-- build:css assets/css/yoga.min.css -->
+    <link rel="stylesheet" href="styles/skins/yoga.css" type="text/css">
+    <!-- endbuild -->
+{% endblock %}
+
+
+{% block header %}
+    {% include "partials/yoga/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 100,
+        navbarScrolled : 90,
+        navbarScrolledPoint : 30,
+        menuClose : 'on',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/yoga/footer.html" %}
+{% endblock %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+{% endblock %}

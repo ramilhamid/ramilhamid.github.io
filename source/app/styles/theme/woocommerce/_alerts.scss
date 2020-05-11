@@ -1,0 +1,41 @@
+@mixin link_white() {
+	color: #fff;
+	box-shadow: 0 1px 0 rgba(#fff, 1) !important;
+	@include transition( box-shadow ease-in-out 130ms );
+
+	&:hover {
+		color: #fff !important;
+		box-shadow: 0 3px 0 rgba(#fff, 1) !important;
+	}
+}
+
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+	margin-bottom: 1.5em;
+	padding: 2em;
+	background: #eee;
+}
+
+.woocommerce-message {
+	background: teal;
+	color: #fff;
+}
+
+.woocommerce-error {
+	background: firebrick;
+	color: #fff;
+}
+
+.woocommerce-info {
+	background: royalblue;
+	color: #fff;
+}
+
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+	a {
+		@include link_white();
+	}
+}

@@ -1,0 +1,103 @@
+{% extends "layouts/barber.html" %}
+
+{% set title = "Find us | Barber Shop" %}
+
+{% set bodyclasses = "transparent-header transparent-menu-below pace-on pace-minimal" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/barber/footer.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+{% endblock %}
+
+{% set activeMenu = "Find us" %}
+
+{% block content %}
+<article>
+    <section class="section">
+    <div class="background-media" style="background-image: url(assets/images/barber/img10-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(107,88,70,0.5);"></div>
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-3 text-center"></div>
+                <div class="col-md-6 text-center">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-0"></div>
+                        <div class="visible-sm element-height-50"></div>
+                        <div class="visible-md element-height-150"></div>
+                        <div class="visible-lg element-height-150"></div>
+                    </div>
+                    <div class="panel element-top-20 element-bottom-20">
+                        <div class="panel-body" style=
+                        "background-color:rgba(255, 152, 102, 0.5);">
+                            <h1 class=
+                            "text-default element-top-20 element-bottom-0 text-light os-animation super regular" data-os-animation="fadeIn" data- os-animation-delay="0.1s">Find us</h1>
+                            <div class="figure element-top-0 element-bottom-0 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.15s">
+                                <a class="figure-image magnific" href="assets/images/barber/moustache-white.png"
+                                target="_self"><img alt="" src=
+                                "assets/images/barber/moustache-white.png"></a>
+                            </div>
+                            <hr class="element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                            <div class="col-text-1 text-light element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+                                <p><i class="fa fa-home" style=
+                                "color: #42b2a9;"></i> 36. St Michael&#8217;s
+                                St, Oxford OX1, UK<br>
+                                <i class="fa fa-phone" style=
+                                "color: #42b2a9;"></i> (00) 789 456 7890</p>
+                            </div>
+                            <hr class=" element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                            <div class="col-text-1 text-light element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay="1s">
+                                <p><i class="fa fa-home" style=
+                                "color: #42b2a9;"></i> 6-8 St Michael&#8217;s
+                                St, Oxford OX1, UK<br>
+                                <i class="fa fa-phone" style=
+                                "color: #42b2a9;"></i> (00) 123 123 7890</p>
+                            </div>
+                            <hr class=" element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "1.2s">
+                            <div class="col-text-1 text-light element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "1.5s">
+                                <p><i class="fa fa-home" style=
+                                "color: #42b2a9;"></i> 18 High St, Oxford OX1,
+                                UK<br>
+                                <i class="fa fa-phone" style=
+                                "color: #42b2a9;"></i> (00) 123 456 7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-0"></div>
+                        <div class="visible-sm element-height-50"></div>
+                        <div class="visible-md element-height-150"></div>
+                        <div class="visible-lg element-height-150"></div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container-fullwidth ">
+            <div class="row">
+                <div class="col-md-12 element-top-0 element-bottom-0">
+                    <div class="google-map" id="map" style="height:500px"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

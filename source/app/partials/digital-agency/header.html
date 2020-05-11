@@ -1,0 +1,33 @@
+<div class="menu header-logo-left-menu-right navbar navbar-static-top oxy-mega-menu navbar-sticky text-none" id="masthead">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="digital-agency-index.html"><img alt="Lambda - Charity" src="assets/images/digital-agency/lambda.png"> Lambda
+            </a>
+        </div>
+        <div class="nav-container">
+            <nav class="collapse navbar-collapse main-navbar logo-navbar navbar-right">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav" id="menu-one-page-menu">
+                        {% for item in [{title:"Home", href:"digital-agency-index.html#home"},
+                                    {title:"About us", href:"digital-agency-index.html#about-us"},
+                                    {title:"Services", href:"digital-agency-index.html#services"},
+                                    {title:"Portfolio", href:"digital-agency-index.html#portfolio"},
+                                    {title:"Blog", href:"digital-agency-blog.html"},
+                                    {title:"Contact", href:"digital-agency-contact.html"}] %}
+                            <li class="menu-item {{ 'active' if activeMenu == item.title }}">
+                                <a href="/{{ item.href }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="menu-sidebar"></div>
+            </nav>
+        </div>
+    </div>
+</div>

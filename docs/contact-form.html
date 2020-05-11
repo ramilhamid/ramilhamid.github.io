@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gt IE 8)]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <title>Lambda HTML 1.13.0 | Contact Form</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicons/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/images/favicons/apple-touch-icon-60x60-precomposed.png">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="bs-docs-home ">
+        <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">Lambda HTML</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="getting-started.html">
+                    Getting Started
+                </a>
+                        </li>
+                        <li>
+                            <a href="using-lambda.html">
+                    Using Lambda
+                </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="skin.html">
+                                    Skin
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="slideshow.html">
+                                    Slideshow
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="revolution-slider.html">
+                                    Revolution Slider
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="map.html">
+                                    Map
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="pricing-tables.html">
+                                    Pricing Tables
+                                </a>
+                                </li>
+                                <li class="active">
+                                    <a href="contact-form.html">
+                                    Contact Form
+                                </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="source.html">
+                    Source Files
+                </a>
+                        </li>
+                        <li>
+                            <a href="changelog.html">
+                    Changelog
+                </a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <a href="http://themeforest.net/item/lambda-multi-purpose-bootstrap-html-template/10465708&ref=oxygenna" target="_blank" class="btn btn-success"><i class="fa fa-shopping-cart"></i> Purchase</a>
+                    </form>
+                </nav>
+            </div>
+        </header>
+        <div class="bs-header" id="content">
+            <div class="container">
+                <h1>Contact Form</h1>
+                <p>How to create a contact form with PHPMailer plugin.</p>
+            </div>
+        </div>
+        <div id="online-docs-warning" class="alert alert-info text-center">
+            <div class="container">
+                <strong>Online Docs Available</strong>
+                Looks like you are looking at the offline docs. You can find possibly more up to date docs <a href="http://lambdahtmldocs.oxygenna.com">online here</a>
+            </div>
+        </div>
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="bs-sidebar hidden-print affix-top" role="complementary">
+                        <ul class="nav bs-sidenav">
+                            <li><a href="#contact-form">Contact Form</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="bs-docs-section">
+                        <h1 id="contact-form">Contact Form</h1>
+                        <p>The contact form now uses the <strong>PHPMailer</strong>, which is a full-featured email creation and transfer class for PHP. For more about PHPMailer please visit the official website
+                            <a href="http://phpmailer.worxware.com/"><a href="http://phpmailer.worxware.com/">http://phpmailer.worxware.com/</a></a>.
+                            <br>To setup your contact form you will need to edit the <strong>contact_mailer.php, contact_mailer_hotel.php, contact_mailer_reservation.php, contact_mailer_signup.php or contact_mailer_wedding.php</strong> file in the main theme
+                            folder. The first <strong>62 lines</strong> can be modified to customise your contact form.</p>
+                        <ol>
+                            <li>Set the main host. It is by default set to <code>smtp.gmail.com</code> if you are using a <strong>GMail</strong> account. Other options are
+                                <ul>
+                                    <li>Hotmail =&gt; <code>smtp.live.com</code>
+                                    </li>
+                                    <li>Yahoo =&gt; <code>smtp.mail.yahoo.com</code>
+                                    </li>
+                                    <li>Lycos =&gt; <code>smtp.mail.lycos.com</code>
+                                    </li>
+                                    <li>AOL =&gt; <code>smtp.aol.com</code>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Set the SMTP username and password. This is the email account that PHPMailer will use to send the email. Change <code>some_email@email.com</code> to the email that you want to use and <code>secret</code> to the password of that
+                                email, from <strong>lines 16, 17</strong>.</li>
+                            <li>Set the address that the email of the form will be delivered to. Change the <code>receiver@mail.com</code> from <strong>line 21</strong> to the address that you want.</li>
+                            <li>Set the company name - When a message arrives in your inbox it will have a subject with your company name inside. To change this edit <strong>line 26</strong> and change the <em>your_company</em> to your company name.</li>
+                            <li>
+                                <p>Set which fields are required - to change which fields are required in your form you can edit the following</p>
+                                <pre><code> $field_rules = array(
+  &#39;name&#39; =&gt; &#39;required&#39;,
+  &#39;email&#39; =&gt; &#39;required|valid_email&#39;,
+  &#39;message&#39; =&gt; &#39;required&#39;
+ );</code></pre>
+                                <p>Remove the lines of the fields you do not want to be required.</p>
+                            </li>
+                            <li>
+                                <p>Change error validation messages - to change the error messages that popup on the forms change the following section</p>
+                                <pre><code> $error_messages = array(
+  &#39;required&#39; =&gt; &#39;This field is required&#39;,
+  &#39;valid_email&#39; =&gt; &#39;Please enter a valid email address&#39;
+ );
+ // select where each inputs error messages will be shown
+ $error_placements = array(
+  &#39;name&#39; =&gt; &#39;top&#39;,
+  &#39;email&#39; =&gt; &#39;top&#39;,
+  &#39;subject&#39; =&gt; &#39;right&#39;,
+  &#39;message&#39; =&gt; &#39;right&#39;,
+  &#39;submitButton&#39; =&gt; &#39;right&#39;
+ );</code></pre>
+                            </li>
+                        </ol>
+                        <p><strong>$error_messages</strong> - defines the messages shown in the popups.</p>
+                        <p><strong>$error_placements</strong> - defines where the popups will appear on (top|bottom|left|right).</p>
+                        <div class="alert alert-success">
+                            <i class="fa fa-gittip"></i> Keep in mind that you need to include the
+                            <code>&lt;script src=&quot;assets/js/contact.min.js&quot;&gt;&lt;/script&gt;</code> at the and of the <code>&lt;body&gt;</code>.
+                        </div>
+                        <p>
+                            <img src="assets/images/contact-form.png" alt="contact-form">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="docs-footer" role="contentinfo">
+            <div class="container">
+                <ul class="bs-masthead-links pull-left">
+                    <li class="current-version">
+                        Currently v1.13.0
+                    </li>
+                    <li>
+                        <a href="changelog.html">Changelog</a>
+                    </li>
+                    <li>
+                        <a href="http://themeforest.net/user/oxygenna/portfolio" target="_blank">Our Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="http://www.oxygenna.com/contact" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="bs-masthead-links pull-right">
+                    <li>
+                        Made with <i class="fa fa-heart"></i> in Sitia, Greece
+                    </li>
+                </ul>
+                </li>
+        </footer>
+    </body>
+    <script src="assets/js/main.js"></script>
+</html>

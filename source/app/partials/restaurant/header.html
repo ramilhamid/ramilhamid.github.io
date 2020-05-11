@@ -1,0 +1,52 @@
+<div id="masthead" class="menu navbar navbar-static-top header-logo-left-menu-right oxy-mega-menu navbar-sticky text-none" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".main-navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/restaurant-index.html" class="navbar-brand">
+                <img src="assets/images/restaurant/logo.png" alt="Restaurant">
+            </a>
+        </div>
+        <div class="nav-container">
+            <nav class="collapse navbar-collapse main-navbar logo-navbar navbar-right" role="navigation">
+                <div class="menu-container">
+                    <ul id="menu-main" class="nav navbar-nav">
+                        {% for item in [{title:"Home", href:"restaurant-index.html"},
+                                        {title:"Menu", href:"restaurant-menu.html"},
+                                        {title:"Reservations", href:"restaurant-reservations.html"},
+                                        {title:"Gallery", href:"restaurant-gallery.html"},
+                                        {title:"Contact", href:"restaurant-contact.html"}] %}
+                        <li class="menu-item {{ 'active' if activeMenu == item.title }}">
+                            <a href="/{{ item.href }}">{{ item.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="menu-sidebar">
+                    <div class="sidebar-widget widget_social">
+                        <ul class="unstyled inline social-icons social-simple">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

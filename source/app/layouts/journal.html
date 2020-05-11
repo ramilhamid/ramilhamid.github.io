@@ -1,0 +1,56 @@
+{% extends "layouts/base.html" %}
+
+{% set bodyclasses = "pace-on pace-minimal layout-boxed" %}
+
+{% set bodystyle = 'style="background-image: url(assets/images/journal/bg-10.jpg);
+background-color: #0a0a0a;
+background-repeat: no-repeat;
+background-position: top left;
+background-attachment: fixed;"' %}
+{% set gotopshape = "circle" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,900%7CMonsieur+La+Doulaise&amp;subset=latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/journal.min.css -->
+    <link rel="stylesheet" href="styles/skins/journal.css" type="text/css">
+    <!-- endbuild -->
+{% endblock %}
+
+{% block header %}
+    {% include "partials/journal/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 120,
+        navbarScrolled : 120,
+        navbarScrolledPoint : 62,
+        menuClose : 'off',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/journal/footer.html" %}
+{% endblock %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+{% endblock %}
+

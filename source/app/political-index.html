@@ -1,0 +1,1142 @@
+{% extends "layouts/political.html" %}
+
+{% set title = "Political" %}
+{% set activeMenu = "Home" %}
+
+{% block extracss %}
+{% endblock %}
+
+{% set bodyclasses = "transparent-header pace-on pace-minimal" %}
+
+{% block extrajs %}
+    <!-- build:js assets/js/revolution.min.js -->
+    <script type="text/javascript" src="scripts/tools.min.js"></script>
+    <script type="text/javascript" src="scripts/revolution.min.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('#homepage-slider').revolution({
+                jsFileLocation: '/scripts/',
+                extensions: 'revolution-extensions/',
+                sliderType:"standard",
+                sliderLayout:"auto",
+                dottedOverlay:"none",
+                delay:28500,
+                navigation: {
+                    onHoverStop:"off",
+                },
+                viewPort: {
+                    enable:true,
+                    outof:"pause",
+                    visible_area:"80%"
+                },
+                responsiveLevels:[1240,1024,1024,1024],
+                gridwidth:[1240,1024,778,480],
+                gridheight:[600,600,500,400],
+                lazyType:"none",
+                parallax: {
+                    type:"mouse",
+                    origo:"slidercenter",
+                    speed:2000,
+                    levels:[2,3,4,5,6,7,12,16,10,50],
+                },
+                shadow:5,
+                spinner:"off",
+                stopLoop:"off",
+                stopAfterLoops:-1,
+                stopAtSlide:-1,
+                shuffle:"off",
+                autoHeight:"off",
+                disableProgressBar:"on",
+                hideThumbsOnMobile:"on",
+                hideSliderAtLimit:0,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                debugMode:false,
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            });
+        });
+    </script>
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rev_slider_wrapper fullwidthbanner-container">
+                        <div id="homepage-slider" class="rev_slider" data-version="5.0">
+                            <ul>
+                                <!-- SLIDE  -->
+                                <li data-delay="28490" data-description=""
+                                data-easein="Power4.easeInOut"
+                                data-easeout="Power4.easeInOut"
+                                data-fsmasterspeed="1500"
+                                data-fsslotamount="7"
+                                data-fstransition="fade"
+                                data-index="rs-8"
+                                data-masterspeed="2000"
+                                data-rotate="0"
+                                data-saveperformance="off"
+                                data-slotamount="7"
+                                data-title="John Doe"
+                                data-transition="zoomin">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg"
+                                    data-bgparallax="10"
+                                    data-bgposition="center center"
+                                    data-duration="30000"
+                                    data-ease="Linear.easeNone"
+                                    data-kenburns="on"
+                                    data-no-retina=""
+                                    data-offsetend="0 0"
+                                    data-offsetstart="0 0"
+                                    data-rotateend="0"
+                                    data-rotatestart="0"
+                                    data-scaleend="120"
+                                    data-scalestart="100"
+                                    height="800"
+                                    src="assets/images/political/image15-notinclude.jpg"
+                                    width="1600"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0"
+                                    data-end="7600"
+                                     data-height="['142','164','164','164']"
+                                    data-hoffset="['7','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-start="1100"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['0','0','0','0']"
+                                    data-whitespace="normal"
+                                    data-width="['411','433','433','433']"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-9"
+                                    style="z-index: 5;background-color:rgba(255, 255, 255, 0.50);border-color:rgba(0, 0, 0, 0.50);">
+                                    </div><!-- LAYER NR. 2 -->
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0"
+                                    data-end="8000"
+                                    data-height="none"
+                                    data-hoffset="['0','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="1000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['-23','-21','-21','-21']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-1"
+                                    style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 400; color: rgba(230, 12, 12, 1.00);font-family:Open Sans Condensed;">
+                                    I'm John Doe,
+                                    </div><!-- LAYER NR. 3 -->
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+                                    data-end="6000"
+                                    data-height="none"
+                                    data-hoffset="['16','15','15','15']"
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="1500"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['27','31','31','31']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-4"
+                                    style="z-index: 7; white-space: nowrap; font-size: 16px; color: rgba(28, 28, 28, 1.00);font-family:Open Sans ;">
+                                    and I'm asking for your support.
+                                    </div><!-- LAYER NR. 4 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0"
+                                    data-end="15700"
+                                    data-height="['144','146','146','146']"
+                                    data-hoffset="['-4','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-start="9100"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['0','224','224','224']"
+                                    data-whitespace="normal"
+                                    data-width="['384','440','440','440']"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','bottom','bottom','bottom']"
+                                    id="slide-8-layer-10"
+                                    style="z-index: 8;background-color:rgba(255, 255, 255, 0.70);border-color:rgba(0, 0, 0, 0.50);">
+                                    </div><!-- LAYER NR. 5 -->
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+                                    data-end="16000"
+                                    data-fontsize="['14','16','16','16']"
+                                    data-height="none"
+                                    data-hoffset="['-66','-57','-57','-57']"
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="9000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['-31','-31','-31','-31']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-12"
+                                    style="z-index: 9; white-space: nowrap; font-size: 14px; color: rgba(28, 28, 28, 1.00);font-family:open sans;">
+                                    Let my experience,
+                                    </div><!-- LAYER NR. 6 -->
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0"
+                                    data-end="14000"
+                                    data-height="none"
+                                    data-hoffset="['0','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="9500"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['13','16','16','16']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-11"
+                                    style="z-index: 10; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 400; color: rgba(230, 12, 12, 1.00);font-family:Open Sans Condensed;">
+                                    work for you.
+                                    </div><!-- LAYER NR. 7 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0"
+                                    data-end="-2"
+                                    data-height="none"
+                                    data-hoffset="['281','281','281','281']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-start="0"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:2;e:Power2.easeInOut;s:2;e:Power2.easeInOut;"
+                                    data-voffset="['600','600','600','600']"
+                                    data-whitespace="normal"
+                                    data-width="299"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['bottom','bottom','bottom','bottom']"
+                                    id="slide-8-layer-13"
+                                    style="z-index: 11;background-color:rgba(27, 27, 93, 0.70);border-color:rgba(0, 0, 0, 0.50);">
+                                    </div><!-- LAYER NR. 8 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0"
+                                    data-end="27300"
+                                    data-height="['179','187','187','187']"
+                                    data-hoffset="['0','0','0','0']"
+                                    data-responsive_offset="on"
+                                    data-start="17100"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="opacity:0;s:1500;e:Power2.easeInOut;"
+                                    data-transform_out="opacity:0;s:1000;s:1000;"
+                                    data-voffset="['0','0','0','0']"
+                                    data-whitespace="normal"
+                                    data-width="['285','316','316','316']"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-17"
+                                    style="z-index: 12;background-color:rgba(255, 255, 255, 0.70);border-color:rgba(0, 0, 0, 0.50);">
+                                    </div><!-- LAYER NR. 9 -->
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+                                    data-end="27500"
+                                    data-fontsize="['14','16','16','16']"
+                                    data-height="none"
+                                    data-hoffset="['-27','-23','-23','-23']"
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="17000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['-53','-56','-56','-56']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-15"
+                                    style="z-index: 13; white-space: nowrap; font-size: 14px; color: rgba(28, 28, 28, 1.00);font-family:Open Sans ;">
+                                    Main priciple,
+                                    </div><!-- LAYER NR. 10 -->
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0"
+                                    data-end="25500"
+                                    data-height="none"
+                                    data-hoffset="['0','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="18000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['1','-3','-3','-3']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-14"
+                                    style="z-index: 14; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 400; color: rgba(230, 12, 12, 1.00);font-family:Open Sans Condensed;">
+                                    Stability
+                                    </div><!-- LAYER NR. 11 -->
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+                                    data-end="23500"
+                                    data-fontsize="['14','16','16','16']"
+                                    data-height="none"
+                                    data-hoffset="['29','20','20','20']"
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="19000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['59','56','56','56']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-16"
+                                    style="z-index: 15; white-space: nowrap; font-size: 14px; color: rgba(28, 28, 28, 1.00);font-family:Open Sans;">
+                                    in the future!
+                                    </div>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-delay="28490" data-description=""
+                                data-easein="Power4.easeInOut"
+                                data-easeout="Power4.easeInOut"
+                                data-fsmasterspeed="1500"
+                                data-fsslotamount="7"
+                                data-fstransition="fade"
+                                data-index="rs-4"
+                                data-masterspeed="2000"
+                                data-rotate="0"
+                                data-saveperformance="off"
+                                data-slotamount="7"
+                                data-title="John Doe"
+                                data-transition="zoomin">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg"
+                                    data-bgparallax="10"
+                                    data-bgposition="center center"
+                                    data-duration="30000"
+                                    data-ease="Linear.easeNone"
+                                    data-kenburns="on"
+                                    data-no-retina=""
+                                    data-offsetend="0 0"
+                                    data-offsetstart="0 0"
+                                    data-rotateend="0"
+                                    data-rotatestart="0"
+                                    data-scaleend="120"
+                                    data-scalestart="100"
+                                    height="800"
+                                    src="assets/images/political/image15-notinclude.jpg"
+                                    width="1600"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0"
+                                    data-end="7600"
+                                     data-height="['142','164','164','164']"
+                                    data-hoffset="['7','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-start="1100"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['0','0','0','0']"
+                                    data-whitespace="normal"
+                                    data-width="['411','433','433','433']"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-9"
+                                    style="z-index: 5;background-color:rgba(255, 255, 255, 0.50);border-color:rgba(0, 0, 0, 0.50);">
+                                    </div><!-- LAYER NR. 2 -->
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0"
+                                    data-end="8000"
+                                    data-height="none"
+                                    data-hoffset="['0','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="1000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['-23','-21','-21','-21']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-1"
+                                    style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 400; color: rgba(230, 12, 12, 1.00);font-family:Open Sans Condensed;">
+                                    I'm John Doe,
+                                    </div><!-- LAYER NR. 3 -->
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+                                    data-end="6000"
+                                    data-height="none"
+                                    data-hoffset="['16','15','15','15']"
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="1500"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['27','31','31','31']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-4"
+                                    style="z-index: 7; white-space: nowrap; font-size: 16px; color: rgba(28, 28, 28, 1.00);font-family:Open Sans ;">
+                                    and I'm asking for your support.
+                                    </div><!-- LAYER NR. 4 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0"
+                                    data-end="15700"
+                                    data-height="['144','146','146','146']"
+                                    data-hoffset="['-4','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-start="9100"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['0','224','224','224']"
+                                    data-whitespace="normal"
+                                    data-width="['384','440','440','440']"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','bottom','bottom','bottom']"
+                                    id="slide-8-layer-10"
+                                    style="z-index: 8;background-color:rgba(255, 255, 255, 0.70);border-color:rgba(0, 0, 0, 0.50);">
+                                    </div><!-- LAYER NR. 5 -->
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+                                    data-end="16000"
+                                    data-fontsize="['14','16','16','16']"
+                                    data-height="none"
+                                    data-hoffset="['-66','-57','-57','-57']"
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="9000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['-31','-31','-31','-31']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-12"
+                                    style="z-index: 9; white-space: nowrap; font-size: 14px; color: rgba(28, 28, 28, 1.00);font-family:open sans;">
+                                    Let my experience,
+                                    </div><!-- LAYER NR. 6 -->
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0"
+                                    data-end="14000"
+                                    data-height="none"
+                                    data-hoffset="['0','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="9500"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['13','16','16','16']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-11"
+                                    style="z-index: 10; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 400; color: rgba(230, 12, 12, 1.00);font-family:Open Sans Condensed;">
+                                    work for you.
+                                    </div><!-- LAYER NR. 7 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0"
+                                    data-end="-2"
+                                    data-height="none"
+                                    data-hoffset="['281','281','281','281']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-start="0"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:2;e:Power2.easeInOut;s:2;e:Power2.easeInOut;"
+                                    data-voffset="['600','600','600','600']"
+                                    data-whitespace="normal"
+                                    data-width="299"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['bottom','bottom','bottom','bottom']"
+                                    id="slide-8-layer-13"
+                                    style="z-index: 11;background-color:rgba(27, 27, 93, 0.70);border-color:rgba(0, 0, 0, 0.50);">
+                                    </div><!-- LAYER NR. 8 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0"
+                                    data-end="27300"
+                                    data-height="['179','187','187','187']"
+                                    data-hoffset="['0','0','0','0']"
+                                    data-responsive_offset="on"
+                                    data-start="17100"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="opacity:0;s:1500;e:Power2.easeInOut;"
+                                    data-transform_out="opacity:0;s:1000;s:1000;"
+                                    data-voffset="['0','0','0','0']"
+                                    data-whitespace="normal"
+                                    data-width="['285','316','316','316']"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-17"
+                                    style="z-index: 12;background-color:rgba(255, 255, 255, 0.70);border-color:rgba(0, 0, 0, 0.50);">
+                                    </div><!-- LAYER NR. 9 -->
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+                                    data-end="27500"
+                                    data-fontsize="['14','16','16','16']"
+                                    data-height="none"
+                                    data-hoffset="['-27','-23','-23','-23']"
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="17000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['-53','-56','-56','-56']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-15"
+                                    style="z-index: 13; white-space: nowrap; font-size: 14px; color: rgba(28, 28, 28, 1.00);font-family:Open Sans ;">
+                                    Main priciple,
+                                    </div><!-- LAYER NR. 10 -->
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0"
+                                    data-end="25500"
+                                    data-height="none"
+                                    data-hoffset="['0','0','0','0']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="18000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['1','-3','-3','-3']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-14"
+                                    style="z-index: 14; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 400; color: rgba(230, 12, 12, 1.00);font-family:Open Sans Condensed;">
+                                    Stability
+                                    </div><!-- LAYER NR. 11 -->
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+                                    data-end="23500"
+                                    data-fontsize="['14','16','16','16']"
+                                    data-height="none"
+                                    data-hoffset="['29','20','20','20']"
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                    data-responsive_offset="on"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-start="19000"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['59','56','56','56']"
+                                    data-whitespace="nowrap"
+                                    data-width="none"
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    id="slide-8-layer-16"
+                                    style="z-index: 15; white-space: nowrap; font-size: 14px; color: rgba(28, 28, 28, 1.00);font-family:Open Sans;">
+                                    in the future!
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tp-static-layers"></div>
+                            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                        </div>
+                    </div><!-- END REVOLUTION SLIDER -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+    <div class="background-media" style="background-image: url(assets/images/political/img13.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(230,12,12,0.8);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center element-top-40 element-bottom-20 text-light os-animation normal regular"
+                    data-os-animation="fadeInDown" data-os-animation-delay="0.1s">My Mission &amp; Motivation</h1>
+                    <p class="lead text-center center text-light element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                    How can we get our country back on track? How to preserve
+                    our Constitution and get people value and honor it? All
+                    this core questions have been evolving in our minds for
+                    years. And now we have the answers. Within our team, we
+                    have gathered only the best people who stand behind their
+                    promise to recognize and protect people’s rights. Someone
+                    your can trust with your future.</p>
+                    <div class="divider-border divider-border-center element-top-40 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s" style="height:2px;">
+                        <div class="divider-border-inner" style="background:#ffffff; width:80px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2 text-center">
+                            <div class="figure element-top-20 element-bottom-20 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                <span class="figure-image">
+                                    <img alt="" src="assets/images/political/sign.png">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section text-normal section-text-no-shadow section-inner-no-shadow section-normal section-opaque">
+    <div class="background-overlay grid-overlay-0" style="background-color: rgba(255,255,255,0);"></div>
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-12 text-center">
+                    <h1 class="text-center element-top-40 element-bottom-20 text-normal os-animation normal regular"
+                    data-os-animation="fadeInDown" data-os-animation-delay="0.1s">Next Election</h1>
+                    <p class="lead text-center center text-normal element-top-20 element-bottom-20 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                    999 Some Street, Paradise City, UK</p>
+                    <div class="divider-border divider-border-center element-top-20 element-bottom-20 os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.3s" style="height:2px;">
+                        <div class="divider-border-inner" style="width:80px;">
+                        </div>
+                    </div>
+                    <h1 class="countdown hyper regular text-normal element-top-20 element-bottom-20 os-animation"
+                    data-date="2016/11/01 08:15" data-os-animation="fadeIn"data-os-animation-delay="0.4s">
+                        <span class="counter-element"><span class="counter-days odometer text-center">0</span><b>days</b></span>
+                        <span class="counter-element"><span class="counter-hours odometer text-center">0</span><b>hours</b></span>
+                        <span class="counter-element"><span class="counter-minutes odometer text-center">0</span><b>minutes</b></span>
+                        <span class="counter-element"><span class="counter-seconds odometer text-center">0</span><b>seconds</b></span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+    <div class="background-media" style="background-image: url(assets/images/political/img18.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(230,12,12,0.8);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="element-top-40 element-bottom-20 text-light os-animation bigger regular"
+                    data-os-animation="fadeInDown" data-os-animation-delay="0.1s">Our highest priorities &amp; principles</h1>
+                    <p class="lead text-center center text-light element-top-20 element-bottom-20 os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                    The values of freedom, respect for human rights and the
+                    principle of holding periodic and genuine elections. in
+                    turn, democracy provides the natural environment for the
+                    protection and effective realization of human rights. We
+                    have all the answers.</p>
+                    <div class="divider-border divider-border-center element-top-20 element-bottom-20 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.3s"style="height:2px;">
+                        <div class="divider-border-inner" style="background:#ffffff; width:80px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="figure element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                <span class="figure-image">
+                                    <img alt="" src="assets/images/political/political3-white.png">
+                                </span>
+                            </div>
+                            <h1 class="text-center element-top-20 element-bottom-20 text-light os-animation normal regular" data-os-animation="fadeInDown"data-os-animation-delay="0.3s">Our Mission</h1>
+                            <p class="lead text-center center text-light element-top-20 element-bottom-20 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+                            How can we get our country back on track?
+                            How to preserve our Constitution and get people
+                            value and honor it? Now we have all the
+                            answers.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="figure element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                <span class="figure-image">
+                                    <img alt="" src="assets/images/political/political2-white.png">
+                                </span>
+                            </div>
+                            <h1 class="text-center element-top-20 element-bottom-20 text-light os-animation normal regular" data-os-animation="fadeInDown" data-os-animation-delay="0.3s">Elections</h1>
+                            <p class="lead text-center center text-light element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+                            To create a society in which an informed and
+                            active citizenry is sovereign and makes policy
+                            decisions based on the will of the majority.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="figure element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                                <span class="figure-image">
+                                    <img alt="" src="assets/images/political/elections-white.png">
+                                </span>
+                            </div>
+                            <h1 class="text-center element-top-20 element-bottom-20 text-light os-animation normal regular" data-os-animation="fadeInDown" data-os-animation-delay="0.3s">Campaigns</h1>
+                            <p class="lead text-center center text-light element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+                            We need to start over with the real
+                            healthcare and education reforms. Choose a better
+                            future for our children, they deserve to be
+                            happy!</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="figure element-top-20 element-bottom-20 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.1s">
+                                <span class="figure-image">
+                                    <img alt="" src="assets/images/political/ballot-white.png">
+                                </span>
+                            </div>
+                            <h1 class="text-center element-top-20 element-bottom-20 text-light os-animation normal regular" data-os-animation="fadeInDown" data-os-animation-delay="0.3s">Volunteers</h1>
+                            <p class="lead text-center center text-light element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+                            Within our team, we have gathered only the
+                            best people who stand behind their promise to
+                            recognize and protect people’s rights and
+                            freedoms.</p>
+                        </div>
+                    </div>
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" style="background-image: url(assets/images/political/image09-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.3);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6 text-center small-screen-default" style="background:#ffffff;">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <h3 class="bigtext text-normal regular element-top-200 element-bottom-20 os-animation"data-os-animation="fadeInDown" data-os-animation-delay="0.1s">
+                                <span>TOGETHER</span>
+                                <span>WE WILL WIN THE FUTURE.</span>
+                            </h3>
+                            <div class="divider-border divider-border-center element-top-40 element-bottom-140 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s" style="height:2px;">
+                                <div class="divider-border-inner" style="width:80px;"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+    <div class="background-media" style="background-image: url(assets/images/political/image17-notinclube.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.3);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6"></div>
+                <div class="col-md-6" style="background:#ffffff;">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <p class="lead text-left left text-normal element-top-50 element-bottom-50 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                            A wonderful serenity has taken possession of
+                            my entire soul, like these sweet mornings of spring
+                            which I enjoy with my whole heart. I am alone, and
+                            feel the charm of existence in this spot, which was
+                            created for the bliss of souls like mine. I am so
+                            happy, my dear friend, so absorbed in the exquisite
+                            sense of mere tranquil existence, that I neglect my
+                            talents. I should be incapable of drawing a single
+                            stroke at the present moment; and yet I feel that I
+                            never was a greater artist than now.</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+    <div class="background-overlay grid-overlay-0" style="background-color: rgba(230,12,12,1);"></div>
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="counter element-top-20 element-bottom-0 text-light os-animation" data-count="5874" data-format="(,ddd)" data-os-animation="fadeInDown" data-os-animation-delay="0.1s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+                    <p class="lead text-center center text-light element-top-0 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                    Donations</p>
+                    <div class="divider-border divider-border-center element-top-20 element-bottom-40 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s" style="height:2px;">
+                        <div class="divider-border-inner" style="background:#ffffff;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center" style="background:rgba(255, 255, 255, 0.05);">
+                    <div class="counter element-top-20 element-bottom-0 text-light os-animation" data-count="1568" data-format="(,ddd)" data-os-animation="fadeInDown" data-os-animation-delay="0.1s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+                    <p class="lead text-center center text-light element-top-0 element-bottom-20 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.3s">Volunteers</p>
+                    <div class="divider-border divider-border-center element-top-20 element-bottom-40 os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.4s" style="height:2px;">
+                        <div class="divider-border-inner" style="background:#ffffff;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center small-screen-default">
+                    <div class="counter text-default element-top-20 element-bottom-0 text-light os-animation"
+                    data-count="7695" data-format="(,ddd)" data-os-animation="fadeInDown" data-os-animation-delay="0.1s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+                    <p class="lead text-center center text-light element-top-0 element-bottom-20 os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.3s">Followers</p>
+                    <div class="divider-border divider-border-center element-top-20 element-bottom-40 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.4s"style="height:2px;">
+                        <div class="divider-border-inner" style="background:#ffffff;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center" style="background:rgba(255, 255, 255, 0.05);">
+                    <div class="counter element-top-20 element-bottom-0 text-light os-animation"data-count="638" data-format="(,ddd)" data-os-animation="fadeInDown" data-os-animation-delay="0.1s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+                    <p class="lead text-center center text-light element-top-0 element-bottom-20 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.3s">Political Speech</p>
+                    <div class="divider-border divider-border-center element-top-20 element-bottom-40 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.4s"style="height:2px;">
+                        <div class="divider-border-inner" style="background:#ffffff;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-7">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-50"></div>
+                        <div class="visible-sm element-height-50"></div>
+                        <div class="visible-md element-height-50"></div>
+                        <div class="visible-lg element-height-50"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <div class=" element-top-20 element-bottom-20 text-center text-normal flexslider feature-slider"data-flex-animation="slide" data-flex-controls="hide" data-flex-controls-position="outside"data-flex-controlsalign="center"data-flex-directions="hide" data-flex-slideshow="true" data-flex-speed="7000" data-os-animation="none" data-os-animation-delay="0s" id="flexslider-121">
+                                <ul class="slides">
+                                    <li>
+                                        <blockquote>
+                                            <p>The Democrats are the party that
+                                            says government will make you
+                                            smarter, taller, richer, and remove
+                                            the crabgrass on your lawn.</p>
+                                            <footer>
+                                                Donald Coleman
+                                            </footer>
+                                        </blockquote>
+                                    </li>
+                                    <li>
+                                        <blockquote>
+                                            <p>We believe, that to bring our
+                                            economic and social life to the new
+                                            level, we must use non-standard and
+                                            non-traditional means and
+                                            approaches in our work…</p>
+                                            <footer>
+                                                Shirley King
+                                            </footer>
+                                        </blockquote>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="flexslider flex-controls-bottom element-top-0 element-bottom-0"data-flex-animation="slide" data-flex-captionhorizontal="left" data-flex-controls="hide" data-flex-controlsalign=
+                    "center" data-flex-controlsposition="inside"data-flex-controlsvertical="bottom" data-flex-directions="hide" data-flex-duration="600" data-flex-sliderdirection="horizontal" data-flex-slideshow="true" data-flex-speed="7000" data-os-animation="none" data-os-animation-delay="0s" id="flexslider-43">
+                        <ul class="slides">
+                            <li>
+                                <figure>
+                                    <img alt="Happy man" class="attachment-full wp-post-image" height="350" src="assets/images/political/img04-notinclude.jpg" width="450">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img alt="Woman" class="attachment-full wp-post-image" height="350" src="assets/images/political/img05-notinclude.jpg" width="450">
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+    <div class="background-media" style="background-image: url(assets/images/political/img13.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;"></div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(230,12,12,0.8);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center">
+                    <h3 class="bigtext text-light regular element-top-40 element-bottom-40 os-animation" data-os-animation="fadeInDown" data-os-animation-delay="0.1s">
+                    <span>CHANGE</span> <span>WE CAN BELIEVE IN.</span></h3>
+                    <div class="divider-border divider-border-center element-top-0 element-bottom-40 os-animation"data-os-animation="fadeIn" data-os-animation-delay="0.3s"style="height:2px;">
+                        <div class="divider-border-inner" style="background:#ffffff; width:80px;"></div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-7">
+                    <div class="flexslider element-top-0 element-bottom-0 text-center feature-slider" data-flex-animation="slide" data-flex-controls="hide" data-flex-controlsalign="center" data-flex-controlsposition="inside" data-flex-directions="show" data-flex-slideshow="true" data-flex-speed="7000"data-os-animation="none" data-os-animation-delay="0s" id="flexslider-448">
+                        <ul class="slides">
+                            <li>
+                                <div class="figure fade-none figcaption-bottom text-center">
+                                    <a class="figure-image" href="political-post.html">
+                                        <img alt="Bank target" src="assets/images/political/img04-notinclude1.jpg">
+                                        <div class="figure-overlay">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h2 class="figure-caption-title">
+                                                        <strong>Banktarget</strong>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <h5 class="figure-caption-category">
+                                        <a href="political-blog.html">News</a>
+                                    </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="figure fade-none figcaption-bottom text-center">
+                                    <a class="figure-image" href="political-post.html">
+                                        <img alt="UK and the EU: Better off out or in?" src=
+                                        "assets/images/political/img03-notinclude.jpg">
+                                        <div class="figure-overlay">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h2 class="figure-caption-title">
+                                                        <strong>UK and the EU: Better off out or in?</strong>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <h5 class="figure-caption-category">
+                                        <a href="political-blog.html">News</a>
+                                    </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="figure fade-none figcaption-bottom text-center">
+                                    <a class="figure-image" href="political-post.html">
+                                        <img alt="What Britain wants from Europe" src="assets/images/political/img07-notinclude.jpg">
+                                        <div class="figure-overlay">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h2 class="figure-caption-title">
+                                                        <strong>What Britain wants from Europe</strong>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <h5 class="figure-caption-category">
+                                        <a href="political-blog.html">News</a>
+                                    </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="figure fade-none figcaption-bottom text-center">
+                                    <a class="figure-image" href="political-post.html">
+                                        <img alt="Who are the 2016 election candidates?" src="assets/images/political/img02-notinclude.jpg">
+                                        <div class="figure-overlay">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h2 class="figure-caption-title">
+                                                        <strong>Who are the 2016 election candidates?</strong>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <h5 class="figure-caption-category">
+                                        <a href="political-blog.html">News</a>
+                                    </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="figure fade-none figcaption-bottom text-center">
+                                    <a class="figure-image" href="political-post.html">
+                                        <img alt="Syria policy" src="assets/images/political/img01-notinclude.jpg">
+                                        <div class="figure-overlay">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h2 class="figure-caption-title">
+                                                        <strong>Syriapolicy</strong>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <h5 class="figure-caption-category">
+                                        <a href="political-blog.html">News</a>
+                                    </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="figure fade-none figcaption-bottom text-center">
+                                    <a class="figure-image" href="poitical-post.html">
+                                        <img alt="Straight taking or old politics?" src="assets/images/political/img08-notinclude.jpg">
+                                        <div class="figure-overlay">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h2 class="figure-caption-title">
+                                                        <strong>Straight taking or oldpolitics?</strong>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <h5 class="figure-caption-category">
+                                        <a href="political-blog.html">News</a>
+                                    </h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 text-left">
+                    <div class=" element-top-20 element-bottom-20 recent-simple-os-container list-container post-list">
+                    <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                            <a class="post-list-image" href="political-post.html">
+                                <img alt="Bank target" src="assets/images/political/img04-notinclude1-150x150.jpg">
+                            </a>
+                            <h3 class="post-list-title">
+                                <a href="political-post.html">Bank target</a>
+                            </h3>
+                            <div class="post-list-date">
+                                October 1, 2015
+                            </div>
+                        </div>
+                        <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay=
+                        "0.2s">
+                            <a class="post-list-image" href="political-post.html">
+                                <img alt="UK and the EU: Better off out or in?" src="assets/images/political/img03-notinclude-150x150.jpg">
+                            </a>
+                            <h3 class="post-list-title">
+                                <a href="political-post.html">UK and the EU: Better off out or in?</a>
+                            </h3>
+                            <div class="post-list-date">
+                                October 1, 2015
+                            </div>
+                        </div>
+                        <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay=
+                        "0.3s">
+                            <a class="post-list-image" href="political-post.html">
+                                <img alt="What Britain wants from Europe." src="assets/images/political/img07-notinclude-150x150.jpg">
+                            </a>
+                            <h3 class="post-list-title">
+                                <a href="political-post.html">What Britain wants from Europe</a>
+                            </h3>
+                            <div class="post-list-date">
+                                October 1, 2015
+                            </div>
+                        </div>
+                        <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay=
+                        "0.4s">
+                            <a class="post-list-image" href="political-post.html">
+                                <img alt="Who are the 2016 election candidates?" src="assets/images/political/img02-notinclude-150x150.jpg">
+                            </a>
+                            <h3 class="post-list-title">
+                                <a href="political-post.html">Who are the 2016 election candidates?</a>
+                            </h3>
+                            <div class="post-list-date">
+                                September 29, 2015
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary element-left-0 element-right-0 element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s"
+                    href="political-blog.html">View more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="donate">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(230,12,12,1);"></div>
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6 text-right ">
+                    <h2 class="element-top-60 element-bottom-60 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                    Help us make a better world</h2>
+                </div>
+                <div class="col-md-6 text-left ">
+                    <a class="btn btn-default btn-lg text-light element-left-0 element-right-0 element-top-60 element-bottom-60 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s" data-target="#183" data-toggle="modal" href="#">
+                    MAKE A DONATION</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

@@ -1,0 +1,222 @@
+{% extends "layouts/hotel.html" %}
+
+{% set title = "Reservations|Hotel" %}
+{% set activeMenu = "Reservations" %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom="background-position: 50% -85px" data-start=
+        "background-position: 50% 0px" style="background-image: url(assets/images/hotel/rooms2-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(0,0,0,0.2);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-50"></div>
+                        <div class="visible-sm element-height-100"></div>
+                        <div class="visible-md element-height-200"></div>
+                        <div class="visible-lg element-height-200"></div>
+                    </div>
+
+                    <h1 class="text-center text-light os-animation super" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        Online reservation
+                    </h1>
+
+                    <h1 class="text-center element-top-20 element-bottom-20 text-light os-animation bigger regular"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                        <em>book now &#038; get the best price</em>
+                    </h1>
+
+                    <div class="figure os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                        <span class="figure-image">
+                            <img alt="decor-big-white.png" src="assets/images/hotel/decor-big-white.png">
+                        </span>
+                    </div>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-50"></div>
+                        <div class="visible-sm element-height-100"></div>
+                        <div class="visible-md element-height-100"></div>
+                        <div class="visible-lg element-height-100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" style="background-image: url(assets/images/hotel/rooms2-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(0,0,0,0.4);"></div>
+
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-12 text-center">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-40"></div>
+                        <div class="visible-sm element-height-40"></div>
+                        <div class="visible-md element-height-40"></div>
+                        <div class="visible-lg element-height-40"></div>
+                    </div>
+
+                    <form action="contact_mailer_hotel.php" class="contact-form">
+
+                        <div class="row vertical-middle">
+                            <div class="col-md-3 text-light">
+                                <div class="form-group  text-left">
+                                    <label>Check in Date:</label>
+                                    <div class="date-wrapper">
+                                        <input type="text" name="datepickerin" size="40" class="form-control datepicker" placeholder=
+                                        "Choose Check in date" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-light">
+                                <div class="form-group text-left">
+                                    <label>Check out Date:</label>
+
+                                    <div class="date-wrapper">
+                                        <div class="date-wrapper">
+                                            <input type="text" name="datepickerout" size="40" class="form-control datepicker" placeholder=
+                                        "Choose Check out date" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-light">
+                                <div class="form-group text-left">
+                                    <label>Room type:</label><br>
+                                    <select name="type">
+                                        <option value="Single Room">
+                                            Single Room
+                                        </option>
+                                        <option value="Double Room">
+                                            Double Room
+                                        </option>
+                                        <option value="Triple Room">
+                                            Triple Room
+                                        </option>
+                                        <option value="Suite">
+                                            Suite
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group text-center">
+                                    <label>&nbsp;</label><br>
+                                    <input class=
+                                    "btn btn-primary"
+                                    type="submit" value=
+                                    "Book Your Room Now">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messages"></div>
+                    </form>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-40"></div>
+                        <div class="visible-sm element-height-40"></div>
+                        <div class="visible-md element-height-40"></div>
+                        <div class="visible-lg element-height-40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom="background-position: 50% -80px" data-start="background-position: 50% 0px" style="background-image: url(assets/images/hotel/rooms-notinclude1.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(86,154,167,0);"></div>
+
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6" style="background:rgba(255, 255, 255, 0.95);">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-md-8">
+                            <h2 class="text-center element-top-100 os-animation big"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.1s">
+                                Special Offers
+                            </h2>
+
+                            <div class="figure block text-center os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.2s">
+                                <span class="figure-image">
+                                    <img alt="decor-small-gold.png" src="assets/images/hotel/decor-small-gold.png">
+                                </span>
+                            </div>
+
+                            <ul class="pricing-item-list element-top-20 element-bottom-100"
+                            data-os-animation="none" data-os-animation-delay=
+                            "0s">
+                                <li class=
+                                "pricing-cirle element-bottom-40 os-animation"
+                                data-os-animation="fadeIn"
+                                data-os-animation-delay="0s">
+                                    <div class="pricing-item-list-content">
+                                        <h3>Superior Room
+                                        <span>$99/night</span></h3>
+
+                                        <p>The Superior Room, with king-size
+                                        bed or twin single and one sofa bed,
+                                        spans 25 sqm with a balcony or terrace
+                                        overlooking the sea.</p>
+                                    </div>
+                                </li>
+
+                                <li class="pricing-cirle element-bottom-40 os-animation"
+                                data-os-animation="fadeIn"
+                                data-os-animation-delay="0s">
+                                    <div class="pricing-item-list-content">
+                                        <h3>Deluxe Room
+                                        <span>$105/night</span></h3>
+
+                                        <p>The Deluxe Room, with king-size bed
+                                        or twin single and one sofa bed, spans
+                                        25 sqm with a balcony or terrace
+                                        overlooking the sea.</p>
+                                    </div>
+                                </li>
+
+                                <li class="pricing-cirle element-top-0 element-bottom-40 os-animation" data-os-animation="fadeIn"
+                                data-os-animation-delay="0s">
+                                    <div class="pricing-item-list-content">
+                                        <h3>Bungalow Studio
+                                        <span>$150/weekend</span></h3>
+
+                                        <p>The Bungalow Studio, with king-size
+                                        bed or twin single and one sofa bed,
+                                        spans 25 sqm with a balcony or terrace
+                                        overlooking the sea.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center"></div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

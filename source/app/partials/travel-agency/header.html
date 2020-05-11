@@ -1,0 +1,38 @@
+<div class="menu header-logo-center-menu-below navbar navbar-static-top text-none" id="masthead" role="banner">
+    <div class="logo-navbar container-logo">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="travel-agency-index.html">
+                    <img alt="Lambda Travel Agency" src="assets/images/travel-agency/lamda-travelagency.png">
+                </a>
+                <div class="logo-sidebar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav-container clearfix">
+            <nav class="collapse navbar-collapse main-navbar">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav" id="menu-main-menu">
+                        {% for item in [{title:"Home", href:"travel-agency-index.html"},
+                                    {title:"America", href:"travel-agency-blog.html"},
+                                    {title:"Africa", href:"travel-agency-blog.html"},
+                                    {title:"Asia", href:"travel-agency-blog.html"},
+                                    {title:"Europe", href:"travel-agency-blog.html"},
+                                    {title:"Offers", href:"travel-agency-offers.html"},
+                                    {title:"Contact", href:"travel-agency-contact.html"}] %}
+                            <li class="menu-item {{ 'active' if activeMenu == item.title }}">
+                                <a href="/{{ item.href }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

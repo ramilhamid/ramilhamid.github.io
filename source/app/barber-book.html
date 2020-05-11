@@ -1,0 +1,154 @@
+{% extends "layouts/barber.html" %}
+
+{% set title = "Book Now | Barber Shop" %}
+
+{% set bodyclasses = "transparent-header transparent-menu-below pace-on pace-minimal" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block extracss %}
+    <style>
+        select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .select-wrap, .form-control {
+            background-color: rgba(255, 152, 102, 0.6)!important;
+        }
+    </style>
+{% endblock %}
+
+{% set activeMenu = "Book Now" %}
+
+{% block content %}
+<article>
+    <section class="section">
+    <div class="background-media" style="background-image: url(assets/images/barber/img10-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(107,88,70,0.5);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="text-center element-top-150 element-bottom-0 text-light os-animation super regular"data-os-animation="fadeIn" data-os-animation-delay="0s">
+                    Book Now</h1>
+                    <div class="figure element-top-0 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        <a class="figure-image magnific" href=
+                        "assets/images/barber/moustache-white.png"
+                        target="_self"><img alt="" src="assets/images/barber/moustache-white.png"></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-30"></div>
+                                <div class="visible-sm element-height-30"></div>
+                                <div class="visible-md element-height-30"></div>
+                                <div class="visible-lg element-height-30"></div>
+                            </div>
+                            <form action="contact_mailer.php" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-user"></i>
+                                            <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-envelope"></i>
+                                            <input class="form-control" id="email" name="email" placeholder="Your email *" type="email" required="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-pencil"></i>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="10" required=""></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Send email" class="btn btn-primary">
+                                </div>
+                                <div class="messages text-center"></div>
+                            </form>
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-30"></div>
+                                <div class="visible-sm element-height-30"></div>
+                                <div class="visible-md element-height-30"></div>
+                                <div class="visible-lg element-height-30"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+    <div class="background-overlay grid-overlay-0" style=
+    "background-color: rgba(66,178,169,1);"></div>
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-3 text-center small-screen-default os-animation"
+                data-os-animation="fadeIn" data-os-animation-delay="0s">
+                    <div class="box box-round box-medium element-top-20 element-bottom-20">
+                        <div class="box-dummy"></div>
+                        <div class="box-inner grid-overlay-0">
+                            <div class="box-animate" data-animation="bounce">
+                                <i class="fa fa-home" style=
+                                "color:#ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead text-light element-top-20 element-bottom-20"
+                    data-os-animation="none" data-os-animation-delay="0s">
+                    Lambda LTD<br>
+                    Some Address, London UK</p>
+                </div>
+                <div class="col-md-3 text-center os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.07s"
+                style="background:rgba(0, 0, 0, 0.05);">
+                    <div class="box box-round box-medium element-top-20 element-bottom-20">
+                        <div class="box-dummy"></div>
+                        <div class="box-inner grid-overlay-0">
+                            <div class="box-animate" data-animation="bounce">
+                                <i class="fa fa-envelope" style="color:#ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead text-light element-top-20 element-bottom-20"
+                    data-os-animation="none" data-os-animation-delay="0s">
+                    some@lambda.com<br>
+                    Drop us a line</p>
+                </div>
+                <div class="col-md-3 text-center os-animation"
+                data-os-animation="fadeIn" data-os-animation-delay="0.14s">
+                    <div class="box box-round box-medium element-top-20 element-bottom-20">
+                        <div class="box-dummy"></div>
+                        <div class="box-inner grid-overlay-0">
+                            <div class="box-animate" data-animation="bounce">
+                                <i class="fa fa-facebook" style="color:#ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead text-light element-top-20 element-bottom-20">visit our page<br>
+                    on facebook</p>
+                </div>
+                <div class="col-md-3 text-center os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.21s" style="background:rgba(0, 0, 0, 0.05);">
+                    <div class="box box-round box-medium element-top-20 element-bottom-20">
+                        <div class="box-dummy"></div>
+                        <div class="box-inner grid-overlay-0">
+                            <div class="box-animate" data-animation="bounce">
+                                <i class="fa fa-twitter" style="color:#ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead text-center center text-light element-top-20 element-bottom-20">
+                    follow us on twitter<br>
+                    for the latest news</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

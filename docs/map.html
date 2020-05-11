@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gt IE 8)]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <title>Lambda HTML 1.13.0 | Map</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicons/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/images/favicons/apple-touch-icon-60x60-precomposed.png">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="bs-docs-home ">
+        <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">Lambda HTML</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="getting-started.html">
+                    Getting Started
+                </a>
+                        </li>
+                        <li>
+                            <a href="using-lambda.html">
+                    Using Lambda
+                </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="skin.html">
+                                    Skin
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="slideshow.html">
+                                    Slideshow
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="revolution-slider.html">
+                                    Revolution Slider
+                                </a>
+                                </li>
+                                <li class="active">
+                                    <a href="map.html">
+                                    Map
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="pricing-tables.html">
+                                    Pricing Tables
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="contact-form.html">
+                                    Contact Form
+                                </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="source.html">
+                    Source Files
+                </a>
+                        </li>
+                        <li>
+                            <a href="changelog.html">
+                    Changelog
+                </a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <a href="http://themeforest.net/item/lambda-multi-purpose-bootstrap-html-template/10465708&ref=oxygenna" target="_blank" class="btn btn-success"><i class="fa fa-shopping-cart"></i> Purchase</a>
+                    </form>
+                </nav>
+            </div>
+        </header>
+        <div class="bs-header" id="content">
+            <div class="container">
+                <h1>Map</h1>
+                <p>How to setup your map.</p>
+            </div>
+        </div>
+        <div id="online-docs-warning" class="alert alert-info text-center">
+            <div class="container">
+                <strong>Online Docs Available</strong>
+                Looks like you are looking at the offline docs. You can find possibly more up to date docs <a href="http://lambdahtmldocs.oxygenna.com">online here</a>
+            </div>
+        </div>
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="bs-sidebar hidden-print affix-top" role="complementary">
+                        <ul class="nav bs-sidenav">
+                            <li><a href="#map">Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="bs-docs-section">
+                        <h1 id="map">Map</h1>
+                        <p>Adding a map in Lambda is pretty easy. What you need to do is add this markup wherever you want in your markup</p>
+                        <pre><code>&lt;div class=&quot;google-map&quot; id=&quot;map&quot; style=&quot;height:354px;&quot; &gt;&lt;/div&gt;</code></pre>
+                        <p>You can adjust the height to your needs.</p>
+                        <p>The map&#39;s settings can be added/changed as a script at the bottom of the body, along with the rest of the javascript imports.</p>
+                        <pre><code>&lt;script&gt;window.map = {
+map_type: &#39;ROADMAP&#39;,
+map_zoom: 15,
+map_style: &#39;blackwhite&#39;,
+map_scrollable: &#39;on&#39;,
+marker: &#39;show&#39;,
+label: [&#39;London Royal&#39;,&#39;Athens Bistro&#39;],
+address: &#39;&#39;,
+latlng : [&#39;51.511084, -0.133202&#39;,&#39;51.506623, -0.111916&#39;],
+center_latlng: &#39;&#39;,
+markerURL: &#39;assets/images/marker.png&#39;,
+auto_center: true,
+};&lt;/script&gt;</code></pre>
+                        <ol>
+                            <li><strong>map_type</strong> : <strong>ROADMAP</strong>, <strong>SATELLITE</strong>, <strong>TERRAIN</strong> or <strong>HYBRID</strong>.</li>
+                            <li><strong>map_zoom</strong> : the amount of zoom that you wish to have (1-20)</li>
+                            <li><strong>map_style</strong> : <strong>blackwhite</strong> or <strong>regular</strong>
+                            </li>
+                            <li><strong>map_scrollable</strong> : <strong>on</strong> or <strong>off</strong> for the map to be scrollable.</li>
+                            <li><strong>marker</strong> : <strong>show</strong> or <strong>hide</strong>.</li>
+                            <li><strong>label</strong> : Set the text that will show as the markers label. If multiple markers are added, make sure that you have set the same number of labels as well.</li>
+                            <li><strong>address</strong> : Set the addresses of the map&#39;s markers. Be careful of the syntax that is being used here. It has to be an
+                                <mark>array</mark>of comma-separated single quotes. Inside the quotes put the addresses separated by comma. Leave empty if you wan t to use lat/lng. Example for 3 addresses [&#39;address 15 New York&#39;,&#39;address 22 New Orleans&#39;,&#39;address
+                                3 Amsterdam&#39;]</li>
+                            <li><strong>latlng</strong> : Set the latitude and longitude of the map&#39;s location. Be careful of the syntax that is being used here. It has to be an
+                                <mark>array</mark>of comma-separated single quotes. Inside the quotes put the latitude and longitude separated by comma. Example for 3 markers [&#39;lat1, lng1&#39;,&#39;lat2, lng2&#39;,&#39;lat3, lng3&#39;]</li>
+                            <li><strong>center_latlng</strong> : Set the lat/lng according to which you want the map to be centered at.</li>
+                            <li><strong>markerURL</strong> : Set the URL of the marker&#39;s icon.</li>
+                            <li><strong>auto_center</strong> : Set to
+                                <mark>true</mark>if you want the map to be centered automatically, fitting all the markers that you have inserted.</li>
+                        </ol>
+                        <div class="alert alert-success">
+                            <i class="fa fa-gittip"></i> Keep in mind that you need to include the
+                            <code>&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?sensor=false&quot;&gt;&lt;/script&gt;</code> and <code>&lt;script src=&quot;assets/js/map.min.js&quot;&gt;&lt;/script&gt;</code> at the end of the <code>&lt;body&gt;</code>.
+                        </div>
+                        <p>
+                            <img src="assets/images/contact-form.png" alt="contact-form">
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="docs-footer" role="contentinfo">
+            <div class="container">
+                <ul class="bs-masthead-links pull-left">
+                    <li class="current-version">
+                        Currently v1.13.0
+                    </li>
+                    <li>
+                        <a href="changelog.html">Changelog</a>
+                    </li>
+                    <li>
+                        <a href="http://themeforest.net/user/oxygenna/portfolio" target="_blank">Our Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="http://www.oxygenna.com/contact" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="bs-masthead-links pull-right">
+                    <li>
+                        Made with <i class="fa fa-heart"></i> in Sitia, Greece
+                    </li>
+                </ul>
+                </li>
+        </footer>
+    </body>
+    <script src="assets/js/main.js"></script>
+</html>

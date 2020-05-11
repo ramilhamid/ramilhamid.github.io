@@ -1,0 +1,47 @@
+{% extends "layouts/base.html" %}
+
+{% set bodyclasses = "transparent-header pace-on pace-minimal" %}
+{% set bodystyle = "" %}
+
+{% set gotopshape = "square" %}
+
+{% block fonts %}
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block skin %}
+    <!-- build:css assets/css/digital-agency.min.css -->
+    <link rel="stylesheet" href="styles/skins/digital-agency.css" type="text/css">
+    <!-- endbuild -->
+{% endblock %}
+
+
+{% block header %}
+    {% include "partials/digital-agency/header.html" %}
+{% endblock %}
+
+{% block extrathemejs %}
+    {% include "partials/js/html-only.html" %}
+{% endblock %}
+
+{% block jsparams %}
+<script type="text/javascript">
+    var oxyThemeData = {
+        navbarHeight : 90,
+        navbarScrolled : 70,
+        navbarScrolledPoint : 30,
+        menuClose : 'on',
+        scrollFinishedMessage : 'No more items to load.',
+        hoverMenu : {
+            hoverActive : false,
+            hoverDelay : 200,
+            hoverFadeDelay : 200
+        },
+        siteLoader: 'on'
+    };
+</script>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/digital-agency/footer.html" %}
+{% endblock %}

@@ -1,0 +1,686 @@
+{% extends "layouts/medical.html" %}
+
+{% set title = "Medical | Lambda" %}
+{% set activeMenu = "Home" %}
+
+{% block extracss %}
+    <!-- build:css assets/css/extras.min.css -->
+    <link rel="stylesheet" href="styles/revolution.css">
+    <link rel="stylesheet" href="../bower_components/mediaelement/build/mediaelementplayer.css">
+    <!-- endbuild -->
+{% endblock %}
+
+{% block extrajs %}
+    <!-- build:js assets/js/revolution.min.js -->
+    <script type="text/javascript" src="scripts/tools.min.js"></script>
+    <script type="text/javascript" src="scripts/revolution.min.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('#homepage-slider').revolution({
+                jsFileLocation: '/scripts/',
+                extensions: 'revolution-extensions/',
+                sliderType:"standard",
+                sliderLayout:"auto",
+                dottedOverlay:"none",
+                delay:9000,
+                navigation: {
+                    keyboardNavigation:"off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation:"off",
+                    onHoverStop:"off",
+                    touch:{
+                        touchenabled:"on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    }
+                    ,
+                    arrows: {
+                        style:"",
+                        enable:true,
+                        hide_onmobile:false,
+                        hide_onleave:false,
+                        tmp:'',
+                        left: {
+                            h_align:"left",
+                            v_align:"center",
+                            h_offset:20,
+                            v_offset:0
+                        },
+                        right: {
+                            h_align:"right",
+                            v_align:"center",
+                            h_offset:20,
+                            v_offset:0
+                        }
+                    }
+                },
+                gridwidth:1170,
+                gridheight:550,
+                lazyType:"none",
+                parallax: {
+                    type:"mouse+scroll",
+                    origo:"enterpoint",
+                    speed:400,
+                    levels:[5,10,15,20,25,30,35,40,45,50],
+                },
+                shadow:0,
+                spinner:"spinner2",
+                stopLoop:"off",
+                stopAfterLoops:-1,
+                stopAtSlide:-1,
+                shuffle:"off",
+                autoHeight:"off",
+                hideThumbsOnMobile:"off",
+                hideSliderAtLimit:0,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                debugMode:false,
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section" id="home">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rev_slider_wrapper fullwidthbanner-container">
+                        <div id="homepage-slider" class="rev_slider" data-version="5.0">
+                            <ul>
+                                <!-- SLIDE  -->
+
+                                <li data-delay="2000" data-description="" data-easein="default" data-easeout="default" data-index="rs-1" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-title="Slide" data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="off" data-bgposition="center top" data-bgrepeat="repeat-x" data-no-retina="" src="assets/images/medical/img6-notinclude.jpg"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption tp-resizeme fullscreenvideo rs-parallaxlevel-0 tp-videolayer" data-aspectratio="16:9" data-autoplay="on" data-disablevideoonmobile="1" data-forcecover="1"
+                                    data-height="auto" data-nextslideatend="true" data-posteronmobile="off" data-responsive_offset="on" data-start="0" data-transform_idle="" data-transform_in=
+                                    "opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-videocontrols="none" data-videoheight="100%" data-videoloop="none" data-videomp4="http://theme-background-videos.s3.amazonaws.com/doctors-2.mp4" data-videoposter="http://theme-background-videos.s3.amazonaws.com/doctors-2.jpg" data-videopreload="auto" data-videowebm=
+                                    "http://theme-background-videos.s3.amazonaws.com/doctors-2.webm" data-videowidth="100%" data-volume="mute" data-width="auto" data-x="0" data-y="0" id="slide-1-layer-1" style=
+                                    "z-index: 5;"></div><!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-start="0" data-transform_idle="" data-transform_in=
+                                    "y:50px;opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-voffset="0" data-width="auto" data-x="center" data-y="center" id="slide-1-layer-2" style=
+                                    "z-index: 6;"><img alt="" data-no-retina="" height="1086" src="assets/images/medical/19001.png" width="1900"></div>
+                                    <!-- LAYER NR. 3 -->
+
+                                    <div class="tp-caption medicalwhitecenter tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none"
+                                    data-start="900" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:700;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-voffset="-15" data-width="auto" data-x=
+                                    "center" data-y="center" id="slide-1-layer-3" style="z-index: 7; white-space: nowrap;">
+                                        WELCOME TO LAMBDA
+                                    </div><!-- LAYER NR. 4 -->
+
+                                    <div class="tp-caption medicalcenter tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start=
+                                    "1550" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:700;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-voffset="50" data-width="auto" data-x="center"
+                                    data-y="center" id="slide-1-layer-4" style="z-index: 8; white-space: nowrap;">
+                                        Restoring body, mind and spirit with advanced technology and treatment.
+                                    </div><!-- LAYER NR. 5 -->
+
+                                    <div class="tp-caption medicalbutton tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="-80" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start=
+                                    "2000" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:700;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-voffset="100" data-width="auto" data-x="center"
+                                    data-y="bottom" id="slide-1-layer-5" style="z-index: 9; white-space: nowrap;">
+                                        <a href='#'>Read More</a>
+                                    </div><!-- LAYER NR. 6 -->
+
+                                    <div class="tp-caption medicalbuttonsecond tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="80" data-responsive_offset="on" data-splitin="none" data-splitout="none"
+                                    data-start="2000" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:700;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-voffset="100" data-width="auto" data-x=
+                                    "center" data-y="bottom" id="slide-1-layer-6" style="z-index: 10; white-space: nowrap;">
+                                        <a href='#'>Book Now</a>
+                                    </div>
+                                </li><!-- SLIDE  -->
+
+                                <li data-description="" data-easein="default" data-easeout="default" data-index="rs-2" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7"  data-title="Slide" data-transition="fade">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="off" data-bgposition="center top" data-bgrepeat="repeat-x" data-no-retina="" src=
+                                    "assets/images/medical/img2-notinclude.jpg"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-start="0" data-transform_idle="" data-transform_in=
+                                    "opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-voffset="0" data-width="auto" data-x="center" data-y="center" id="slide-2-layer-1" style="z-index: 5;">
+                                    <img alt="" data-no-retina="" height="1086" src="assets/images/medical/19001.png" width="1900"></div>
+                                    <!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption medicalwhitecenter tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none"
+                                    data-start="900" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:700;e:Power3.easeInOut;" data-transform_out="opacity:0;s:700;s:700;" data-voffset="-15" data-width="auto"
+                                    data-x="center" data-y="center" id="slide-2-layer-2" style="z-index: 6; white-space: nowrap;">
+                                        Welcome to Lambda
+                                    </div><!-- LAYER NR. 3 -->
+
+                                    <div class="tp-caption medicalcenter tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start=
+                                    "1550" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:700;e:Power3.easeInOut;" data-transform_out="opacity:0;s:700;s:700;" data-voffset="50" data-width="auto" data-x=
+                                    "center" data-y="center" id="slide-2-layer-3" style="z-index: 7; white-space: nowrap;">
+                                        National leaders in medicine. Advancing medicine. Touching lives.
+                                    </div><!-- LAYER NR. 4 -->
+
+                                    <div class="tp-caption medicalbutton tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="-80" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start=
+                                    "2000" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:700;e:Power3.easeInOut;" data-transform_out="opacity:0;s:700;s:700;" data-voffset="100" data-width="auto" data-x=
+                                    "center" data-y="bottom" id="slide-2-layer-4" style="z-index: 8; white-space: nowrap;">
+                                        <a href='#'>Read More</a>
+                                    </div><!-- LAYER NR. 5 -->
+
+                                    <div class="tp-caption medicalbuttonsecond tp-resizeme rs-parallaxlevel-0" data-height="auto" data-hoffset="80" data-responsive_offset="on" data-splitin="none" data-splitout="none"
+                                    data-start="2000" data-transform_idle="" data-transform_in="y:-50px;opacity:0;s:700;e:Power3.easeInOut;" data-transform_out="opacity:0;s:700;s:700;" data-voffset="100" data-width="auto"
+                                    data-x="center" data-y="bottom" id="slide-2-layer-5" style="z-index: 9; white-space: nowrap;">
+                                        <a href='#'>Book Now</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="tp-bannertimer"></div>
+                        </div><!-- END REVOLUTION SLIDER -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="text-center element-top-50 element-bottom-0 text-normal os-animation big regular" data-os-animation="fadeIn" data-os-animation-delay="0s">What we Provide</h1>
+
+                    <div class="divider-border divider-border-center element-top-30 element-bottom-60 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:3px;">
+                        <div class="divider-border-inner" style="width:60px;"></div>
+                    </div>
+
+                    <div class="list-container row element-top-0 element-bottom-50 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                        <div class="col-md-4 text-normal element-top-0 element-bottom-20 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            <span class="service-simple-image">
+                                <img alt="Medical Examination" src="assets/images/medical/medical-examination-blue1.png">
+                            </span>
+
+                            <h2>Medical Examination</h2>
+
+                            <p>The development of preventive medicine has been one of the main goals of Metropolitan Hospital since its establishment. Quality of life directly depends on prevention
+                            and discovering illnesses right at the start.</p>
+                        </div>
+
+                        <div class="col-md-4 text-normal element-top-0 element-bottom-20 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            <span class="service-simple-image">
+                                <img alt="Best Doctors" src="assets/images/medical/best-doctors-blue.png">
+                            </span>
+
+                            <h2>Best Doctors</h2>
+
+                            <p>Through Best Doctors, medical experts and treating physicians are working together in an innovative new way to ensure that patients make the right decisions and receive
+                            the right care.</p>
+                        </div>
+
+                        <div class="col-md-4 text-normal element-top-0 element-bottom-20 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            <span class="service-simple-image">
+                                <img alt="Hospital Facilities" src="assets/images/medical/hospital-faclities-blue.png">
+                            </span>
+
+                            <h2>Hospital Facilities</h2>
+
+                            <p>The Hospital has acquired the latest diagnostic equipment which minimizes both examination times and the amount of invasive procedures.This is why our doctors have been
+                            supplied with cutting edge equipment.</p>
+                        </div>
+
+                        <div class="col-md-4 text-normal element-top-0 element-bottom-20 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            <span class="service-simple-image">
+                                <img alt="Alternative Treatment" src="assets/images/medical/alternative-treatment-blue.png">
+                            </span>
+
+                            <h2>Alternative Treatment</h2>
+
+                            <p>Some healing treatments are not part of conventional medical training. People in Western countries like the United States used to consider these treatments outside the
+                            mainstream, or "alternative."</p>
+                        </div>
+
+                        <div class="col-md-4 text-normal element-top-0 element-bottom-20 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            <span class="service-simple-image">
+                                <img alt="Quality of medicines" src="assets/images/medical/quality-of-medicines-blue.png">
+                            </span>
+
+                            <h2>Quality of medicines</h2>
+
+                            <p>Here, we consider the nature of drug targets, and by classifying known drug substances on the basis of the discussed principles we provide an estimation of the total
+                            number of current drug targets.</p>
+                        </div>
+
+                        <div class="col-md-4 text-normal element-top-0 element-bottom-20 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+                            <span class="service-simple-image">
+                                <img alt="Neurology Department" src="assets/images/medical/neurology-department-blue.png">
+                            </span>
+
+                            <h2>Neurology Department</h2>
+
+                            <p>Our neurological department is the best in UK. We offer treatments with high-end technology.We are the first to offer integrated Brain SUITE , the first of its kind in
+                            Europe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom="background-position: 50% 50px" data-start="background-position: 50% -31px" ></div>
+
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(3,194,227,0.9);"></div>
+
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-3 text-center" style="background:rgba(0, 0, 0, 0.2);">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+
+                    <div class="figure element-top-0 element-bottom-0" data-os-animation="none" data-os-animation-delay="0s">
+                        <a class="figure-image magnific" href="assets/images/medical/skilled-doctors-white1.png" target="_self">
+                            <img alt="skilled-doctors-white1" src="assets/images/medical/skilled-doctors-white1.png">
+                        </a>
+                    </div>
+
+                    <div class="counter element-top-10 element-bottom-0 text-light os-animation" data-count="46" data-format="(,ddd)" data-os-animation="fadeIn" data-os-animation-delay=
+                    "0s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+
+                    <div class="divider-border divider-border-center element-top-0 element-bottom-10 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:3px;">
+                        <div class="divider-border-inner" style="background:rgba(255, 255, 255, 0.81); width:60px;"></div>
+                    </div>
+
+                    <h3 class="text-center element-top-0 element-bottom-0 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0.1s">Skilled Doctors</h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center" style="background:rgba(0, 0, 0, 0.15);">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                    <i class="fa fa-child text-light" style="font-size:42px"></i>
+
+                    <div class="counter element-top-10 element-bottom-0 text-light os-animation" data-count="52,963" data-format="(,ddd)" data-os-animation="fadeIn"
+                    data-os-animation-delay="0.3s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+
+                    <div class="divider-border divider-border-center element-top-0 element-bottom-10 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s" style="height:3px;">
+                        <div class="divider-border-inner" style="background:rgba(255, 255, 255, 0.81); width:60px;"></div>
+                    </div>
+
+                    <h3 class="text-center element-top-0 element-bottom-0 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0.4s">Happy Patients</h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center" style="background:rgba(0, 0, 0, 0.1);">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                    <i class="fa fa-tachometer text-light" style="font-size:42px"></i>
+
+                    <div class="counter element-top-10 element-bottom-0 text-light os-animation" data-count="15" data-format="(,ddd)" data-os-animation="fadeIn" data-os-animation-delay=
+                    "0.6s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+
+                    <div class="divider-border divider-border-center element-top-0 element-bottom-10 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s" style="height:3px;">
+                        <div class="divider-border-inner" style="background:rgba(255, 255, 255, 0.81); width:60px;"></div>
+                    </div>
+
+                    <h3 class="text-center element-top-0 element-bottom-0 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0.7s">Years Experience</h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center" style="background:rgba(0, 0, 0, 0.05);">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+
+                    <div class="figure element-top-0 element-bottom-0" data-os-animation="none" data-os-animation-delay="0s">
+                        <a class="figure-image magnific" href="assets/images/medical/varitety-of-drugs-white.png" target="_self"><img alt=""
+                        src="assets/images/medical/varitety-of-drugs-white.png"></a>
+                    </div>
+
+                    <div class="counter element-top-10 element-bottom-0 text-light os-animation" data-count="3,000" data-format="(,ddd)" data-os-animation="fadeIn"
+                    data-os-animation-delay="0.9s">
+                        <span class="value odometer-counter super regular">0</span>
+                    </div>
+
+                    <div class="divider-border divider-border-center element-top-0 element-bottom-10 os-animation" data-os-animation="fadeIn" data-os-animation-delay="1s" style="height:3px;">
+                        <div class="divider-border-inner" style="background:rgba(255, 255, 255, 0.81); width:60px;"></div>
+                    </div>
+
+                    <h3 class="text-center element-top-0 element-bottom-0 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="1s">Variety of Drugs</h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-30"></div>
+                        <div class="visible-sm element-height-30"></div>
+                        <div class="visible-md element-height-30"></div>
+                        <div class="visible-lg element-height-30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center element-top-50 element-bottom-0 text-normal os-animation big regular" data-os-animation="fadeIn" data-os-animation-delay="0s">Our doctors</h1>
+
+                    <div class="divider-border divider-border-center element-top-30 element-bottom-60 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:3px;">
+                        <div class="divider-border-inner" style="width:60px;"></div>
+                    </div>
+
+                    <div class="row staff-list-container list-container element-top-0 element-bottom-50">
+                        <div class="figure text-normal col-md-3 fade-in element-top-0 element-bottom-20 figcaption-bottom text-left fade-in os-animation" data-os-animation="fadeIn"
+                        data-os-animation-delay="0.2s">
+                            <div class="figure-image">
+                                <img alt="Benjamin Bentley" src="assets/images/medical/doctors2-notinclude.jpg">
+
+                                <div class="figure-overlay grid-overlay-0">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption text-center">
+                                            <ul class="figure-overlay-icons social-icons social-simple">
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-facebook-official"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-google-plus"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-yahoo"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="figure-caption text-left">
+                                <h3 class="figure-caption-title"><strong>Benjamin Bentley</strong> <span>Pathologist</span></h3>
+
+                                <p class="figure-caption-description">A pathologist is a physician who studies body fluids and tissues, and uses laboratory tests to monitor the health of patients
+                                with chronic conditions.</p>
+                            </div>
+                        </div>
+
+                        <div class="figure text-normal col-md-3 fade-in element-top-0 element-bottom-20 figcaption-bottom text-left fade-in os-animation" data-os-animation="fadeIn"
+                        data-os-animation-delay="0.4s">
+                            <div class="figure-image">
+                                <img alt="Lily Finch" src="assets/images/medical/doctors4-notinclude.jpg">
+
+                                <div class="figure-overlay grid-overlay-0">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption text-center">
+                                            <ul class="figure-overlay-icons social-icons social-simple">
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-facebook-official"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-google-plus"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-yahoo"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="figure-caption text-left">
+                                <h3 class="figure-caption-title"><strong>Lily Finch</strong> <span>Cardiologist</span></h3>
+
+                                <p class="figure-caption-description">A cardiologist is a doctor with special training and skill in finding, treating and preventing diseases of the heart and blood
+                                vessels.</p>
+                            </div>
+                        </div>
+
+                        <div class="figure text-normal col-md-3 fade-in element-top-0 element-bottom-20 figcaption-bottom text-left fade-in os-animation" data-os-animation="fadeIn"
+                        data-os-animation-delay="0.6s">
+                            <div class="figure-image">
+                                <img alt="Thomas Alexander" src="assets/images/medical/doctors5-notinclude.jpg">
+
+                                <div class="figure-overlay grid-overlay-0">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption text-center">
+                                            <ul class="figure-overlay-icons social-icons social-simple">
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-facebook-official"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-google-plus"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-yahoo"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="figure-caption text-left">
+                                <h3 class="figure-caption-title"><strong>Thomas Alexander</strong> <span>Dentist</span></h3>
+
+                                <p class="figure-caption-description">A dentist, is a health care practitioner who specializes in the diagnosis, and treatment of diseases and conditions of the oral
+                                cavity.</p>
+                            </div>
+                        </div>
+
+                        <div class="figure text-normal col-md-3 fade-in element-top-0 element-bottom-20 figcaption-bottom text-left fade-in os-animation" data-os-animation="fadeIn"
+                        data-os-animation-delay="0.8s">
+                            <div class="figure-image">
+                                <img alt="Scott Barker" src="assets/images/medical/doctors7-notinclude.jpg">
+
+                                <div class="figure-overlay grid-overlay-0">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption text-center">
+                                            <ul class="figure-overlay-icons social-icons social-simple">
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-facebook-official"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-google-plus"></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">
+                                                        <i class="fa fa-yahoo"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="figure-caption text-left">
+                                <h3 class="figure-caption-title"><strong>Scott Barker</strong> <span>Neurosurgeon</span></h3>
+
+                                <p class="figure-caption-description">A neurosurgeon is a specialist who treats diseases and conditions affecting the nervous system, which includes the brain and the
+                                peripheraxl nerves.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(1,192,225,1);"></div>
+
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-9">
+                    <h2 class="text-center element-top-60 element-bottom-60 text-light os-animation big light" data-os-animation="fadeInLeft" data-os-animation-delay="0s">Do you need an
+                    appointment?</h2>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <a class="btn btn-primary btn-lg text-light btn-icon-right element-left-0 element-right-0 element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s"
+                    href="medical-appointment.html" target="_self">book an appointment <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(250,250,250,1);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center element-top-50 element-bottom-0 text-normal os-animation big regular" data-os-animation="fadeIn" data-os-animation-delay="0s">Latest news</h1>
+
+                    <div class="divider-border divider-border-center element-top-30 element-bottom-60 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:3px;">
+                        <div class="divider-border-inner" style="width:60px;"></div>
+                    </div>
+
+                    <div class="element-top-0 element-bottom-50 recent-simple-os-container list-container row">
+                        <div class="col-md-4 recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                            <article class="post-grid post-grid-overlay element-bottom-20 text-left" style="background-image: url(assets/images/medical/img9-notinclude.jpg)">
+                                <a href="medical-post.html">
+                                    <div class="post-grid-content">
+                                        <h3 class="post-grid-content-title">Working in the OR as a nurse</h3>
+
+                                        <div class="post-grid-content-footer">
+                                            oxygenna , July 29, 2015
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4 recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.6s">
+                            <article class="post-grid post-grid-overlay element-bottom-20 text-left" style="background-image: url(assets/images/medical/img10-notinclude.jpg)">
+                                <a href="medical-post.html">
+                                    <div class="post-grid-content">
+                                        <h3 class="post-grid-content-title">Broken Arm: Read About Symptoms</h3>
+
+                                        <div class="post-grid-content-footer">
+                                            harconst , July 25, 2015
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4 recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.9s">
+                            <article class="post-grid post-grid-overlay element-bottom-20 text-left"  style="background-image: url(assets/images/medical/img1-notinclude.jpg)">
+                                <a href="medical-post.html">
+                                    <div class="post-grid-content">
+                                        <h3 class="post-grid-content-title">Types of Gum Disease</h3>
+
+                                        <div class="post-grid-content-footer">
+                                            langan , August 02, 2015
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom="background-position: 50% -0px" data-start="background-position: 50% 0px" style="background-image: url(assets/images/medical/img4-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel element-top-60 element-bottom-60 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        <div class="panel-body" style="background-color:rgba(255, 255, 255, 0.69);">
+                            <h1 class="text-center element-top-20 element-bottom-20 text-normal normal regular">Opening Hours</h1>
+
+                            <div class="divider-border divider-border-center element-top-20 element-bottom-40 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s" style="height:3px;">
+                                <div class="divider-border-inner" style="width:60px;"></div>
+                            </div>
+
+                            <div class="col-text-1 text-normal element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">
+                                <p style="text-align: center;">Monday-Friday</p>
+
+                                <p style="text-align: center;">24 Hours open</p>
+                            </div>
+
+                            <div class="col-text-1 text-normal element-top-20 element-bottom-20" data-os-animation="none" data-os-animation-delay="0s">
+                                <p style="text-align: center;">Saturday-Sunday</p>
+
+                                <p style="text-align: center;">06:00-00.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

@@ -1,0 +1,1990 @@
+{% extends "layouts/travel-agency.html" %}
+
+{% set title = "Travel Agency" %}
+
+{% set bodyclasses = "transparent-header transparent-menu-below pace-on pace-dot" %}
+
+{% set activeMenu = "Home" %}
+
+{% block extrajs %}
+
+<!-- build:js assets/js/revolution.min.js -->
+    <script type="text/javascript" src="scripts/tools.min.js"></script>
+    <script type="text/javascript" src="scripts/revolution.min.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+        jQuery(document).ready(function()
+        {
+            jQuery('#homepage-slider').revolution(
+            {
+                jsFileLocation: '/scripts/',
+                extensions: 'revolution-extensions/',
+                sliderType:"standard",
+                sliderLayout:"fullscreen",
+                dottedOverlay:"none",
+                delay:9000,
+                navigation: {
+                    keyboardNavigation:"off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation:"off",
+                    onHoverStop:"off",
+                    arrows: {
+                        style:"uranus",
+                        enable:true,
+                        hide_onmobile:true,
+                        hide_under:600,
+                        hide_onleave:true,
+                        hide_delay:200,
+                        hide_delay_mobile:1200,
+                        tmp:'',
+                        left: {
+                            h_align:"left",
+                            v_align:"center",
+                            h_offset:30,
+                            v_offset:0
+                        },
+                        right: {
+                            h_align:"right",
+                            v_align:"center",
+                            h_offset:30,
+                            v_offset:0
+                        }
+                    }
+                },
+                viewPort: {
+                    enable:true,
+                    outof:"pause",
+                    visible_area:"80%"
+                },
+                responsiveLevels:[1240,1024,778,480],
+                gridwidth:[1240,1024,778,480],
+                gridheight:[600,600,500,400],
+                lazyType:"none",
+                shadow:5,
+                spinner:"off",
+                stopLoop:"off",
+                stopAfterLoops:-1,
+                stopAtSlide:-1,
+                shuffle:"off",
+                autoHeight:"off",
+                fullScreenAutoWidth:"off",
+                fullScreenAlignForce:"off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                hideThumbsOnMobile:"on",
+                hideSliderAtLimit:0,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                debugMode:false,
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            });
+
+            jQuery('#homepage-slider-2').revolution(
+            {
+                jsFileLocation: '/scripts/',
+                extensions: 'revolution-extensions/',
+                sliderType:"standard",
+                sliderLayout:"fullwidth",
+                dottedOverlay:"none",
+                delay:9000,
+                navigation: {
+                    keyboardNavigation:"on",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation:"off",
+                    onHoverStop:"off",
+                    touch:{
+                        touchenabled:"on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    }
+                    ,
+                    arrows: {
+                        style:"uranus",
+                        enable:true,
+                        hide_onmobile:true,
+                        hide_under:600,
+                        hide_onleave:true,
+                        hide_delay:200,
+                        hide_delay_mobile:1200,
+                        tmp:'',
+                        left: {
+                            h_align:"left",
+                            v_align:"center",
+                            h_offset:30,
+                            v_offset:0
+                        },
+                        right: {
+                            h_align:"right",
+                            v_align:"center",
+                            h_offset:30,
+                            v_offset:0
+                        }
+                    }
+                    ,
+                    tabs: {
+                        style:"hebe",
+                        enable:false,
+                        width:300,
+                        height:70,
+                        min_width:70,
+                        wrapper_padding:30,
+                        wrapper_color:"#0a0a0a",
+                        wrapper_opacity:"0.3",
+                        tmp:'<div class="tp-tab-title">{{param1}}</div><div class="tp-tab-desc">{{title}}</div>',
+                        visibleAmount: 4,
+                        hide_onmobile: true,
+                        hide_under:778,
+                        hide_onleave:false,
+                        hide_delay:200,
+                        direction:"vertical",
+                        span:true,
+                        position:"inner",
+                        space:20,
+                        h_align:"right",
+                        v_align:"center",
+                        h_offset:30,
+                        v_offset:0
+                    }
+                },
+                responsiveLevels:[1240,1024,778,480],
+                gridwidth:[1240,1024,778,480],
+                gridheight:[500,450,400,350],
+                lazyType:"none",
+                parallax: {
+                    type:"mouse+scroll",
+                    origo:"slidercenter",
+                    speed:400,
+                    levels:[5,10,15,20,25,30,35,40,45,50],
+                },
+                shadow:0,
+                spinner:"off",
+                stopLoop:"on",
+                stopAfterLoops:0,
+                stopAtSlide:1,
+                shuffle:"off",
+                autoHeight:"off",
+                disableProgressBar:"on",
+                hideThumbsOnMobile:"off",
+                hideSliderAtLimit:0,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                debugMode:false,
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            });
+        });
+    </script>
+
+{% endblock %}
+
+{% block content %}
+
+<article>
+    <section class="section" id="home">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rev_slider_wrapper fullwidthbanner-container">
+                        <div id="homepage-slider" class="rev_slider" data-version="5.0">
+                            <ul>
+                                <!-- SLIDE  -->
+
+                                <li data-description="" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-index="rs-6"
+                                data-masterspeed="2000" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-title="Ken Burns" data-transition="zoomin">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgposition="center center" data-duration="30000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0"
+                                    data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="120" data-scalestart="100" height="855" src="assets/images/travel-agency/post3-notinclude.jpg" width="1200">
+                                    <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" data-height="308" data-hoffset="['4','4','0','0']" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;"
+                                    data-responsive_offset="on" data-start="1000" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['100','100','10','10']" data-whitespace="normal" data-width="373" data-x=
+                                    "['center','center','center','center']" data-y="['middle','middle','middle','middle']" id="slide-6-layer-9" style=
+                                    "z-index: 5;background-color:rgba(0, 0, 0, 0.75);border-color:rgba(0, 0, 0, 0.50);"></div><!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme" data-fontsize="['70','70','70','45']" data-height="none" data-hoffset="['0','0','0','2']" data-lineheight="['70','70','70','50']"
+                                    data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="500" data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['2','2','-90','-100']" data-whitespace="nowrap" data-width="none" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" id=
+                                    "slide-6-layer-1" style="z-index: 6; white-space: nowrap;font-family:Amatic SC;">
+                                        TRAVEL
+                                    </div><!-- LAYER NR. 3 -->
+
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme" data-height="none" data-hoffset="['0','0','0','11']" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;"
+                                    data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1500" data-transform_idle="o:1;" data-transform_in=
+                                    "y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['52','52','-40','-50']" data-whitespace="nowrap" data-width="none" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" id=
+                                    "slide-6-layer-4" style="z-index: 7; white-space: nowrap;font-family:Josefin Sans;">
+                                        in the younger sort, is a part of
+                                    </div><!-- LAYER NR. 4 -->
+
+                                    <div class="tp-caption NotGeneric-Title" data-fontsize="['70','70','70','45']" data-height="none" data-hoffset="['0','0','0','2']" data-lineheight="['70','70','70','50']" data-mask_in=
+                                    "x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-responsive_offset="off" data-splitin="none" data-splitout="none" data-start="2000" data-transform_idle="o:1;" data-transform_in=
+                                    "y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:3000;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset=
+                                    "['101','102','10','0']" data-whitespace="nowrap" data-width="none" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" id="slide-6-layer-10"
+                                    style="z-index: 8; white-space: nowrap;font-family:Amatic SC;">
+                                        EDUCATION
+                                    </div><!-- LAYER NR. 5 -->
+
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme" data-height="none" data-hoffset="['8','0','0','6']" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;"
+                                    data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="3000" data-transform_idle="o:1;" data-transform_in=
+                                    "y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:3500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['149','152','60','50']" data-whitespace="nowrap" data-width="none" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" id=
+                                    "slide-6-layer-11" style="z-index: 9; white-space: nowrap;font-family:Josefin Sans;">
+                                        in the elder, a part of
+                                    </div><!-- LAYER NR. 6 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme" data-fontsize="['70','70','70','45']" data-height="none" data-hoffset="['5','0','0','0']" data-lineheight="['70','70','70','50']"
+                                    data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="3500" data-transform_idle="o:1;"
+                                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:4500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['198','202','110','100']" data-whitespace="nowrap" data-width="none" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" id=
+                                    "slide-6-layer-12" style="z-index: 10; white-space: nowrap;font-family:Amatic SC;">
+                                        EXPERIENCE
+                                    </div>
+                                </li><!-- SLIDE  -->
+
+                                <li data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-index="rs-7" data-masterspeed="2000" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-title="Ken Burns" data-transition="zoomin">
+                                    <!-- MAIN IMAGE -->
+                                    <img alt="" class="rev-slidebg" data-bgposition="center center" data-duration="30000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0"
+                                    data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="120" data-scalestart="100" height="855" src=
+                                    "assets/images/travel-agency/post2-notinclude.jpg" width="1200"> <!-- LAYERS -->
+                                     <!-- LAYER NR. 1 -->
+
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" data-height="248" data-hoffset="['0','0','0','0']" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out=
+                                    "x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-start="1000" data-transform_idle="o:1;" data-transform_in=
+                                    "y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset=
+                                    "['62','62','62','-20']" data-whitespace="normal" data-width="311" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" id="slide-7-layer-9"
+                                    style="z-index: 5;background-color:rgba(0, 0, 0, 0.75);border-color:rgba(0, 0, 0, 0.50);"></div><!-- LAYER NR. 2 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme" data-fontsize="['70','70','70','45']" data-height="none" data-hoffset="['0','0','0','-1']" data-lineheight="['70','70','70','50']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start=
+                                    "1000" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out=
+                                    "y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['2','0','0','-89']" data-whitespace="nowrap" data-width="none" data-x=
+                                    "['center','center','center','center']" data-y="['middle','middle','middle','middle']" id="slide-7-layer-1" style="z-index: 6; white-space: nowrap;font-family:Amatic SC;">
+                                        WE TRAVEL
+                                    </div><!-- LAYER NR. 3 -->
+
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme" data-height="none" data-hoffset="['-1','0','0','0']" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out=
+                                    "x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1500" data-transform_idle="o:1;" data-transform_in=
+                                    "y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['52','51','51','-40']" data-whitespace="nowrap" data-width="none" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" id=
+                                    "slide-7-layer-4" style="z-index: 7; white-space: nowrap;font-family:Josefin Sans;">
+                                        not to escape life
+                                    </div><!-- LAYER NR. 4 -->
+
+                                    <div class="tp-caption NotGeneric-Title tp-resizeme" data-fontsize="['70','70','70','45']" data-height="none" data-hoffset="['0','0','0','0']" data-lineheight="['70','70','70','50']"
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start=
+                                    "2000" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:3000;e:Power3.easeInOut;" data-transform_out=
+                                    "y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['101','100','100','0']" data-whitespace="nowrap" data-width="none" data-x=
+                                    "['center','center','center','center']" data-y="['middle','middle','middle','middle']" id="slide-7-layer-10" style="z-index: 8; white-space: nowrap;font-family:Amatic SC;">
+                                        BUT FOR LIFE
+                                    </div><!-- LAYER NR. 5 -->
+
+                                    <div class="tp-caption NotGeneric-SubTitle tp-resizeme" data-height="none" data-hoffset="['8','0','0','0']" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out=
+                                    "x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="3000" data-transform_idle="o:1;" data-transform_in=
+                                    "y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:3500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-voffset="['149','150','150','50']" data-whitespace="nowrap" data-width="none" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" id=
+                                    "slide-7-layer-11" style="z-index: 9; white-space: nowrap;font-family:Josefin Sans;">
+                                        not to escape us
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>
+                    </div>
+                </div><!-- END REVOLUTION SLIDER -->
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="col-text-1 element-top-20 element-bottom-20"></div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+
+                    <h3 class="bigtext regular element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        <span>The wolrd is a book,</span>
+                        <span>and those who do not travel read only a page.</span>
+                    </h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="col-text-1 element-top-20 element-bottom-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-container element-top-0 element-bottom-0 text-light">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="portfolio-header clearfix">
+                                    <div class="portfolio-filters pull-right"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio masonry no-transition use-masonry" data-col-lg="6" data-col-md="4" data-col-sm="2" data-col-xs="1" data-layout="masonry" data-padding="0">
+                            <div class="masonry-item portfolio-item masonry-wide" data-title=
+                            "Winter Holiday in Switzerland">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="0s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img18.jpg"
+                                    target="_self" title="">
+                                        <img alt="Winter Holiday in Switzerland" class="normalwidth" src="assets/images/travel-agency/img18-768x1024.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Winter Holiday in Switzerland</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Enjoy the view">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img2.jpg"
+                                    target="_self" title="">
+                                        <img alt="Enjoy the view" class="normalwidth" src="assets/images/travel-agency/img2-768x1024.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Enjoy the view</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Alps">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img7.jpg"
+                                    target="_self" title="">
+                                        <img alt="Alps" class="normalwidth" src="assets/images/travel-agency/img7-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Alps</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Beautiful Rome">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="0.6s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img9.jpg" target="_self" title="">
+                                        <img alt="Beautiful Rome" class="normalwidth" src="assets/images/travel-agency/img9-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Beautiful Rome</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Big Ben">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="0.8s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img3.jpg"
+                                    target="_self" title="">
+                                        <img alt="Big Ben" class="normalwidth" src="assets/images/travel-agency/img3-768x1024.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Big Ben</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Luxury Paris">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="1s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img12.jpg"
+                                    target="_self" title="">
+                                        <img alt="Luxury Paris" class="normalwidth" src="assets/images/travel-agency/img12-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Luxury Paris</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Safari in Marocco">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="1.2s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img13.jpg" target="_self" title="">
+                                        <img alt="Safari in Marocco" class="normalwidth" src="assets/images/travel-agency/img13-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Safari in Marocco</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="New York">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="1.4s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img6.jpg" target="_self" title="">
+                                        <img alt="New York" class="normalwidth" src="assets/images/travel-agency/img6-768x1024.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">New York</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Trekking in Austria">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="1.6s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img14.jpg" target="_self" title="">
+                                        <img alt="Trekking in Austria" class="normalwidth" src="assets/images/travel-agency/img14-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Trekking in Austria</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Paragliding in Kenya">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="1.8s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img15.jpg" target="_self" title="">
+                                        <img alt="Paragliding in Kenya" class="normalwidth" src="assets/images/travel-agency/img15-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Paragliding in Kenya</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Snowboard on Alps">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="2s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img16.jpg" target="_self" title="">
+                                        <img alt="Snowboard on Alps" class="normalwidth" src="assets/images/travel-agency/img16-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Snowboard on Alps</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Climbing in Nepal">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="2.2s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img17.jpg" target="_self" title="">
+                                        <img alt="Climbing in Nepal" class="normalwidth" src="assets/images/travel-agency/img17-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Climbing in Nepal</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Windsurf in Brazil">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="2.4s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img20.jpg" target="_self" title="">
+                                        <img alt="Windsurf in Brazil" class="normalwidth" src="assets/images/travel-agency/img20-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Windsurf in Brazil</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="masonry-item portfolio-item masonry-wide" data-title="Surfing in Greece">
+                                <div class="figure element-top-0 element-bottom-0 portfolio-os-animation image-filter-none image-filter-invert fade-in text-center figcaption-middle normalwidth"
+                                data-os-animation="fadeIn" data-os-animation-delay="2.6s">
+                                    <a class="figure-image magnific image-all" data-links="" href="assets/images/travel-agency/img21.jpg" target="_self" title="">
+                                        <img alt="Surfing in Greece" class="normalwidth" src="assets/images/travel-agency/img21-1024x683.jpg">
+
+                                        <div class="figure-overlay grid-overlay-0">
+                                            <div class="figure-overlay-container">
+                                                <div class="figure-caption">
+                                                    <h3 class="figure-caption-title bordered bordered-small">Surfing in Greece</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="col-text-1 element-top-20 element-bottom-20">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+
+                    <h3 class="bigtext regular element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        <span>Travel is the only thing you
+                        buy,</span>
+                        <span>that makes you richer.</span>
+                    </h3>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="col-text-1 element-top-20 element-bottom-20">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container-fullwidth">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rev_slider_wrapper fullwidthbanner-container">
+                        <div id="homepage-slider-2" class="rev_slider" data-version="5.0">
+                            <ul>    <!-- SLIDE  -->
+                                <li data-index="rs-121" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/images/travel-agency/post2-notinclude-100x50.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Bora Bora&lt;span&gt; &#8211; 6 Days &lt;strong&gt;$600&lt;/strong&gt;&lt;/span&gt;" data-param1="Asia" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post2-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-121-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-121-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Bora Bora<span> - 6 Days <strong>$600</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0" href="travel-agency-post.html" target="_self"            id="slide-121-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-125" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0"  data-saveperformance="off"  data-title="Venice, Italy&lt;span&gt; &#8211; 3 Days &lt;strong&gt;$300&lt;/strong&gt;&lt;/span&gt;" data-param1="Europe" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post3-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-125-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-125-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Venice, Italy<span> - 3 Days <strong>$300</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0" href="travel-agency-post.html" target="_self" id="slide-125-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-128" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0"  data-saveperformance="off"  data-title="Santorini, Greece&lt;span&gt; &#8211; 7 Days  &lt;strong&gt;$800&lt;/strong&gt;&lt;/span&gt;" data-param1="Europe" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post6-notinclude.jpg" alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-128-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-128-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Santorini, Greece<span> - 7 Days  <strong>$800</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0" href="travel-agency-post.html" target="_self" id="slide-128-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-131" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0"  data-saveperformance="off"  data-title="Arab Emirates&lt;span&gt; &#8211; 12 Days &lt;strong&gt;$1500&lt;/strong&gt;&lt;/span&gt;" data-param1="Asia" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post4-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-131-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-131-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Arab Emirates<span> - 12 Days <strong>$1500</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0" href="travel-agency-post.html" target="_self" id="slide-131-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-134" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Paris&lt;span&gt; &#8211; 4 Days &lt;strong&gt;$800&lt;/strong&gt;&lt;/span&gt;" data-param1="Europe" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post5-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-134-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-134-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Paris<span> - 4 Days <strong>$800</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0"
+                                    href="travel-agency-post.html" target="_self"            id="slide-134-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-137" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Mauritius&lt;span&gt; &#8211; 6 Days  &lt;strong&gt;$1000&lt;/strong&gt;&lt;/span&gt;" data-param1="Asia" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post1-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-137-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-137-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Mauritius<span> - 6 Days  <strong>$1000</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0"
+                             href="travel-agency-post.html" target="_self"            id="slide-137-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-140" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/images/travel-agency/post7-notinclude-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Italy &lt;span&gt; &#8211; 14 Days  &lt;strong&gt;$1600&lt;/strong&gt;&lt;/span&gt;" data-param1="Europe" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post7-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-140-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-140-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Italy <span> - 14 Days  <strong>$1600</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0"
+                             href="travel-agency-post.html" target="_self"            id="slide-140-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-143" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0"  data-saveperformance="off"  data-title="Colorado &lt;span&gt; &#8211; 7 Days  &lt;strong&gt;$1000&lt;/strong&gt;&lt;/span&gt;" data-param1="America" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post8-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-143-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-143-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Colorado <span> - 7 Days  <strong>$1000</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0"
+                             href="travel-agency-post.html" target="_self"             id="slide-143-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-195" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0"  data-saveperformance="off"  data-title="Marocco &lt;span&gt; &#8211; 14 Days &lt;strong&gt;$1500&lt;/strong&gt;&lt;/span&gt;" data-param1="Africa" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post9-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-195-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-195-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Marocco <span> - 14 Days <strong>$1500</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0"
+                             href="travel-agency-post.html14-days-1500/" target="_self"             id="slide-195-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-281" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0"  data-saveperformance="off"  data-title="San francisco &lt;span&gt; &#8211; 14 Days  &lt;strong&gt;$1500&lt;/strong&gt;&ltlt;/span&gt;" data-param1="America" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post12-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-281-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-281-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">San francisco <span> - 14 Days  <strong>$1500</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0" href="travel-agency-post.html" target="_self"           id="slide-281-layer-5"
+                                        data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                        data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']" data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-286" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/images/travel-agency/post10-notinclude-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Jamaica &lt;span&gt; &#8211; 7 Days  &lt;strong&gt;$1000&lt;/strong&gt;&lt;/span&gt;" data-param1="America" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post10-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-286-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-286-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Jamaica <span> - 7 Days  <strong>$1000</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0" href="travel-agency-post.html" target="_self" id="slide-286-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-288" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/images/travel-agency/post11-notinclude-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Miami &lt;span&gt; &#8211; 10 Days  &lt;strong&gt;$2500&lt;/strong&gt;&lt;/span&gt;" data-param1="America" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post11-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-288-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-288-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Miami <span> - 10 Days  <strong>$2500</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0" href="travel-agency-post.html" target="_self"            id="slide-288-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-293" data-transition="parallaxvertical" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/images/travel-agency/post13-notinclude-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Kenya &lt;span&gt; &#8211; 12 Days &lt;strong&gt;$1000&lt;/strong&gt;&lt;/span&gt;" data-param1="Africa" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="assets/images/travel-agency/post13-notinclude.jpg"  alt=""  width="1200" height="855" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-293-layer-3"
+                                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                                    data-width="full"
+                                        data-height="full"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                        data-start="1000"
+                                        data-basealign="slide"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title   tp-resizeme rs-parallaxlevel-0"
+                                         id="slide-293-layer-1"
+                                         data-x="['left','left','left','center']" data-hoffset="['50','50','50','0']"
+                                         data-y="['top','top','top','top']" data-voffset="['165','135','105','130']"
+                                                    data-fontsize="['50','50','50','30']"
+                                        data-lineheight="['55','55','55','35']"
+                                        data-width="['781','600','600','420']"
+                                        data-height="none"
+                                        data-whitespace="normal"
+                                        data-transform_idle="o:1;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-responsive_offset="on"
+
+
+                                        style="z-index: 6; min-width: 781px; max-width: 781px; white-space: normal; color: rgba(255, 255, 255, 1.00);font-family:'Amatic SC';">Kenya <span> - 12 Days <strong>$1000</strong></span>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <a class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0" href="travel-agency-post.html" target="_self"           id="slide-293-layer-5"
+                                         data-x="['left','left','left','left']" data-hoffset="['55','55','55','31']"
+                                         data-y="['middle','middle','middle','top']" data-voffset="['5','5','5','177']"
+                                                    data-fontsize="['16','13','13','13']"
+                                        data-fontweight="['900','700','700','700']"
+                                        data-color="['rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(0, 188, 212, 1.00)','rgba(2, 187, 211, 1.00)']"
+                                        data-width="none"
+                                        data-height="none"
+                                        data-whitespace="nowrap"
+                                        data-transform_idle="o:1;"
+                                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 188, 212, 1.00);bc:rgba(0, 188, 212, 1.00);cursor:pointer;"
+
+                                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                                         data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                                         data-mask_in="x:0px;y:0px;"
+                                         data-mask_out="x:0;y:0;"
+                                        data-start="1000"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-actions=''
+                                        data-responsive_offset="on"
+                                        data-responsive="off"
+
+                                        style="z-index: 7; white-space: nowrap; font-size: 16px; font-weight: 900; color: rgba(0, 188, 212, 1.00);font-family:Josefin Sans;background-color:rgba(255, 255, 255, 1.00);padding:12px 12px 12px 12px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">read more
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                    </div>
+                </div><!-- END REVOLUTION SLIDER -->
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="trips">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="col-text-1 element-top-20 element-bottom-20">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="col-md-8 text-center small-screen-default">
+                    <div class="divider-wrapper" style="visibility:hidden;background-color:#FFFFFF">
+                        <div class="visible-xs" style="height:24px;"></div>
+
+                        <div class="visible-sm" style="height:24px;"></div>
+
+                        <div class="visible-md" style="height:24px;"></div>
+
+                        <div class="visible-lg" style="height:24px;"></div>
+                    </div>
+
+                    <h3 class="bigtext regular element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        <span>We travel, some of us
+                        forever,</span>
+                        <span>to seek other states, other lives, other souls.</span>
+                    </h3>
+                    <a class="btn btn-primary btn-lg element-left-0 element-right-0 element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s" href="travel-agency-blog.html">Explore our trips</a>
+
+                    <div class="divider-wrapper" style="visibility:hidden;background-color:#FFFFFF">
+                        <div class="visible-xs" style="height:24px;"></div>
+
+                        <div class="visible-sm" style="height:24px;"></div>
+
+                        <div class="visible-md" style="height:24px;"></div>
+
+                        <div class="visible-lg" style="height:24px;"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="col-text-1 element-top-20 element-bottom-20">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn"
+                    data-os-animation-delay="0.1s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Colorado" src="assets/images/travel-agency/post8-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Colorado <span>- 7 Days <strong>$1000</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category"><a href="travel-agency-blog.html">America</a></h5>
+                    </div>
+
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn"
+                    data-os-animation-delay="0.1s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Marocco" src="assets/images/travel-agency/post9-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Marocco <span>- 14 Days <strong>$1500</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category">
+                            <a href="travel-agency-blog.html">Africa</a>
+                        </h5>
+                    </div>
+
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Bora Bora" src="assets/images/travel-agency/post2-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Bora Bora <span>- 6 Days <strong>$600</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category">
+                            <a href="travel-agency-blog.html">Asia</a>
+                        </h5>
+                    </div>
+
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Kenya" src="assets/images/travel-agency/post13-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Kenya <span>- 12 Days <strong>$1000</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category">
+                            <a href="travel-agency-blog.html">Africa</a>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Paris" src="assets/images/travel-agency/post5-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Paris <span>- 4 Days <strong>$800</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category"><a href="travel-agency-blog.html">Europe</a></h5>
+                    </div>
+
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Italy" src="assets/images/travel-agency/post7-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Italy <span>- 14 Days <strong>$1600</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category"><a href="travel-agency-blog.html">Europe</a></h5>
+                    </div>
+
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Venice, Italy" src="assets/images/travel-agency/post3-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Venice, Italy <span>- 3 Days <strong>$300</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category">
+                            <a href="travel-agency-blog.html">Europe</a>
+                        </h5>
+                    </div>
+
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Miami" src="assets/images/travel-agency/post11-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Miami <span>- 10 Days <strong>$2500</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category"><a href="travel-agency-blog.html">America</a></h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Mauritius" src="assets/images/travel-agency/post1-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Mauritius <span>- 6 Days <strong>$1000</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category">
+                            <a href="travel-agency-blog.html">Asia</a>
+                        </h5>
+                    </div>
+
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn"
+                    data-os-animation-delay="0.3s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Arab Emirates" src="assets/images/travel-agency/post4-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Arab Emirates <span>- 12 Days <strong>$1500</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category">
+                            <a href="travel-agency-blog.html">Asia</a>
+                        </h5>
+                    </div>
+
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Santorini, Greece" src="assets/images/travel-agency/post6-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Santorini, Greece <span>- 7 Days <strong>$800</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category">
+                            <a href="travel-agency-post.html">Europe</a>
+                        </h5>
+                    </div>
+
+                    <div class="figure fade-none element-top-20 element-bottom-20 figcaption-top text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                        <a class="figure-image" href="travel-agency-post.html">
+                            <img alt="Jamaica" src="assets/images/travel-agency/post10-notinclude.jpg">
+
+                            <div class="figure-overlay">
+                                <div class="figure-overlay-container">
+                                    <div class="figure-caption">
+                                        <h3 class="figure-caption-title">
+                                            <strong>Jamaica <span>- 7 Days <strong>$1000</strong></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <h5 class="figure-caption-category">
+                            <a href="travel-agency-blog.html">America</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

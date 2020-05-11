@@ -1,0 +1,142 @@
+// Core variables and mixins
+@import "bootstrap/oxygenna-variables";
+@import "compass/css3";
+@import "theme/compass-mixins";
+
+
+// Skin Variables
+$font-family: 'Josefin Sans';
+$font-size: 16px;
+$font-weight: 400;
+$heading-font-family: 'Poiret One';
+$heading-font-weight: 700;
+$heading-text-transform: uppercase;
+$brand-font-family: 'Poiret One';
+$brand-font-size: 24px;
+$brand-font-weight: 700;
+$navbar-font-family: 'Poiret One';
+$navbar-font-size: 18px;
+$navbar-font-weight: 700;
+$navbar-dropdown-font-size: 16px;
+$font-weight-hairline: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$blog-post-title-font-size: 36px;
+$blog-post-title-font-weight: 700;
+$blog-post-font-size: 16px;
+$blog-post-font-weight: 400;
+$blockquote-font-family: 'Gentium Book Basic';
+$blockquote-font-size: 30px;
+$blockquote-font-style: italic;
+$blockquote-font-weight: 400;
+$lead-font-size: 21px;
+$lead-font-weight: 300;
+$navbar-height: 100px;
+$navbar-scrolled: 90px;
+$submenu-width: 220px;
+$navbar-border-height: 0px;
+$sidemenu-width: 270px;
+$sidemenu-nav-max-height: 600px;
+$text-color: #575757;
+$heading-color: #303030;
+$link-color: #d29eaf;
+$link-color-hover: #d29eaf;
+$icon-color: #d29eaf;
+$small-color: #959494;
+$text-color-alt: #ffffff;
+$heading-color-alt: #ffffff;
+$link-color-alt: #ffffff;
+$link-color-hover-alt: #ffffff;
+$icon-color-alt: #ffffff;
+$small-color-alt: #ffffff;
+$background-color: #ffffff;
+$background-invert: #d29eaf;
+$background-complementary: rgba(0,0,0,.1);
+$nav-background: rgba(255, 255, 255, 0.9);
+$nav-link: #303030;
+$nav-link-hover: #d29eaf;
+$nav-link-active: #d29eaf;
+$nav-brand: #ffffff;
+$nav-text: #d29eaf;
+$nav-borders: rgba(195, 195, 195, 0.5);
+$nav-dropdown-background: rgba(255, 255, 255, 0.9);
+$nav-dropdown-link: #ffffff;
+$nav-dropdown-link-hover: rgba(255,255,255,.75);
+$nav-dropdown-text: #303030;
+$nav-dropdown-border: rgba(0,0,0,.055);
+$nav-dropdown-separators: rgba(0,0,0,.055);
+$nav-transparent-link: #ffffff;
+$nav-transparent-link-hover: #d29eaf;
+$nav-transparent-brand: #ffffff;
+$nav-transparent-text: #ffffff;
+$nav-transparent-borders: rgba(255, 255, 255, 0.1);
+$logo-background: rgba(255, 255, 255, 0.9);
+$logo-brand: #000000;
+$top-bar-background: #272e31;
+$top-bar-link: #ffffff;
+$top-bar-link-hover: #ffffff;
+$top-bar-text: #ffffff;
+$top-bar-borders: rgba(255, 255, 255, .1);
+$footer-background: #d4a4b4;
+$footer-link: #d29eaf;
+$footer-link-hover: #d29eaf;
+$footer-text: #ffffff;
+$footer-borders: rgba(255, 255, 255, .1);
+$sub-footer-background: #000;
+$sub-footer-link: #ffffff;
+$sub-footer-link-hover: #ffffff;
+$sub-footer-text: rgba(255, 255, 255, 0.6);
+$sub-footer-borders: rgba(255, 255, 255, .1);
+$form-color: #d29eaf;
+$form-background: rgba(209, 209, 209, 0.22);
+$form-borders: rgba(255, 255, 255, 0.13);
+$form-placeholder-color: #d29eaf;
+$form-active: #d29eaf;
+$primary-text: #ffffff;
+$primary-bg: #d29eaf;
+$default-text: #ffffff;
+$default-bg: #4D4A51;
+$warning-text: #ffffff;
+$warning-bg: #CD6727;
+$danger-text: #ffffff;
+$danger-bg: #E85543;
+$success-text: #ffffff;
+$success-bg: #008D7D;
+$info-text: #ffffff;
+$info-bg: #78A2BB;
+$border-radius-base: 3px;
+$border-radius-large: 3px;
+$border-radius-small: 3px;
+$border-radius-forms: 3px;
+$overlay-text: #ffffff;
+$overlay-bg: rgba(210, 158, 175, 0.9);
+$magnific-overlay-bg: rgba(48, 40, 64, .9);
+$magnific-close-icon: #ffffff;
+$magnific-close-bg: rgba(210, 158, 175, 0.75);
+$top-icon-color: #ffffff;
+$top-icon-bg: rgba(210, 158, 175, 0.84);
+$slideshow-color: #ffffff;
+$slideshow-shadow: rgba(0, 0, 0, 0.2);
+$loader-color: #d29eaf;
+$loader-bg: #ffffff;
+
+// Skin Creator
+@import "theme/skin";
+
+// Transparent logo switch
+@media (min-width: 992px) {
+    .transparent-header #masthead .navbar-brand {
+        background-image: url('../../assets/images/wedding/lambda-wedding-logo-transparent.png');
+    }
+    .transparent-header #masthead .navbar-brand img {
+        visibility: hidden;
+    }
+    .transparent-header #masthead.navbar-scrolled .navbar-brand {
+        background-image: none;
+    }
+    .transparent-header #masthead.navbar-scrolled .navbar-brand img {
+        visibility: visible;
+    }
+}

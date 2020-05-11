@@ -1,0 +1,202 @@
+{% extends "layouts/hotel.html" %}
+
+{% set title = "Contact|Hotel" %}
+{% set activeMenu = "Contact" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/restaurant/footer.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="background-media" style=
+        "background-image: url(assets/images/hotel/contact-notinclude1.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 70%;">
+        </div>
+
+        <div class="background-overlay" style=
+        "background-color: rgba(0,0,0,0.3);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-50"></div>
+                        <div class="visible-sm element-height-100"></div>
+                        <div class="visible-md element-height-200"></div>
+                        <div class="visible-lg element-height-200"></div>
+                    </div>
+
+                    <h1 class="text-center text-light os-animation super"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        Contact us
+                    </h1>
+
+                    <div class="figure os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                        <span class="figure-image">
+                            <img alt="decor-big-white.png" src="assets/images/hotel/decor-big-white.png">
+                        </span>
+                    </div>
+
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-50"></div>
+                        <div class="visible-sm element-height-100"></div>
+                        <div class="visible-md element-height-100"></div>
+                        <div class="visible-lg element-height-100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay" style=
+        "background-color: rgba(86,154,167,0);"></div>
+
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-md-8 text-center">
+                            <h2 class="element-top-100 os-animation big"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.1s">
+                                Drop us a Line
+                            </h2>
+
+                            <div class="figure element-bottom-40 os-animation"
+                            data-os-animation="fadeIn" data-os-animation-delay=
+                            "0.2s">
+                                <span class="figure-image">
+                                    <img alt="decor-small-gold.png" src="assets/images/hotel/decor-small-gold.png">
+                                </span>
+                            </div>
+
+                            <form action="contact_mailer.php" class="contact-form">
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-user"></i>
+                                    <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required="">
+                                </div>
+
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-envelope"></i>
+                                    <input class="form-control" id="email" name="email" placeholder="Your email *" type="email" required="">
+                                </div>
+
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-pencil"></i>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="10" required=""></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Send email" class="btn btn-primary">
+                                </div>
+                                <div class="messages text-center"></div>
+                            </form>
+
+                            <div class="divider-wrapper">
+                                <div class="visible-xs element-height-100"></div>
+                                <div class="visible-sm element-height-100"></div>
+                                <div class="visible-md element-height-100"></div>
+                                <div class="visible-lg element-height-100"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 "></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center" style="background:rgba(255, 255, 255, 0.95);">
+                    <div class="google-map" data-os-animation="none" data-os-animation-delay="0s" id="map" style="height:800px"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-media" data-0-top-bottom="background-position: 50% -80px" data-start="background-position: 50% 0px" style=
+        "background-image: url(assets/images/hotel/rooms2-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+        </div>
+
+        <div class="background-overlay grid-overlay-0" style=
+        "background-color: rgba(0,0,0,0.7);"></div>
+
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-2 text-center"></div>
+
+                <div class="col-md-8 text-center">
+                    <h2 class="element-top-100 text-light os-animation big"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        Our Guests
+                    </h2>
+
+                    <div class="figure os-animation"
+                    data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                        <span class="figure-image">
+                            <img alt="decor-small-white.png" src="assets/images/hotel/decor-small-white.png">
+                        </span>
+                    </div>
+
+                    <div class="element-top-20 element-bottom-100 text-center text-light os-animation flexslider feature-slider"
+                    data-flex-animation="slide" data-flex-controls="show" data-flex-controls-position="outside" data-flex-controlsalign="center" data-flex-directions="hide" data-flex-slideshow="true" data-flex-speed="7000" data-os-animation="fadeIn" data-os-animation-delay="0.3s"
+                    id="flexslider-985">
+                        <ul class="slides">
+                            <li>
+                                <blockquote>
+                                    <p>The ideal spot for any occasion, Lambda
+                                    Hotel serves dinner seven nights a week,
+                                    and serves lunch Monday through Friday,
+                                    when the room is awash in sunlight.</p>
+
+                                    <footer>
+                                        Athens Square
+                                    </footer>
+                                </blockquote>
+                            </li>
+
+                            <li>
+                                <blockquote>
+                                    <p>What an amazing hotel. We were greeted
+                                    by Linda at the front desk with a warm
+                                    friendly smile. Thank you so much for
+                                    making our days with you special.</p>
+
+                                    <footer>
+                                        Mary Jane Doe
+                                    </footer>
+                                </blockquote>
+                            </li>
+
+                            <li>
+                                <blockquote>
+                                    <p>Thank you for a great time, your
+                                    kindness and great service. I enjoyed my
+                                    spa time and felt completely relaxed. Many
+                                    thanks for a wonderful time with warm
+                                    regards.</p>
+
+                                    <footer>
+                                        John Doe
+                                    </footer>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

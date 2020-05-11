@@ -1,0 +1,344 @@
+@import "bootstrap-rtl";
+
+/* THEME CSS */
+body.rtl {
+  unicode-bidi:embed;
+
+  // Header
+  @media (min-width: 992px) {
+    .menu-sidebar .sidebar-widget {
+      float: left;
+    }
+    .header-logo-left-menu-right .main-navbar,
+    .header-logo-left-menu-right .menu-container,
+    .header-logo-left-menu-right .menu-sidebar {
+      float: right;
+    }
+    .header-logo-left-menu-right .nav-container,
+    .header-logo-right-menu-left .navbar-header {
+      float: left;
+    }
+    .header-logo-right-menu-left .nav-container {
+      float: right !important;
+    }
+    .header-logo-right-menu-below .navbar-header {
+      float: left;
+    }
+    .header-logo-left-menu-below .menu-container {
+      float: right;
+    }
+  }
+
+  #navbar-slide {
+    right: 100%;
+    left: auto;
+  }
+  &.side-menu-right #navbar-slide {
+    left: 0;
+    right: auto;
+  }
+  &.side-menu-left #navbar-slide {
+    left: auto;
+    right: 0;
+  }
+
+  .menu .dropdown-submenu>a:after {
+    content: "\f104";
+    float: left;
+    margin-left: -6px;
+  }
+  .dropdown-submenu>.dropdown-menu {
+    left: auto;
+    right: 100%;
+  }
+
+  // Typography classes
+  .text-left {
+    text-align: right !important;
+  }
+  .text-right {
+    text-align: left !important;
+  }
+
+  // Layout
+  @media (min-width: 992px) {
+    .col-md-2-4 {
+      width: 20%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-sm-2-4{
+      width: 20%;
+    }
+  }
+
+  // Top Bar
+  .top-bar .top {
+    float: right;
+    text-align: initial;
+  }
+  .top-bar .top-right {
+    float: left;
+    text-align: left;
+  }
+
+  // Footer
+  .footer-columns-2 [class*=col-sm-]:last-child {
+    text-align: left;
+  }
+
+  // Icon buttons
+  .btn i, button i {
+    margin-left: 0px;
+    margin-right: 8px;
+  }
+
+  // Go to top icon
+  .go-top {
+    right: auto;
+    left: 12px;
+  }
+
+  // Blockquote
+  blockquote {
+    border-right: 0px;
+  }
+  blockquote:before {
+    left: auto;
+    right: 0;
+    content: "\201D";
+  }
+
+  // Feature List
+  .features-list li {
+    padding-right: 88px;
+    padding-left: 0px;
+  }
+  .features-list .features-list-icon {
+    left: auto;
+    right: 0;
+    margin-left: 16px;
+    margin-right: 0px;
+  }
+
+  // Search button on menu
+  @media (min-width: 992px) {
+    .top-search.active .search-trigger {
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  // Widgets
+  .widget_archive ul,
+  .widget_categories ul,
+  .widget_meta ul,
+  .widget_nav_menu ul,
+  .widget_pages ul,
+  .widget_recent_comments ul,
+  .widget_recent_entries ul,
+  .widget_rss ul,
+  .widget_twitter ul {
+    padding-right: 0;
+  }
+
+  .widget_recent_entries li {
+    padding-left: 0px;
+    padding-right: 48px;
+  }
+  .widget_archive .post-icon,
+  .widget_categories .post-icon,
+  .widget_meta .post-icon,
+  .widget_nav_menu .post-icon,
+  .widget_pages .post-icon,
+  .widget_recent_comments .post-icon,
+  .widget_recent_entries .post-icon,
+  .widget_rss .post-icon,
+  .widget_twitter .post-icon {
+    left: auto;
+    right: 0;
+    margin-right: 0px;
+    margin-left: 8px;
+  }
+
+  // Flexslider
+  .flexslider {
+    direction:ltr;
+  }
+
+  // Pricing List
+  .pricing-item-list li strong {
+    right: auto;
+    left: -12px;
+  }
+  .pricing-item-list li img+.pricing-item-list-content {
+    padding-left: 0;
+    padding-right: 70px;
+  }
+  .pricing-item-list li h3 {
+    padding-right: 0px;
+    padding-left: 60px;
+  }
+  // Social Icons
+  ul.social-icons {
+    padding-right: 0;
+  }
+
+  // Accordion Panels
+  .panel-heading .accordion-toggle:after {
+    left: 0;
+    right: auto;
+  }
+
+  // Input Group
+  .input-group-btn .btn i {
+    margin: 0;
+  }
+
+  // Portfolio
+  .portfolio-nav {
+    left: 15px;
+    right: auto;
+    ul {
+      direction: initial;
+    }
+  }
+
+  // Blog
+  .post-navigation i {
+    transform: rotate(180deg);
+  }
+  .post-navigation .previous i {
+    margin-left: 8px;
+    margin-right: 0;
+  }
+  .breadcrumb-blog {
+    right: auto;
+    left: 0;
+  }
+  .comment-reply {
+    float: left !important;
+  }
+  .post-details span {
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-left: 12px;
+    padding-left: 12px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right: 0;
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  // Skills List
+  .skills-list {
+    padding-left: 0px;
+    padding-right: 24px;
+  }
+  .skills-list li:before {
+    right: -24px;
+    left: auto;
+  }
+
+  // Divider border
+  .divider-border .divider-border-inner {
+    left: auto;
+    right: 0;
+  }
+  .divider-border-center .divider-border-inner {
+    left: 50%;
+    right: auto;
+  }
+  .divider-border-right .divider-border-inner {
+    left: 0;
+    right: auto;
+  }
+
+  // Fa lists
+  .fa-ul {
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 2.1428571429em;
+  }
+  .fa-li {
+    right: -2.1428571429em;
+    left: auto;
+  }
+
+  // WooCommerce
+  .mini-cart-overview .icon-bag {
+    margin-left: 16px;
+    margin-right: 0;
+  }
+  .mini-cart-overview .mini-cart-count {
+    right: 10px;
+    left: auto;
+  }
+  .onsale {
+    left: -15px;
+    right: auto;
+  }
+  .add-to-cart-button {
+    right: auto;
+    left: 0;
+  }
+  .add-to-cart-button:before {
+    left: 24px;
+    right: auto;
+  }
+  .product-nav {
+    float: left !important;
+    direction: initial;
+  }
+  .products .product-title {
+    padding-left: 44px;
+    padding-right: 0;
+  }
+  #review_form_wrapper p.stars span {
+    float: right;
+  }
+  p.stars span a {
+    float: right;
+  }
+  p.stars span a, p.stars span a:after {
+    left: auto;
+    right: 0;
+  }
+  .mini-cart-overview .product-image {
+    right: 0;
+    left: auto;
+  }
+  .mini-cart-overview .product-details {
+    padding-right: 48px;
+    padding-left: 12px;
+  }
+  .mini-cart-overview .remove {
+    left: 0;
+    right: auto;
+  }
+  .mini-cart-overview .buttons a:first-child {
+    margin-right: 0px;
+    margin-left: 6px;
+  }
+  .product_list_widget img {
+    float: right;
+    margin-left: 12px;
+    margin-right: 0;
+  }
+  .select-wrap select {
+    padding-right: 16px;
+    padding-left: 30px;
+  }
+  .select-wrap:after {
+    right: auto;
+    left: 0;
+  }
+  .page-numbers .next, 
+  .page-numbers .prev {
+    transform: rotate(180deg);
+  }
+}
+

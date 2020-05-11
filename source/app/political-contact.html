@@ -1,0 +1,97 @@
+{% extends "layouts/political.html" %}
+
+{% set title = "Contact | Political" %}
+{% set activeMenu = "Contact" %}
+
+{% set bodyclasses = "pace-on pace-minimal" %}
+
+{% block extrajs %}
+    <!-- load contact form js -->
+    {% include "partials/js/contact.html" %}
+    <!-- load map js -->
+    {% include "partials/js/map.html" %}
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/political/footer.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+{% endblock %}
+
+{% block content %}
+<article>
+    <section class="section">
+        <div class="container-fullwidth container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6">
+                    <div class="google-map" id="map" style="height:650px"></div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1 class="text-center element-top-20 element-bottom-20 text-normal os-animation normal regular" data-os-animation="fadeInDown" data-os-animation-delay="0.1s">Contact us</h1>
+                            <p class="lead text-center center text-normal element-top-20 element-bottom-20 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                            Oxygenna is a creative design agency with a
+                            passion for pixel perfect themes. We are located on an
+                            isolated island and we mind our own business.</p>
+                            <div class="divider-border divider-border-center element-top-20 element-bottom-40 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s" style="height:2px;">
+                                <div class="divider-border-inner" style="width:80px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center small-screen-default os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                            <form action="contact_mailer.php" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-user"></i>
+                                            <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group">
+                                            <i class="fa fa-envelope"></i>
+                                            <input class="form-control" id="email" name="email" placeholder="Your email *" type="email" required="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-icon-group">
+                                    <i class="fa fa-pencil"></i>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="10" required=""></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Send email" class="btn btn-primary">
+                                </div>
+                                <div class="messages text-center"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="divider-wrapper">
+                        <div class="visible-xs element-height-20"></div>
+                        <div class="visible-sm element-height-20"></div>
+                        <div class="visible-md element-height-20"></div>
+                        <div class="visible-lg element-height-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="donate">
+        <div class="background-overlay grid-overlay-0" style="background-color: rgba(230,12,12,1);"></div>
+        <div class="container container-vertical-middle">
+            <div class="row vertical-middle">
+                <div class="col-md-6 text-right">
+                    <h2 class="element-top-60 element-bottom-60 text-light os-animation normal regular" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                    Help us make a better world</h2>
+                </div>
+                <div class="col-md-6 text-left ">
+                    <a class="btn btn-default btn-lg text-light element-left-0 element-right-0 element-top-60 element-bottom-60 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s" data-target="#183" data-toggle="modal" href="#">
+                    MAKE A DONATION</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}
