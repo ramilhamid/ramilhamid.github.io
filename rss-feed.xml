@@ -1,0 +1,48 @@
+<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+    <channel>
+        <title>Проект дома с мансардой</title>
+        <link>https://vmansarde.ru/</link>
+        <description>Проект дома с мансардой "Нур"</description>
+
+        <item turbo="true">
+  <title>Проект дома с мансардой "Нур"</title>
+  <link>https://vmansarde.ru</link>
+  <turbo:content>
+    <![CDATA[
+      <header>
+        <h1>Проект дома с мансардой «Нур»</h1>
+        <h2>Закажите проект дома мечты</h2>
+        <figure>
+          <img src="https://vmansarde.ru/assets/images/mansarda/house.jpg">
+        </figure>
+        <menu>
+          <a href="https://vmansarde.ru/post-planirovka.html">Планировка дома</a>
+          <a href="https://vmansarde.ru/post-banya.html">Оптимальный проект бани</a>
+        </menu>
+      </header>
+      <p>Ищите проект дома для строительства?</p>
+      <p>Увидев наш дом, вы перестанете искать другие варианты и остановитесь на нем. Посмотрите <a href="#">на нашем сайте</a>.</p>
+      <h2>Планировка</h2>
+      <figure>
+        <img src="https://vmansarde.ru/assets/images/mansarda/plan1.jpg">
+        <figcaption>Планировка первого этажа</figcaption>
+      </figure>
+	<figure>
+        <img src="https://vmansarde.ru/assets/images/mansarda/plan2.jpg">
+        <figcaption>Планировка второго этажа</figcaption>
+      </figure>
+      <p>На нашем сайте вы можете изучить планировку и все детали по проекту.</p>
+      <p>Убедитесь в этом сами.</p>
+      <button formaction="tel:+7(916)282-76-11"
+              data-background-color="#58b451"
+              data-color="white"
+              data-primary="true">Написать автору</button>
+      <div data-block="widget-feedback" data-stick="false">
+        <div data-block="chat" data-type="whatsapp" data-url="https://wa.me/79162827611"></div>
+        <div data-block="chat" data-type="telegram" data-url="tg://resolve?domain=ramilhamid"></div>
+      </div>
+    ]]>
+    </turbo:content>
+</item>
+    </channel>
+</rss>
