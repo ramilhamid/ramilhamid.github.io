@@ -8,8 +8,7 @@
   <title>Проект дома с мансардой "Нур"</title>
   <link>https://vmansarde.ru</link>
   <turbo:content>
-    <![CDATA[
-      <header>
+    <header>
         <h1>Проект дома с мансардой «Нур»</h1>
         <h2>Закажите проект дома мечты</h2>
         <figure>
@@ -41,7 +40,6 @@
         <div data-block="chat" data-type="whatsapp" data-url="https://wa.me/79162827611"></div>
         <div data-block="chat" data-type="telegram" data-url="tg://resolve?domain=ramilhamid"></div>
       </div>
-    ]]>
     </turbo:content>
 </item>
     </channel>
