@@ -12,7 +12,7 @@
         <h1>Проект дома с мансардой «Нур»</h1>
         <h2>Закажите проект дома мечты</h2>
         <figure>
-          <img src="https://vmansarde.ru/assets/images/mansarda/house.jpg">
+          <img src="https://vmansarde.ru/assets/images/mansarda/house.jpg"/>
         </figure>
         <menu>
           <a href="https://vmansarde.ru/post-planirovka.html">Планировка дома</a>
@@ -23,11 +23,11 @@
       <p>Увидев наш дом, вы перестанете искать другие варианты и остановитесь на нем. Посмотрите <a href="#">на нашем сайте</a>.</p>
       <h2>Планировка</h2>
       <figure>
-        <img src="https://vmansarde.ru/assets/images/mansarda/plan1.jpg">
+        <img src="https://vmansarde.ru/assets/images/mansarda/plan1.jpg"/>
         <figcaption>Планировка первого этажа</figcaption>
       </figure>
 	<figure>
-        <img src="https://vmansarde.ru/assets/images/mansarda/plan2.jpg">
+        <img src="https://vmansarde.ru/assets/images/mansarda/plan2.jpg"/>
         <figcaption>Планировка второго этажа</figcaption>
       </figure>
       <p>На нашем сайте вы можете изучить планировку и все детали по проекту.</p>
